@@ -1,0 +1,505 @@
+﻿database,table_name,column_name,sql_type,nullable,key_type,description,example,backend_required
+sqlite:financial.db,account_mapping,account_key,TEXT,NO,PK,"계정 식별 키(태그 우선, 태그 없으면 계정명 기반)",ifrs-full_GainsOnChangeInFairValueOfDerivatives,N
+sqlite:financial.db,account_mapping,sj_div,TEXT,NO,PK,"재무제표 구분: BS 재무상태표, IS 손익계산서, CIS 포괄손익, CF 현금흐름표, SCE 자본변동표",SCE,N
+sqlite:financial.db,account_mapping,account_id,TEXT,YES,,"XBRL 계정 태그(ifrs-full_*, dart_* 등)",ifrs-full_GainsOnChangeInFairValueOfDerivatives,N
+sqlite:financial.db,account_mapping,standard_account_name,TEXT,NO,,표준 계정명,파생상품평가이익,N
+sqlite:financial.db,account_mapping,source_account_names,TEXT,YES,,이 태그로 관측된 원 계정명 목록,파생상품평가이익,N
+sqlite:financial.db,account_mapping,company_count,INTEGER,YES,,관측된 기업 수,1,N
+sqlite:financial.db,account_mapping,observation_count,INTEGER,YES,,관측 횟수,2,N
+sqlite:financial.db,account_mapping,mapping_status,TEXT,NO,,매핑 상태(auto_account_id / review_required),auto_account_id,N
+sqlite:financial.db,capex_build_metadata,key,TEXT,NO,PK,CAPEX 빌드 메타 키,quarterly_record_count,N
+sqlite:financial.db,capex_build_metadata,value,TEXT,NO,,CAPEX 빌드 메타 값,274,N
+sqlite:financial.db,capex_facts,capex_id,INTEGER,NO,PK,"SQLite 내부 번호(빌드마다 바뀜, 사용 금지)",549,N
+sqlite:financial.db,capex_facts,corp_code,TEXT,NO,FK,DART 고유번호(8자리). 모든 기업 데이터의 기준 키,00145880,Y
+sqlite:financial.db,capex_facts,period_id,INTEGER,NO,FK,"SQLite 내부 기간 번호. 빌드마다 바뀔 수 있으므로 (year, report_type)로 조인",24,N
+sqlite:financial.db,capex_facts,fs_div,TEXT,NO,,"재무제표 범위: CFS=연결, OFS=별도",CFS,Y
+sqlite:financial.db,capex_facts,sj_div,TEXT,NO,,"재무제표 구분: BS 재무상태표, IS 손익계산서, CIS 포괄손익, CF 현금흐름표, SCE 자본변동표",CF,Y
+sqlite:financial.db,capex_facts,rcept_no,TEXT,YES,,DART 접수번호(14자리). 공시 원문 1건을 식별. 정정공시면 정정본 번호,20260814003379,Y
+sqlite:financial.db,capex_facts,account_id,TEXT,NO,,"XBRL 계정 태그(ifrs-full_*, dart_* 등)",ifrs-full_PurchaseOfPropertyPlantAndEquipmentClassifiedAsInvestingActivities,Y
+sqlite:financial.db,capex_facts,original_account_nm,TEXT,NO,,공시에 적힌 원래 계정명,유형자산의 취득,Y
+sqlite:financial.db,capex_facts,standard_account_nm,TEXT,NO,,프로젝트 표준 계정명,유형자산취득(CAPEX),Y
+sqlite:financial.db,capex_facts,period_type,TEXT,NO,,기간 유형: annual / cumulative / quarterly / point_in_time,quarterly,N
+sqlite:financial.db,capex_facts,value_type,TEXT,NO,,"값 유형: cumulative 누적, quarterly 해당 분기 단독, annual 연간, point_in_time 시점 잔액, ratio 비율",quarterly,Y
+sqlite:financial.db,capex_facts,period_start,TEXT,YES,,값이 적용되는 시작일,2026-04-01,N
+sqlite:financial.db,capex_facts,period_end,TEXT,NO,,값이 적용되는 종료일(시점 값이면 기준일),2026-06-30,N
+sqlite:financial.db,capex_facts,currency,TEXT,NO,,통화(KRW),KRW,N
+sqlite:financial.db,capex_facts,raw_value,TEXT,YES,,DART API/공시 원값(문자열 보존),767945535814,N
+sqlite:financial.db,capex_facts,normalized_value,INTEGER,YES,,원 단위로 정규화한 공시 값,767945535814,Y
+sqlite:financial.db,capex_facts,calculated_value,INTEGER,YES,,계산으로 얻은 값(분기 차감 등). is_calculated=1일 때 사용,215256345454,Y
+sqlite:financial.db,capex_facts,cash_outflow_amount,INTEGER,YES,,CAPEX 지출액(양수). 음수 단독 분기 등 확정 불가 시 NULL,215256345454,Y
+sqlite:financial.db,capex_facts,sign_normalized,INTEGER,NO,,1=현금흐름 부호를 지출 양수로 정규화,0,N
+sqlite:financial.db,capex_facts,is_calculated,INTEGER,NO,,1이면 공시 원값이 아니라 계산값,1,Y
+sqlite:financial.db,capex_facts,is_derived,INTEGER,NO,,1=여러 계정에서 파생,0,N
+sqlite:financial.db,capex_facts,value_source,TEXT,NO,,direct(직접 계정) / derived(구성 계정 합산),direct,N
+sqlite:financial.db,capex_facts,capex_method,TEXT,NO,,CAPEX 산출 방법,direct_account,N
+sqlite:financial.db,capex_facts,calculation_method,TEXT,NO,,계산식 설명(예: H1 cumulative - Q1 cumulative),"H1 cumulative CAPEX - Q1 cumulative CAPEX [{""H1"": 767945535814, ""Q1"": 5526891903",N
+sqlite:financial.db,capex_facts,source_account_ids,TEXT,NO,,구성 계정 태그 목록,"[""ifrs-full_PurchaseOfPropertyPlantAndEquipmentClassifiedAsInvestingActivities""]",N
+sqlite:financial.db,capex_facts,source_account_names,TEXT,NO,,구성 계정명 목록,"[""유형자산의 취득""]",N
+sqlite:financial.db,capex_facts,source_values,TEXT,NO,,"계산·추출 근거 JSON(입력값, 원문 위치 locator, 부호 처리 기록 등)","{""H1"": 767945535814, ""Q1"": 552689190360}",N
+sqlite:financial.db,capex_facts,source_account_count,INTEGER,NO,,구성 계정 수,1,N
+sqlite:financial.db,capex_facts,direct_account_found,INTEGER,NO,,1=직접 CAPEX 계정 발견,1,N
+sqlite:financial.db,capex_facts,review_required,INTEGER,NO,,1이면 확정값으로 표시하기 전 주의가 필요한 행(값과 근거는 보존),0,Y
+sqlite:financial.db,capex_facts,note,TEXT,YES,,비고,direct CAPEX account selected; component fallback suppressed,N
+sqlite:financial.db,companies,corp_code,TEXT,NO,PK,DART 고유번호(8자리). 모든 기업 데이터의 기준 키,01133217,Y
+sqlite:financial.db,companies,company_name,TEXT,NO,,기업명(표시용). 조인 키로 쓰지 말 것,카카오뱅크,Y
+sqlite:financial.db,companies,stock_code,TEXT,YES,,KRX 종목코드(6자리). 화면 표시·외부 시세 연동용,323410,Y
+sqlite:financial.db,company_financial_profiles,corp_code,TEXT,NO,PK,DART 고유번호(8자리). 모든 기업 데이터의 기준 키,00989619,Y
+sqlite:financial.db,company_financial_profiles,industry_profile,TEXT,NO,,"산업 프로필: BANK_HOLDING, INTERNET_BANK, HEALTHCARE, STEEL 등",HEALTHCARE,Y
+sqlite:financial.db,company_financial_profiles,preferred_fs_div,TEXT,NO,,우선 재무제표 범위(CFS/OFS),CFS,Y
+sqlite:financial.db,company_financial_profiles,fallback_fs_div,TEXT,YES,,우선 범위가 없을 때 쓰는 범위,OFS,N
+sqlite:financial.db,company_financial_profiles,comparison_scope,TEXT,NO,,"KPI scope 값(consolidated, separate, holding_consolidated, bank_separate)",consolidated,Y
+sqlite:financial.db,company_financial_profiles,capex_applicable,INTEGER,NO,,"1=CAPEX 계산 대상, 0=금융주 등 비대상",1,Y
+sqlite:financial.db,company_financial_profiles,valid_from,TEXT,NO,,프로필 적용 시작일,2023-01-01,N
+sqlite:financial.db,company_financial_profiles,valid_to,TEXT,YES,,프로필 적용 종료일(NULL=현재),,N
+sqlite:financial.db,financial_collection_status,corp_code,TEXT,NO,PK,DART 고유번호(8자리). 모든 기업 데이터의 기준 키,01350869,Y
+sqlite:financial.db,financial_collection_status,year,INTEGER,NO,PK,사업연도,2026,Y
+sqlite:financial.db,financial_collection_status,report_type,TEXT,NO,PK,"보고 기간: Q1(1분기), H1(반기), Q3(3분기), FY(사업보고서)",H1,Y
+sqlite:financial.db,financial_collection_status,requested_fs_div,TEXT,NO,,요청한 재무제표 범위,CFS,N
+sqlite:financial.db,financial_collection_status,selected_fs_div,TEXT,YES,,실제 적재한 범위,CFS,Y
+sqlite:financial.db,financial_collection_status,cfs_status,TEXT,NO,,"연결 API 상태 코드(000 정상, 013 데이터 없음)",000,N
+sqlite:financial.db,financial_collection_status,ofs_status,TEXT,NO,,별도 API 상태 코드,NOT_TRIED,N
+sqlite:financial.db,financial_collection_status,missing_reason,TEXT,YES,,누락 사유(없으면 NULL),DART_FNLTT_API_NO_DATA,Y
+sqlite:financial.db,financial_collection_status,rcept_no,TEXT,YES,,DART 접수번호(14자리). 공시 원문 1건을 식별. 정정공시면 정정본 번호,20260814003410,Y
+sqlite:financial.db,financial_facts,fact_id,INTEGER,NO,PK,내부 번호. 조인은 자연키 사용,105554,N
+sqlite:financial.db,financial_facts,corp_code,TEXT,NO,FK,DART 고유번호(8자리). 모든 기업 데이터의 기준 키,01350869,Y
+sqlite:financial.db,financial_facts,period_id,INTEGER,NO,FK,"SQLite 내부 기간 번호. 빌드마다 바뀔 수 있으므로 (year, report_type)로 조인",24,N
+sqlite:financial.db,financial_facts,fs_div,TEXT,NO,,"재무제표 범위: CFS=연결, OFS=별도",CFS,Y
+sqlite:financial.db,financial_facts,sj_div,TEXT,NO,,"재무제표 구분: BS 재무상태표, IS 손익계산서, CIS 포괄손익, CF 현금흐름표, SCE 자본변동표",CF,Y
+sqlite:financial.db,financial_facts,account_key,TEXT,NO,,"계정 식별 키(태그 우선, 태그 없으면 계정명 기반)",name:현금의유출이없는비용의가산,N
+sqlite:financial.db,financial_facts,account_id,TEXT,YES,,"XBRL 계정 태그(ifrs-full_*, dart_* 등)",-표준계정코드 미사용-,Y
+sqlite:financial.db,financial_facts,original_account_nm,TEXT,NO,,공시에 적힌 원래 계정명,현금의 유출이 없는 비용의 가산,Y
+sqlite:financial.db,financial_facts,standard_account_nm,TEXT,YES,,프로젝트 표준 계정명,현금의 유출이 없는 비용의 가산,Y
+sqlite:financial.db,financial_facts,period_type,TEXT,NO,,기간 유형: annual / cumulative / quarterly / point_in_time,quarterly,N
+sqlite:financial.db,financial_facts,value_type,TEXT,NO,,"값 유형: cumulative 누적, quarterly 해당 분기 단독, annual 연간, point_in_time 시점 잔액, ratio 비율",quarterly,Y
+sqlite:financial.db,financial_facts,period_start,TEXT,YES,,값이 적용되는 시작일,2026-04-01,N
+sqlite:financial.db,financial_facts,period_end,TEXT,NO,,값이 적용되는 종료일(시점 값이면 기준일),2026-06-30,N
+sqlite:financial.db,financial_facts,currency,TEXT,YES,,통화(KRW),KRW,N
+sqlite:financial.db,financial_facts,source_value_field,TEXT,NO,,DART API에서 값을 읽은 필드(thstrm_amount 등),calculated_from_cumulative,N
+sqlite:financial.db,financial_facts,raw_value,TEXT,YES,,DART API/공시 원값(문자열 보존),4342881000000,N
+sqlite:financial.db,financial_facts,normalized_value,INTEGER,YES,,원 단위로 정규화한 공시 값,40880143000000,Y
+sqlite:financial.db,financial_facts,calculated_value,INTEGER,YES,,계산으로 얻은 값(분기 차감 등). is_calculated=1일 때 사용,2493679000000,Y
+sqlite:financial.db,financial_facts,calculation_method,TEXT,YES,,계산식 설명(예: H1 cumulative - Q1 cumulative),H1 cumulative - Q1 cumulative (verified evidence) [H1:4342881000000;Q1:184920200,N
+sqlite:financial.db,financial_facts,source_values,TEXT,YES,,"계산·추출 근거 JSON(입력값, 원문 위치 locator, 부호 처리 기록 등)","{""H1"": 4342881000000, ""Q1"": 1849202000000, ""match"": ""verified_evidence"", ""ord"": ",N
+sqlite:financial.db,financial_facts,is_calculated,INTEGER,NO,,1이면 공시 원값이 아니라 계산값,1,Y
+sqlite:financial.db,financial_facts,ord,INTEGER,YES,,DART API 표시 순서,59,N
+sqlite:financial.db,financial_facts,rcept_no,TEXT,YES,,DART 접수번호(14자리). 공시 원문 1건을 식별. 정정공시면 정정본 번호,20260814003410,Y
+sqlite:financial.db,financial_metric_definitions,metric_code,TEXT,NO,PK,KPI 코드(financial_metric_definitions 참조),RND_TO_REVENUE,Y
+sqlite:financial.db,financial_metric_definitions,metric_name,TEXT,NO,,KPI 한글명,연구개발비/매출액 비율,Y
+sqlite:financial.db,financial_metric_definitions,industry_profile,TEXT,NO,,"KPI 적용 산업 범주(COMMON, GENERAL, BANKING, HEALTHCARE)",HEALTHCARE,Y
+sqlite:financial.db,financial_metric_definitions,statement_type,TEXT,YES,,근거 재무제표 유형,NOTE,N
+sqlite:financial.db,financial_metric_definitions,metric_type,TEXT,NO,,DIRECT / DERIVED / RATIO,RATIO,Y
+sqlite:financial.db,financial_metric_definitions,period_nature,TEXT,NO,,flow(기간 값) / point_in_time(잔액) / ratio,ratio,Y
+sqlite:financial.db,financial_metric_definitions,unit_type,TEXT,NO,,"정의상 단위(KRW, BPS, PERCENT). 실제 값 단위는 financial_metric_values.unit",BPS,Y
+sqlite:financial.db,financial_metric_definitions,description,TEXT,YES,,KPI 설명,"사업보고서 공시 비율 우선; 미공시 시 동일 범위 연구개발비/매출액, bp",N
+sqlite:financial.db,financial_metric_definitions,is_core,INTEGER,NO,,1=핵심 KPI,1,N
+sqlite:financial.db,financial_metric_definitions,is_active,INTEGER,NO,,"1=현재 활성 행, 0=이전 버전에만 있던 행(삭제 대신 비활성)",1,Y
+sqlite:financial.db,financial_metric_mappings,mapping_id,INTEGER,NO,PK,매핑 내부 번호,724,N
+sqlite:financial.db,financial_metric_mappings,metric_code,TEXT,NO,FK,KPI 코드(financial_metric_definitions 참조),INVENTORIES,N
+sqlite:financial.db,financial_metric_mappings,industry_profile,TEXT,NO,,"산업 프로필: BANK_HOLDING, INTERNET_BANK, HEALTHCARE, STEEL 등",AUTOMOTIVE,N
+sqlite:financial.db,financial_metric_mappings,account_id,TEXT,NO,,"XBRL 계정 태그(ifrs-full_*, dart_* 등)",ifrs-full_InventoriesTotal,N
+sqlite:financial.db,financial_metric_mappings,normalized_account_name,TEXT,NO,,정규화 계정명(현재 전 행 빈 값: 태그로만 매칭),,N
+sqlite:financial.db,financial_metric_mappings,sj_div,TEXT,NO,,"재무제표 구분: BS 재무상태표, IS 손익계산서, CIS 포괄손익, CF 현금흐름표, SCE 자본변동표",BS,N
+sqlite:financial.db,financial_metric_mappings,fs_div,TEXT,NO,,"재무제표 범위: CFS=연결, OFS=별도",*,N
+sqlite:financial.db,financial_metric_mappings,applies_to_corp_code,TEXT,NO,,"특정 기업 전용 매핑이면 corp_code, 공통이면 '*'",*,N
+sqlite:financial.db,financial_metric_mappings,mapping_status,TEXT,NO,,매핑 상태(approved / review_required),approved,N
+sqlite:financial.db,financial_metric_mappings,mapping_confidence,TEXT,NO,,매핑 신뢰도(high/medium),high,N
+sqlite:financial.db,financial_metric_mappings,tag_class,TEXT,NO,,태그 분류(현재 official_standard_tag만 사용),official_standard_tag,N
+sqlite:financial.db,financial_metric_mappings,priority,INTEGER,NO,,같은 KPI 후보 중 우선순위(작을수록 우선),20,N
+sqlite:financial.db,financial_metric_mappings,valid_from,TEXT,YES,,매핑 적용 시작일,,N
+sqlite:financial.db,financial_metric_mappings,valid_to,TEXT,YES,,매핑 적용 종료일,,N
+sqlite:financial.db,financial_metric_mappings,review_note,TEXT,YES,,검토 메모,대출채권 및 기타금융자산 결합 계정,N
+sqlite:financial.db,financial_metric_values,metric_value_id,INTEGER,NO,PK,내부 번호. 조인은 자연키 사용,4800,N
+sqlite:financial.db,financial_metric_values,corp_code,TEXT,NO,FK,DART 고유번호(8자리). 모든 기업 데이터의 기준 키,01135941,Y
+sqlite:financial.db,financial_metric_values,year,INTEGER,NO,,사업연도,2026,Y
+sqlite:financial.db,financial_metric_values,report_type,TEXT,NO,,"보고 기간: Q1(1분기), H1(반기), Q3(3분기), FY(사업보고서)",H1,Y
+sqlite:financial.db,financial_metric_values,metric_code,TEXT,NO,FK,KPI 코드(financial_metric_definitions 참조),INVENTORY_CHANGE,Y
+sqlite:financial.db,financial_metric_values,value,INTEGER,YES,,"KPI 값. unit이 KRW면 원, BPS면 1/10000 (예: 1159 = 11.59%)",115013139983,Y
+sqlite:financial.db,financial_metric_values,unit,TEXT,YES,,KRW 또는 BPS,KRW,Y
+sqlite:financial.db,financial_metric_values,value_type,TEXT,NO,,"값 유형: cumulative 누적, quarterly 해당 분기 단독, annual 연간, point_in_time 시점 잔액, ratio 비율",quarterly,Y
+sqlite:financial.db,financial_metric_values,fs_div,TEXT,NO,,"재무제표 범위: CFS=연결, OFS=별도",CFS,Y
+sqlite:financial.db,financial_metric_values,scope,TEXT,NO,,비교 범위(consolidated/separate/holding_consolidated/bank_separate),consolidated,Y
+sqlite:financial.db,financial_metric_values,source_kind,TEXT,NO,,"DIRECT 공시 값, DERIVED 계산 값, DOCUMENT_EXTRACTED 원문 표·주석 추출",DERIVED,Y
+sqlite:financial.db,financial_metric_values,source_type,TEXT,NO,,"세부 출처(financial_statement, calculation, kpi_calculation, capex_facts, dart_document_xml 등)",kpi_calculation,N
+sqlite:financial.db,financial_metric_values,source_rcept_no,TEXT,YES,,근거 공시 접수번호,20260814001845,Y
+sqlite:financial.db,financial_metric_values,source_document_id,TEXT,YES,,정식 원문 문서 ID = SHA-256(rcept_no + '\0' + source_path). MySQL filing_source_documents.document_id와 같은 값,80b1a68a3213d8690cf80d719fdce184269b1ef8f2bd9d772ea9f97adee1a86f,Y
+sqlite:financial.db,financial_metric_values,source_chunk_id,TEXT,YES,,원문 추출 KPI의 근거 청크 ID,20260814002038:v2:13:11,Y
+sqlite:financial.db,financial_metric_values,source_account_id,TEXT,YES,,근거 계정 태그,ifrs-full_PurchaseOfPropertyPlantAndEquipmentClassifiedAsInvestingActivities,N
+sqlite:financial.db,financial_metric_values,source_account_name,TEXT,YES,,근거 계정명,유형자산의 취득,N
+sqlite:financial.db,financial_metric_values,source_fact_key,TEXT,YES,,근거 financial_facts 행의 해시 키,bdf00caa4c39ca808237003c8128687d88e9e71cb8efea9e7d29036d594e616f,N
+sqlite:financial.db,financial_metric_values,calculation_method,TEXT,YES,,계산식 설명(예: H1 cumulative - Q1 cumulative),INVENTORIES - previous INVENTORIES,N
+sqlite:financial.db,financial_metric_values,source_values,TEXT,YES,,"계산·추출 근거 JSON(입력값, 원문 위치 locator, 부호 처리 기록 등)","{""current"": {""metric"": ""INVENTORIES"", ""year"": 2026, ""report_type"": ""H1"", ""value_",N
+sqlite:financial.db,financial_metric_values,review_status,TEXT,NO,,"approved=검증 완료, review_required=값·근거는 보존하되 확정 표시 전 주의 필요",approved,Y
+sqlite:financial.db,krx_index_constituents,index_code,TEXT,NO,PK,산업 그룹 코드,KRX_BANK,Y
+sqlite:financial.db,krx_index_constituents,corp_code,TEXT,NO,PK,DART 고유번호(8자리). 모든 기업 데이터의 기준 키,01133217,Y
+sqlite:financial.db,krx_index_constituents,effective_from,TEXT,NO,PK,구성 시작일,2026-10-07,N
+sqlite:financial.db,krx_index_constituents,effective_to,TEXT,YES,,구성 종료일(NULL=현재),,N
+sqlite:financial.db,krx_index_constituents,source_as_of,TEXT,NO,,구성 정보 기준일,2026-10-07,N
+sqlite:financial.db,krx_index_constituents,weight,REAL,YES,,비중(미제공 시 NULL),,N
+sqlite:financial.db,krx_index_constituents,is_current,INTEGER,NO,,1=현재 구성,1,Y
+sqlite:financial.db,krx_index_constituents,created_at,TEXT,NO,,행 생성 시각,2026-10-07 23:26:09,N
+sqlite:financial.db,krx_index_constituents,updated_at,TEXT,NO,,행 갱신 시각,2026-10-07 23:26:09,N
+sqlite:financial.db,krx_indices,index_code,TEXT,NO,PK,프로젝트 산업 그룹 코드(KRX_SEMI 등),KRX_BANK,Y
+sqlite:financial.db,krx_indices,official_index_code,TEXT,YES,,KRX 공식 지수 코드(없으면 NULL),,N
+sqlite:financial.db,krx_indices,index_name,TEXT,NO,,지수명,KRX 은행,N
+sqlite:financial.db,krx_indices,display_name,TEXT,NO,,"화면 표시명(반도체, 자동차 등)",은행·금융지주,Y
+sqlite:financial.db,krx_indices,source_as_of,TEXT,YES,,기준일,2026-10-07,N
+sqlite:financial.db,krx_indices,source_url,TEXT,YES,,출처,project://manual-assignment/current-five,N
+sqlite:financial.db,krx_indices,is_active,INTEGER,NO,,"1=현재 활성 행, 0=이전 버전에만 있던 행(삭제 대신 비활성)",1,Y
+sqlite:financial.db,krx_indices,created_at,TEXT,NO,,행 생성 시각,2026-10-07 23:26:09,N
+sqlite:financial.db,krx_indices,updated_at,TEXT,NO,,행 갱신 시각,2026-10-11 09:32:36,N
+sqlite:financial.db,periods,period_id,INTEGER,NO,PK,"SQLite 내부 기간 번호. 빌드마다 바뀔 수 있으므로 (year, report_type)로 조인",24,N
+sqlite:financial.db,periods,year,INTEGER,NO,,사업연도,2026,Y
+sqlite:financial.db,periods,report_type,TEXT,NO,,"보고 기간: Q1(1분기), H1(반기), Q3(3분기), FY(사업보고서)",H1,Y
+sqlite:financial.db,periods,report_code,TEXT,NO,,"DART 보고서 코드: 11013=Q1, 11012=H1, 11014=Q3, 11011=FY",11012,N
+sqlite:financial.db,periods,report_name,TEXT,NO,,보고서 이름,반기보고서,N
+sqlite:financial.db,pipeline_runs,run_id,INTEGER,NO,PK,실행 번호,5,N
+sqlite:financial.db,pipeline_runs,run_at,TEXT,NO,,실행 시각,2026-10-11T09:32:36.598632+00:00,N
+sqlite:financial.db,pipeline_runs,company_count,INTEGER,NO,,처리 기업 수,25,N
+sqlite:financial.db,pipeline_runs,fact_count,INTEGER,NO,,적재 fact 수,11373,N
+sqlite:filings_bge_m3.db,filing_chunks,vector_id,INTEGER,NO,PK,FAISS 벡터 ID(= SQLite filing_chunks.vector_id),170533,Y
+sqlite:filings_bge_m3.db,filing_chunks,chunk_id,TEXT,NO,,청크 식별자 '{rcept_no}:v2:{섹션}:{순번}'. 검색 결과→원문 연결 키,20260814004200:v2:11:62,Y
+sqlite:filings_bge_m3.db,filing_chunks,corp_name,TEXT,NO,,기업명(표시용). 조인 키로 쓰지 말 것,KB금융,Y
+sqlite:filings_bge_m3.db,filing_chunks,corp_code,TEXT,NO,,DART 고유번호(8자리). 모든 기업 데이터의 기준 키,00688996,Y
+sqlite:filings_bge_m3.db,filing_chunks,year,INTEGER,NO,,사업연도,2026,Y
+sqlite:filings_bge_m3.db,filing_chunks,report_type,TEXT,NO,,"보고 기간: Q1(1분기), H1(반기), Q3(3분기), FY(사업보고서)",H1,Y
+sqlite:filings_bge_m3.db,filing_chunks,rcept_no,TEXT,NO,,DART 접수번호(14자리). 공시 원문 1건을 식별. 정정공시면 정정본 번호,20260814004200,Y
+sqlite:filings_bge_m3.db,filing_chunks,section_name,TEXT,NO,,공시 원문 장(章) 이름,II. 사업의 내용,Y
+sqlite:filings_bge_m3.db,filing_chunks,subsection_name,TEXT,YES,,공시 원문 절(節) 이름,5. 재무건전성 등 기타 참고사항,Y
+sqlite:filings_bge_m3.db,filing_chunks,source_file,TEXT,NO,,원문 XML 경로(프로젝트 루트 기준 상대 경로),data/raw/filings/xml/00688996/2026/H1/20260814004200/20260814004200.xml,Y
+sqlite:filings_bge_m3.db,filing_chunks,original_text,TEXT,NO,,청크 원문 텍스트,"벤처스, ㈜킹고투자파트너스,㈜타임폴리오캐피탈, ㈜토니인베스트먼트, ㈜티쓰리벤처스, ㈜팍스톤인베스트먼트, ㈜펄어비스캐피탈, ㈜플루토스투자, ㈜피오",Y
+sqlite:filings_bge_m3.db,filing_chunks,chunk_text,TEXT,NO,,임베딩 입력 텍스트(짧은 표·목차 청크는 '-'일 수 있음),"벤처스, ㈜킹고투자파트너스,㈜타임폴리오캐피탈, ㈜토니인베스트먼트, ㈜티쓰리벤처스, ㈜팍스톤인베스트먼트, ㈜펄어비스캐피탈, ㈜플루토스투자, ㈜피오",N
+sqlite:filings_bge_m3.db,filing_chunks,content_hash,TEXT,NO,,청크 내용 SHA-256,7086e9e9fb0ba1edd168e8bd7f7c5d4cfefa6146a2cdeedf41d10e099893c54c,N
+sqlite:filings_bge_m3.db,filing_chunks,chunk_version,TEXT,NO,,청크 규칙 버전(bge-m3-token-v2),bge-m3-token-v2,N
+sqlite:filings_bge_m3.db,filing_chunks,token_count,INTEGER,NO,,BGE-M3 토큰 수,601,N
+sqlite:filings_bge_m3.db,filing_chunks,content_type,TEXT,NO,,청크 내용 유형(text/table 등),narrative,N
+sqlite:filings_bge_m3.db,filing_chunks,search_priority,REAL,NO,,검색 가중치,1.0,N
+sqlite:filings_bge_m3.db,filing_chunks,selection_reason,TEXT,NO,,검색 대상 선정 사유,핵심 사업·재무 용어가 포함된 서술형 청크,N
+sqlite:filings_bge_m3.db,filing_chunks,is_searchable,INTEGER,NO,,1이면 FAISS 인덱스에 포함,1,Y
+sqlite:filings_bge_m3.db,filing_chunks,embedding,BLOB,NO,,float32 1024차원 정규화 벡터(BLOB),<BLOB>,N
+sqlite:filings_bge_m3.db,filing_chunks,embedding_model,TEXT,NO,,임베딩 모델(BAAI/bge-m3),BAAI/bge-m3,N
+sqlite:filings_bge_m3.db,filing_chunks,model_revision,TEXT,NO,,모델 리비전 해시,5617a9f61b028005a4858fdac845db406aefb181,N
+sqlite:filings_bge_m3.db,filing_chunks,embedding_dimension,INTEGER,NO,,벡터 차원(1024),1024,N
+sqlite:filings_bge_m3.db,filing_chunks,embedded_at,TEXT,NO,,임베딩 생성 시각,2026-10-11 09:49:33,N
+sqlite:filings_bge_m3.db,filing_chunks,source_document_id,TEXT,YES,,정식 원문 문서 ID = SHA-256(rcept_no + '\0' + source_path). MySQL filing_source_documents.document_id와 같은 값,1fcdccf1e946d6baf49ea1ab84b20909b11d2e8727e76856cead596e82aa961b,Y
+sqlite:filings_bge_m3.db,filing_chunks,source_document_sha256,TEXT,YES,,"원문 XML 파일 바이트의 SHA-256(무결성 확인용, 문서 ID 아님)",baf8fac61bff56d3bc9f4ebd429f532b2593d8ab4894e53f4a6ab3855cd1699c,N
+sqlite:filings_bge_m3.db,vector_metadata,key,TEXT,NO,PK,"메타 키(embedding_model, model_revision 등)",searchable_vector_count,N
+sqlite:filings_bge_m3.db,vector_metadata,value,TEXT,NO,,메타 값,170534,N
+mysql:dart_big_in,account_mapping,account_key,varchar(255),NO,PK,"계정 식별 키(태그 우선, 태그 없으면 계정명 기반)",dart_AcquisitionOfTreasuryShares,N
+mysql:dart_big_in,account_mapping,sj_div,varchar(5),NO,PK,"재무제표 구분: BS 재무상태표, IS 손익계산서, CIS 포괄손익, CF 현금흐름표, SCE 자본변동표",CF,N
+mysql:dart_big_in,account_mapping,account_id,varchar(255),YES,,"XBRL 계정 태그(ifrs-full_*, dart_* 등)",dart_AcquisitionOfTreasuryShares,N
+mysql:dart_big_in,account_mapping,standard_account_name,varchar(255),NO,,표준 계정명,자기주식의 취득,N
+mysql:dart_big_in,account_mapping,source_account_names,text,YES,,이 태그로 관측된 원 계정명 목록,자기주식의 취득 | 자기주식의 취득으로 인한 현금의 유출,N
+mysql:dart_big_in,account_mapping,company_count,int,YES,,관측된 기업 수,4,N
+mysql:dart_big_in,account_mapping,observation_count,int,YES,,관측 횟수,24,N
+mysql:dart_big_in,account_mapping,mapping_status,varchar(30),NO,,매핑 상태(auto_account_id / review_required),review_required,N
+mysql:dart_big_in,account_mapping,data_version,varchar(50),NO,,이 행을 마지막으로 적재한 재무 데이터 버전(MySQL),2026-10-11-dart25-2026q1h1-v14,N
+mysql:dart_big_in,capex_facts,capex_fact_id,bigint,NO,PK,MySQL 내부 번호. 조인은 uk_capex 자연키 사용,5601,N
+mysql:dart_big_in,capex_facts,corp_code,char(8),NO,FK/UK,DART 고유번호(8자리). 모든 기업 데이터의 기준 키,00145880,Y
+mysql:dart_big_in,capex_facts,year,smallint,NO,FK/UK,사업연도,2026,Y
+mysql:dart_big_in,capex_facts,report_type,"enum('Q1','H1','Q3','FY')",NO,FK/UK,"보고 기간: Q1(1분기), H1(반기), Q3(3분기), FY(사업보고서)",H1,Y
+mysql:dart_big_in,capex_facts,fs_div,"enum('CFS','OFS')",NO,UK,"재무제표 범위: CFS=연결, OFS=별도",CFS,Y
+mysql:dart_big_in,capex_facts,sj_div,varchar(5),NO,,"재무제표 구분: BS 재무상태표, IS 손익계산서, CIS 포괄손익, CF 현금흐름표, SCE 자본변동표",CF,Y
+mysql:dart_big_in,capex_facts,rcept_no,char(14),YES,,DART 접수번호(14자리). 공시 원문 1건을 식별. 정정공시면 정정본 번호,20260814003379,Y
+mysql:dart_big_in,capex_facts,account_id,varchar(255),NO,,"XBRL 계정 태그(ifrs-full_*, dart_* 등)",ifrs-full_PurchaseOfPropertyPlantAndEquipmentClassifiedAsInvestingActivities,Y
+mysql:dart_big_in,capex_facts,original_account_nm,varchar(255),NO,,공시에 적힌 원래 계정명,유형자산의 취득,Y
+mysql:dart_big_in,capex_facts,standard_account_nm,varchar(100),NO,,프로젝트 표준 계정명,유형자산취득(CAPEX),Y
+mysql:dart_big_in,capex_facts,period_type,varchar(20),NO,,기간 유형: annual / cumulative / quarterly / point_in_time,quarterly,N
+mysql:dart_big_in,capex_facts,value_type,varchar(20),NO,UK,"값 유형: cumulative 누적, quarterly 해당 분기 단독, annual 연간, point_in_time 시점 잔액, ratio 비율",quarterly,Y
+mysql:dart_big_in,capex_facts,period_start,date,YES,,값이 적용되는 시작일,2026-04-01,N
+mysql:dart_big_in,capex_facts,period_end,date,NO,,값이 적용되는 종료일(시점 값이면 기준일),2026-06-30,N
+mysql:dart_big_in,capex_facts,currency,varchar(10),NO,,통화(KRW),KRW,N
+mysql:dart_big_in,capex_facts,raw_value,varchar(100),YES,,DART API/공시 원값(문자열 보존),767945535814,N
+mysql:dart_big_in,capex_facts,normalized_value,bigint,YES,,원 단위로 정규화한 공시 값,,Y
+mysql:dart_big_in,capex_facts,calculated_value,bigint,YES,,계산으로 얻은 값(분기 차감 등). is_calculated=1일 때 사용,215256345454,Y
+mysql:dart_big_in,capex_facts,cash_outflow_amount,bigint,YES,,CAPEX 지출액(양수). 음수 단독 분기 등 확정 불가 시 NULL,215256345454,Y
+mysql:dart_big_in,capex_facts,sign_normalized,tinyint(1),NO,,1=현금흐름 부호를 지출 양수로 정규화,0,N
+mysql:dart_big_in,capex_facts,is_calculated,tinyint(1),NO,,1이면 공시 원값이 아니라 계산값,1,Y
+mysql:dart_big_in,capex_facts,is_derived,tinyint(1),NO,,1=여러 계정에서 파생,0,N
+mysql:dart_big_in,capex_facts,value_source,"enum('direct','derived')",NO,,direct(직접 계정) / derived(구성 계정 합산),direct,N
+mysql:dart_big_in,capex_facts,capex_method,varchar(30),NO,,CAPEX 산출 방법,direct_account,N
+mysql:dart_big_in,capex_facts,calculation_method,text,NO,,계산식 설명(예: H1 cumulative - Q1 cumulative),"H1 cumulative CAPEX - Q1 cumulative CAPEX [{""H1"": 767945535814, ""Q1"": 5526891903",N
+mysql:dart_big_in,capex_facts,source_account_ids,text,NO,,구성 계정 태그 목록,"[""ifrs-full_PurchaseOfPropertyPlantAndEquipmentClassifiedAsInvestingActivities""]",N
+mysql:dart_big_in,capex_facts,source_account_names,text,NO,,구성 계정명 목록,"[""유형자산의 취득""]",N
+mysql:dart_big_in,capex_facts,source_values,text,NO,,"계산·추출 근거 JSON(입력값, 원문 위치 locator, 부호 처리 기록 등)","{""H1"": 767945535814, ""Q1"": 552689190360}",N
+mysql:dart_big_in,capex_facts,source_account_count,int,NO,,구성 계정 수,1,N
+mysql:dart_big_in,capex_facts,direct_account_found,tinyint(1),NO,,1=직접 CAPEX 계정 발견,1,N
+mysql:dart_big_in,capex_facts,review_required,tinyint(1),NO,,1이면 확정값으로 표시하기 전 주의가 필요한 행(값과 근거는 보존),0,Y
+mysql:dart_big_in,capex_facts,note,text,YES,,비고,direct CAPEX account selected; component fallback suppressed,N
+mysql:dart_big_in,capex_facts,data_version,varchar(50),NO,,이 행을 마지막으로 적재한 재무 데이터 버전(MySQL),2026-10-11-dart25-2026q1h1-v14,Y
+mysql:dart_big_in,capex_facts,is_active,tinyint(1),NO,,"1=현재 활성 행, 0=이전 버전에만 있던 행(삭제 대신 비활성)",1,Y
+mysql:dart_big_in,chunk_embeddings,vector_id,bigint,NO,PK,FAISS 벡터 ID(= SQLite filing_chunks.vector_id),0,Y
+mysql:dart_big_in,chunk_embeddings,chunk_id,varchar(100),NO,FK/UK,청크 식별자 '{rcept_no}:v2:{섹션}:{순번}'. 검색 결과→원문 연결 키,20240312000736:v2:0:0,Y
+mysql:dart_big_in,chunk_embeddings,embedding,blob,NO,,"float32 1024차원 정규화 벡터(BLOB, 4096바이트)",<BLOB>,N
+mysql:dart_big_in,chunk_embeddings,embedding_model,varchar(100),NO,,임베딩 모델(BAAI/bge-m3),BAAI/bge-m3,N
+mysql:dart_big_in,chunk_embeddings,model_revision,char(40),NO,,모델 리비전 해시,5617a9f61b028005a4858fdac845db406aefb181,N
+mysql:dart_big_in,chunk_embeddings,embedding_dimension,smallint,NO,,벡터 차원(1024),1024,N
+mysql:dart_big_in,chunk_embeddings,index_version,varchar(50),YES,,임베딩/FAISS 인덱스 버전(재무 data_version과 독립 축),bge-m3-2026-10-11-dart25-2026q1h1-v14,Y
+mysql:dart_big_in,chunk_embeddings,data_version,varchar(50),NO,,이 행을 마지막으로 적재한 재무 데이터 버전(MySQL),2026-10-11-dart25-2026q1h1-v14,Y
+mysql:dart_big_in,chunk_embeddings,is_active,tinyint(1),NO,,"1=현재 활성 행, 0=이전 버전에만 있던 행(삭제 대신 비활성)",1,Y
+mysql:dart_big_in,chunk_metadata,chunk_id,varchar(100),NO,PK,청크 식별자 '{rcept_no}:v2:{섹션}:{순번}'. 검색 결과→원문 연결 키,20261007000223:v2:99:9,Y
+mysql:dart_big_in,chunk_metadata,vector_id,bigint,NO,UK,FAISS 벡터 ID(= SQLite filing_chunks.vector_id),167977,Y
+mysql:dart_big_in,chunk_metadata,corp_code,char(8),NO,FK,DART 고유번호(8자리). 모든 기업 데이터의 기준 키,00382199,Y
+mysql:dart_big_in,chunk_metadata,corp_name,varchar(100),NO,,기업명(표시용). 조인 키로 쓰지 말 것,신한지주,Y
+mysql:dart_big_in,chunk_metadata,year,smallint,NO,FK,사업연도,2026,Y
+mysql:dart_big_in,chunk_metadata,report_type,"enum('Q1','H1','Q3','FY')",NO,FK,"보고 기간: Q1(1분기), H1(반기), Q3(3분기), FY(사업보고서)",H1,Y
+mysql:dart_big_in,chunk_metadata,rcept_no,char(14),NO,,DART 접수번호(14자리). 공시 원문 1건을 식별. 정정공시면 정정본 번호,20261007000223,Y
+mysql:dart_big_in,chunk_metadata,section_name,varchar(500),NO,,공시 원문 장(章) 이름,VI. 이사회 등 회사의 기관에 관한 사항,Y
+mysql:dart_big_in,chunk_metadata,subsection_name,varchar(500),YES,,공시 원문 절(節) 이름,1. 이사회에 관한 사항,Y
+mysql:dart_big_in,chunk_metadata,source_file,varchar(500),NO,,원문 XML 경로(프로젝트 루트 기준 상대 경로),data/raw/filings/xml/00382199/2026/H1/20261007000223/20261007000223.xml,Y
+mysql:dart_big_in,chunk_metadata,chunk_text,mediumtext,NO,,임베딩 입력 텍스트(짧은 표·목차 청크는 '-'일 수 있음),- ESG 전략 수립 및 목표 설정에 관한 사항- ESG 관련 규범/정책의 제정 및 개폐에 관한 사항- ESG 관련 이니셔티브 가입에 관한 사항,N
+mysql:dart_big_in,chunk_metadata,original_text,mediumtext,YES,,청크 원문 텍스트,- ESG 전략 수립 및 목표 설정에 관한 사항- ESG 관련 규범/정책의 제정 및 개폐에 관한 사항- ESG 관련 이니셔티브 가입에 관한 사항,Y
+mysql:dart_big_in,chunk_metadata,content_hash,char(64),NO,,청크 내용 SHA-256,fe9f984979a03dba9708d2a9d52b318e9a7b0de60fa21a9471329a7d43814c68,N
+mysql:dart_big_in,chunk_metadata,chunk_version,varchar(50),NO,,청크 규칙 버전(bge-m3-token-v2),bge-m3-token-v2,N
+mysql:dart_big_in,chunk_metadata,token_count,int,NO,,BGE-M3 토큰 수,599,N
+mysql:dart_big_in,chunk_metadata,content_type,varchar(30),NO,,청크 내용 유형(text/table 등),governance,N
+mysql:dart_big_in,chunk_metadata,search_priority,double,NO,,검색 가중치,0.3,N
+mysql:dart_big_in,chunk_metadata,selection_reason,varchar(200),NO,,검색 대상 선정 사유,지배구조·임원 정보로 분류해 낮은 우선순위로 보존,N
+mysql:dart_big_in,chunk_metadata,is_searchable,tinyint(1),NO,,1이면 FAISS 인덱스에 포함,1,Y
+mysql:dart_big_in,chunk_metadata,embedding_model,varchar(100),NO,,임베딩 모델(BAAI/bge-m3),BAAI/bge-m3,N
+mysql:dart_big_in,chunk_metadata,model_revision,char(40),NO,,모델 리비전 해시,5617a9f61b028005a4858fdac845db406aefb181,N
+mysql:dart_big_in,chunk_metadata,embedding_dimension,smallint,NO,,벡터 차원(1024),1024,N
+mysql:dart_big_in,chunk_metadata,embedded_at,datetime,YES,,임베딩 생성 시각,2026-10-11 09:48:29,N
+mysql:dart_big_in,chunk_metadata,index_version,varchar(50),YES,,임베딩/FAISS 인덱스 버전(재무 data_version과 독립 축),bge-m3-2026-10-11-dart25-2026q1h1-v14,Y
+mysql:dart_big_in,chunk_metadata,data_version,varchar(50),NO,,이 행을 마지막으로 적재한 재무 데이터 버전(MySQL),2026-10-11-dart25-2026q1h1-v14,Y
+mysql:dart_big_in,chunk_metadata,is_active,tinyint(1),NO,,"1=현재 활성 행, 0=이전 버전에만 있던 행(삭제 대신 비활성)",1,Y
+mysql:dart_big_in,chunk_source_documents,chunk_id,varchar(100),NO,PK/FK,청크 식별자 '{rcept_no}:v2:{섹션}:{순번}'. 검색 결과→원문 연결 키,20230512000911:v2:0:0,Y
+mysql:dart_big_in,chunk_source_documents,document_id,char(64),NO,FK,청크가 속한 원문 문서 ID,62ff0755d72e387129c1a98a8ea2521ac0a7791748d8046b59dbea17bad56007,Y
+mysql:dart_big_in,chunk_source_documents,mapping_method,varchar(30),NO,,연결 방법(source_path_exact),source_path_exact,N
+mysql:dart_big_in,chunk_source_documents,data_version,varchar(50),NO,,이 행을 마지막으로 적재한 재무 데이터 버전(MySQL),2026-10-11-dart25-2026q1h1-v14,Y
+mysql:dart_big_in,chunk_source_documents,created_at,datetime,NO,,행 생성 시각,2026-10-07 16:11:46,N
+mysql:dart_big_in,chunk_source_documents,updated_at,datetime,NO,,행 갱신 시각,2026-10-11 20:32:48,N
+mysql:dart_big_in,companies,corp_code,char(8),NO,PK,DART 고유번호(8자리). 모든 기업 데이터의 기준 키,00102858,Y
+mysql:dart_big_in,companies,corp_name,varchar(100),NO,,기업명(표시용). 조인 키로 쓰지 말 것,고려아연,Y
+mysql:dart_big_in,companies,stock_code,char(6),YES,UK,KRX 종목코드(6자리). 화면 표시·외부 시세 연동용,010130,Y
+mysql:dart_big_in,companies,is_operational,tinyint(1),NO,,1=운영 대상 기업,1,Y
+mysql:dart_big_in,companies,updated_at,datetime,NO,,행 갱신 시각,2026-10-07 16:09:35,N
+mysql:dart_big_in,company_financial_profiles,corp_code,char(8),NO,PK/FK,DART 고유번호(8자리). 모든 기업 데이터의 기준 키,00145109,Y
+mysql:dart_big_in,company_financial_profiles,industry_profile,varchar(30),NO,,"산업 프로필: BANK_HOLDING, INTERNET_BANK, HEALTHCARE, STEEL 등",HEALTHCARE,Y
+mysql:dart_big_in,company_financial_profiles,preferred_fs_div,"enum('CFS','OFS')",NO,,우선 재무제표 범위(CFS/OFS),CFS,Y
+mysql:dart_big_in,company_financial_profiles,fallback_fs_div,"enum('CFS','OFS')",YES,,우선 범위가 없을 때 쓰는 범위,OFS,N
+mysql:dart_big_in,company_financial_profiles,comparison_scope,varchar(50),NO,,"KPI scope 값(consolidated, separate, holding_consolidated, bank_separate)",consolidated,Y
+mysql:dart_big_in,company_financial_profiles,capex_applicable,tinyint(1),NO,,"1=CAPEX 계산 대상, 0=금융주 등 비대상",1,Y
+mysql:dart_big_in,company_financial_profiles,valid_from,date,NO,,프로필 적용 시작일,2023-01-01,N
+mysql:dart_big_in,company_financial_profiles,valid_to,date,YES,,프로필 적용 종료일(NULL=현재),,N
+mysql:dart_big_in,coverage,corp_code,char(8),NO,PK/FK,DART 고유번호(8자리). 모든 기업 데이터의 기준 키,01350869,Y
+mysql:dart_big_in,coverage,year,smallint,NO,PK/FK,사업연도,2026,Y
+mysql:dart_big_in,coverage,report_type,"enum('Q1','H1','Q3','FY')",NO,PK/FK,"보고 기간: Q1(1분기), H1(반기), Q3(3분기), FY(사업보고서)",H1,Y
+mysql:dart_big_in,coverage,rcept_no,char(14),YES,,DART 접수번호(14자리). 공시 원문 1건을 식별. 정정공시면 정정본 번호,20260814003410,Y
+mysql:dart_big_in,coverage,financial_rcept_no,char(14),YES,,재무 데이터의 접수번호,20260814003410,Y
+mysql:dart_big_in,coverage,financial_exists,tinyint(1),NO,,1=재무 데이터 있음,1,Y
+mysql:dart_big_in,coverage,fs_div,varchar(10),YES,,"재무제표 범위: CFS=연결, OFS=별도",CFS,Y
+mysql:dart_big_in,coverage,filing_exists,tinyint(1),NO,,1=원문 공시 있음,1,Y
+mysql:dart_big_in,coverage,chunk_exists,tinyint(1),NO,,1=청크 있음,1,Y
+mysql:dart_big_in,coverage,embedding_exists,tinyint(1),NO,,1=임베딩 있음,1,Y
+mysql:dart_big_in,coverage,capex_status,"enum('direct','derived','unresolved','not_applicable')",YES,,CAPEX 상태,unresolved,N
+mysql:dart_big_in,coverage,status,"enum('PASS','SOURCE_ABSENT','MISSING_OR_REVIEW')",NO,,슬롯 판정(PASS 등),PASS,Y
+mysql:dart_big_in,coverage,reason,varchar(500),YES,,판정 사유,,N
+mysql:dart_big_in,coverage,data_version,varchar(50),NO,,이 행을 마지막으로 적재한 재무 데이터 버전(MySQL),2026-10-11-dart25-2026q1h1-v14,Y
+mysql:dart_big_in,data_versions,data_version,varchar(50),NO,PK,이 행을 마지막으로 적재한 재무 데이터 버전(MySQL),2026-10-06-dart5-krx-v1,Y
+mysql:dart_big_in,data_versions,description,varchar(500),YES,,버전 설명,Healthcare R&D canonical document IDs plus reviewed negative standalone CAPEX po,N
+mysql:dart_big_in,data_versions,financial_sqlite_sha256,char(64),YES,,적재 원천 Financial SQLite 해시,ea656cfd6c63534f487090184e1539f502b9d0476f00e3f384f4025472aa0bdd,Y
+mysql:dart_big_in,data_versions,vector_sqlite_sha256,char(64),YES,,적재 원천 Vector SQLite 해시,8b528ebf2c98bf9456325c90a9e6bf8366c3f6f0d8c6208ae9df7288df239dbb,Y
+mysql:dart_big_in,data_versions,faiss_sha256,char(64),YES,,적재 원천 FAISS 해시,17ddc13efd6488138c8b63f65698fc6b7ad37c39a7224e83e3266fd70e64a6c7,Y
+mysql:dart_big_in,data_versions,index_version,varchar(50),YES,,임베딩/FAISS 인덱스 버전(재무 data_version과 독립 축),bge-m3-2026-10-09-dart25-h1h3-v11,Y
+mysql:dart_big_in,data_versions,manifest_path,varchar(500),YES,,매니페스트 경로(미사용 시 NULL),,N
+mysql:dart_big_in,data_versions,manifest_sha256,char(64),YES,,매니페스트 해시,,N
+mysql:dart_big_in,data_versions,validation_report_path,varchar(500),YES,,검증 보고서 경로,,N
+mysql:dart_big_in,data_versions,validated,tinyint(1),NO,,1=적재 후 검증 통과,1,Y
+mysql:dart_big_in,data_versions,is_current,tinyint(1),NO,,1=현재 서비스 버전(항상 정확히 1개),0,Y
+mysql:dart_big_in,data_versions,created_at,datetime,NO,,행 생성 시각,2026-10-06 15:04:26,N
+mysql:dart_big_in,embedding_metadata,index_version,varchar(50),NO,PK,임베딩/FAISS 인덱스 버전(재무 data_version과 독립 축),bge-m3-2026-10-06-dart5-krx-v1,Y
+mysql:dart_big_in,embedding_metadata,model_name,varchar(100),NO,,임베딩 모델,BAAI/bge-m3,Y
+mysql:dart_big_in,embedding_metadata,model_revision,char(40),NO,,모델 리비전 해시,5617a9f61b028005a4858fdac845db406aefb181,N
+mysql:dart_big_in,embedding_metadata,embedding_dimension,smallint,NO,,벡터 차원(1024),1024,N
+mysql:dart_big_in,embedding_metadata,normalize_embeddings,tinyint(1),NO,,1=L2 정규화(내적=코사인),1,Y
+mysql:dart_big_in,embedding_metadata,faiss_index_type,varchar(50),NO,,IndexIDMap2(IndexFlatIP),IndexIDMap2(IndexFlatIP),Y
+mysql:dart_big_in,embedding_metadata,chunk_version,varchar(50),NO,,청크 규칙 버전(bge-m3-token-v2),bge-m3-token-v2,N
+mysql:dart_big_in,embedding_metadata,faiss_path,varchar(500),NO,,FAISS 파일 경로,db/vector/filings_bge_m3.faiss,Y
+mysql:dart_big_in,embedding_metadata,faiss_sha256,char(64),YES,,FAISS 파일 해시,17ddc13efd6488138c8b63f65698fc6b7ad37c39a7224e83e3266fd70e64a6c7,Y
+mysql:dart_big_in,embedding_metadata,sqlite_path,varchar(500),NO,,Vector SQLite 경로,db/vector/filings_bge_m3.db,Y
+mysql:dart_big_in,embedding_metadata,sqlite_sha256,char(64),YES,,Vector SQLite 해시,8b528ebf2c98bf9456325c90a9e6bf8366c3f6f0d8c6208ae9df7288df239dbb,Y
+mysql:dart_big_in,embedding_metadata,searchable_vector_count,int,YES,,검색 가능 벡터 수,21797,Y
+mysql:dart_big_in,embedding_metadata,faiss_ntotal,int,YES,,FAISS 벡터 수,21797,Y
+mysql:dart_big_in,embedding_metadata,max_vector_id,bigint,YES,,최대 vector_id,21796,N
+mysql:dart_big_in,embedding_metadata,built_at,datetime,YES,,인덱스 생성 시각(최신 임베딩 시각),2026-10-02 07:51:57,N
+mysql:dart_big_in,embedding_metadata,is_current,tinyint(1),NO,,1=현재 서비스 인덱스(항상 정확히 1개),0,Y
+mysql:dart_big_in,filing_source_documents,document_id,char(64),NO,PK,정식 원문 문서 ID = SHA-256(rcept_no + '\0' + source_path),007dc74f7bd685c38921a41fcf889d4af06e1514c18445ef26afeb17a3eb29b3,Y
+mysql:dart_big_in,filing_source_documents,rcept_no,char(14),NO,FK/UK,DART 접수번호(14자리). 공시 원문 1건을 식별. 정정공시면 정정본 번호,20240326000894,Y
+mysql:dart_big_in,filing_source_documents,document_sequence,smallint unsigned,NO,UK,같은 접수번호 안의 문서 순번,1,N
+mysql:dart_big_in,filing_source_documents,source_path,varchar(500),NO,UK,원문 XML 경로(프로젝트 루트 기준),data/raw/filings/xml/00688996/2023/FY/20240326000894/20240326000894.xml,Y
+mysql:dart_big_in,filing_source_documents,file_name,varchar(255),NO,,파일명,20240326000894.xml,N
+mysql:dart_big_in,filing_source_documents,mime_type,varchar(100),NO,,application/xml,application/xml,N
+mysql:dart_big_in,filing_source_documents,detected_encoding,varchar(40),YES,,XML 선언 인코딩,utf-8,N
+mysql:dart_big_in,filing_source_documents,byte_size,bigint unsigned,NO,,원문 바이트 수,10528805,N
+mysql:dart_big_in,filing_source_documents,sha256,char(64),NO,,원문 파일 바이트 SHA-256,c5d8a8b9a0a54c0bcbda8edd27b8941f146da851a2dc28d70d548b8ee15c6f25,Y
+mysql:dart_big_in,filing_source_documents,raw_xml,longblob,NO,,원문 XML 원본 바이트(변환 없음),<BLOB>,Y
+mysql:dart_big_in,filing_source_documents,data_version,varchar(50),NO,,이 행을 마지막으로 적재한 재무 데이터 버전(MySQL),2026-10-11-dart25-2026q1h1-v14,Y
+mysql:dart_big_in,filing_source_documents,is_active,tinyint(1),NO,,"1=현재 활성 행, 0=이전 버전에만 있던 행(삭제 대신 비활성)",1,Y
+mysql:dart_big_in,filing_source_documents,created_at,datetime,NO,,행 생성 시각,2026-10-08 10:02:23,N
+mysql:dart_big_in,filing_source_documents,updated_at,datetime,NO,,행 갱신 시각,2026-10-11 20:31:07,N
+mysql:dart_big_in,filings,rcept_no,char(14),NO,PK,DART 접수번호(14자리). 공시 원문 1건을 식별. 정정공시면 정정본 번호,20261007000223,Y
+mysql:dart_big_in,filings,corp_code,char(8),NO,FK/UK,DART 고유번호(8자리). 모든 기업 데이터의 기준 키,00382199,Y
+mysql:dart_big_in,filings,year,smallint,NO,FK/UK,사업연도,2026,Y
+mysql:dart_big_in,filings,report_type,"enum('Q1','H1','Q3','FY')",NO,FK/UK,"보고 기간: Q1(1분기), H1(반기), Q3(3분기), FY(사업보고서)",H1,Y
+mysql:dart_big_in,filings,rcept_dt,date,YES,,접수일(rcept_no 앞 8자리에서 계산),2026-10-07,Y
+mysql:dart_big_in,filings,dart_report_name,varchar(200),YES,,"DART 보고서명(현재 미적재, 전 행 NULL)",,N
+mysql:dart_big_in,filings,is_amended,tinyint(1),YES,,"정정 여부(현재 미적재, 전 행 NULL)",,N
+mysql:dart_big_in,filings,data_version,varchar(50),NO,,이 행을 마지막으로 적재한 재무 데이터 버전(MySQL),2026-10-11-dart25-2026q1h1-v14,Y
+mysql:dart_big_in,filings,is_active,tinyint(1),NO,,"1=현재 활성 행, 0=이전 버전에만 있던 행(삭제 대신 비활성)",1,Y
+mysql:dart_big_in,financial_collection_status,corp_code,char(8),NO,PK/FK,DART 고유번호(8자리). 모든 기업 데이터의 기준 키,00102858,Y
+mysql:dart_big_in,financial_collection_status,year,smallint,NO,PK,사업연도,2026,Y
+mysql:dart_big_in,financial_collection_status,report_type,"enum('Q1','H1','Q3','FY')",NO,PK,"보고 기간: Q1(1분기), H1(반기), Q3(3분기), FY(사업보고서)",Q1,Y
+mysql:dart_big_in,financial_collection_status,requested_fs_div,"enum('CFS','OFS')",NO,,요청한 재무제표 범위,CFS,N
+mysql:dart_big_in,financial_collection_status,selected_fs_div,"enum('CFS','OFS')",YES,,실제 적재한 범위,CFS,Y
+mysql:dart_big_in,financial_collection_status,cfs_status,varchar(10),NO,,"연결 API 상태 코드(000 정상, 013 데이터 없음)",000,N
+mysql:dart_big_in,financial_collection_status,ofs_status,varchar(10),NO,,별도 API 상태 코드,NOT_TRIED,N
+mysql:dart_big_in,financial_collection_status,missing_reason,varchar(100),YES,,누락 사유(없으면 NULL),,Y
+mysql:dart_big_in,financial_collection_status,rcept_no,char(14),YES,,DART 접수번호(14자리). 공시 원문 1건을 식별. 정정공시면 정정본 번호,20260813001749,Y
+mysql:dart_big_in,financial_facts,fact_id,bigint,NO,PK,내부 번호. 조인은 자연키 사용,863244,N
+mysql:dart_big_in,financial_facts,corp_code,char(8),NO,FK/UK,DART 고유번호(8자리). 모든 기업 데이터의 기준 키,01350869,Y
+mysql:dart_big_in,financial_facts,year,smallint,NO,FK/UK,사업연도,2026,Y
+mysql:dart_big_in,financial_facts,report_type,"enum('Q1','H1','Q3','FY')",NO,FK/UK,"보고 기간: Q1(1분기), H1(반기), Q3(3분기), FY(사업보고서)",H1,Y
+mysql:dart_big_in,financial_facts,rcept_no,char(14),YES,,DART 접수번호(14자리). 공시 원문 1건을 식별. 정정공시면 정정본 번호,20260814003410,Y
+mysql:dart_big_in,financial_facts,fs_div,"enum('CFS','OFS')",NO,UK,"재무제표 범위: CFS=연결, OFS=별도",CFS,Y
+mysql:dart_big_in,financial_facts,sj_div,varchar(5),NO,UK,"재무제표 구분: BS 재무상태표, IS 손익계산서, CIS 포괄손익, CF 현금흐름표, SCE 자본변동표",CF,Y
+mysql:dart_big_in,financial_facts,account_key,varchar(255),NO,UK,"계정 식별 키(태그 우선, 태그 없으면 계정명 기반)",name:현금의유출이없는비용의가산,N
+mysql:dart_big_in,financial_facts,account_id,varchar(255),YES,,"XBRL 계정 태그(ifrs-full_*, dart_* 등)",-표준계정코드 미사용-,Y
+mysql:dart_big_in,financial_facts,original_account_nm,varchar(255),NO,,공시에 적힌 원래 계정명,현금의 유출이 없는 비용의 가산,Y
+mysql:dart_big_in,financial_facts,standard_account_nm,varchar(255),YES,,프로젝트 표준 계정명,현금의 유출이 없는 비용의 가산,Y
+mysql:dart_big_in,financial_facts,ord,int,YES,,DART API 표시 순서,59,N
+mysql:dart_big_in,financial_facts,ord_key,int,NO,UK,자연키용 표시 순서(NULL은 -1),59,N
+mysql:dart_big_in,financial_facts,period_type,varchar(20),NO,,기간 유형: annual / cumulative / quarterly / point_in_time,quarterly,N
+mysql:dart_big_in,financial_facts,value_type,varchar(20),NO,UK,"값 유형: cumulative 누적, quarterly 해당 분기 단독, annual 연간, point_in_time 시점 잔액, ratio 비율",quarterly,Y
+mysql:dart_big_in,financial_facts,period_start,date,YES,,값이 적용되는 시작일,2026-04-01,N
+mysql:dart_big_in,financial_facts,period_end,date,NO,,값이 적용되는 종료일(시점 값이면 기준일),2026-06-30,N
+mysql:dart_big_in,financial_facts,currency,varchar(10),YES,,통화(KRW),KRW,N
+mysql:dart_big_in,financial_facts,source_value_field,varchar(50),NO,,DART API에서 값을 읽은 필드(thstrm_amount 등),calculated_from_cumulative,N
+mysql:dart_big_in,financial_facts,raw_value,varchar(100),YES,,DART API/공시 원값(문자열 보존),4342881000000,N
+mysql:dart_big_in,financial_facts,normalized_value,bigint,YES,,원 단위로 정규화한 공시 값,,Y
+mysql:dart_big_in,financial_facts,calculated_value,bigint,YES,,계산으로 얻은 값(분기 차감 등). is_calculated=1일 때 사용,2493679000000,Y
+mysql:dart_big_in,financial_facts,calculation_method,text,YES,,계산식 설명(예: H1 cumulative - Q1 cumulative),H1 cumulative - Q1 cumulative (verified evidence) [H1:4342881000000;Q1:184920200,N
+mysql:dart_big_in,financial_facts,source_values,text,YES,,"계산·추출 근거 JSON(입력값, 원문 위치 locator, 부호 처리 기록 등)","{""H1"": 4342881000000, ""Q1"": 1849202000000, ""match"": ""verified_evidence"", ""ord"": ",N
+mysql:dart_big_in,financial_facts,is_calculated,tinyint(1),NO,UK,1이면 공시 원값이 아니라 계산값,1,Y
+mysql:dart_big_in,financial_facts,data_version,varchar(50),NO,,이 행을 마지막으로 적재한 재무 데이터 버전(MySQL),2026-10-11-dart25-2026q1h1-v14,Y
+mysql:dart_big_in,financial_facts,is_active,tinyint(1),NO,,"1=현재 활성 행, 0=이전 버전에만 있던 행(삭제 대신 비활성)",1,Y
+mysql:dart_big_in,financial_metric_definitions,metric_code,varchar(60),NO,PK,KPI 코드(financial_metric_definitions 참조),BIS_CAPITAL_RATIO,Y
+mysql:dart_big_in,financial_metric_definitions,metric_name,varchar(100),NO,,KPI 한글명,BIS자기자본비율,Y
+mysql:dart_big_in,financial_metric_definitions,industry_profile,varchar(30),NO,,"KPI 적용 산업 범주(COMMON, GENERAL, BANKING, HEALTHCARE)",BANKING,Y
+mysql:dart_big_in,financial_metric_definitions,statement_type,varchar(10),YES,,근거 재무제표 유형,,N
+mysql:dart_big_in,financial_metric_definitions,metric_type,"enum('DIRECT','DERIVED','RATIO')",NO,,DIRECT / DERIVED / RATIO,RATIO,Y
+mysql:dart_big_in,financial_metric_definitions,period_nature,"enum('point_in_time','flow','ratio')",NO,,flow(기간 값) / point_in_time(잔액) / ratio,ratio,Y
+mysql:dart_big_in,financial_metric_definitions,unit_type,varchar(20),NO,,"정의상 단위(KRW, BPS, PERCENT). 실제 값 단위는 financial_metric_values.unit",PERCENT,Y
+mysql:dart_big_in,financial_metric_definitions,description,varchar(500),YES,,KPI 설명,,N
+mysql:dart_big_in,financial_metric_definitions,is_core,tinyint(1),NO,,1=핵심 KPI,1,N
+mysql:dart_big_in,financial_metric_definitions,is_active,tinyint(1),NO,,"1=현재 활성 행, 0=이전 버전에만 있던 행(삭제 대신 비활성)",1,Y
+mysql:dart_big_in,financial_metric_mappings,mapping_id,bigint,NO,PK,매핑 내부 번호,1,N
+mysql:dart_big_in,financial_metric_mappings,metric_code,varchar(60),NO,FK/UK,KPI 코드(financial_metric_definitions 참조),TOTAL_ASSETS,N
+mysql:dart_big_in,financial_metric_mappings,industry_profile,varchar(30),NO,UK,"산업 프로필: BANK_HOLDING, INTERNET_BANK, HEALTHCARE, STEEL 등",BANK_HOLDING,N
+mysql:dart_big_in,financial_metric_mappings,account_id,varchar(255),NO,UK,"XBRL 계정 태그(ifrs-full_*, dart_* 등)",ifrs-full_Assets,N
+mysql:dart_big_in,financial_metric_mappings,normalized_account_name,varchar(255),NO,UK,정규화 계정명(현재 전 행 빈 값: 태그로만 매칭),,N
+mysql:dart_big_in,financial_metric_mappings,sj_div,varchar(5),NO,UK,"재무제표 구분: BS 재무상태표, IS 손익계산서, CIS 포괄손익, CF 현금흐름표, SCE 자본변동표",BS,N
+mysql:dart_big_in,financial_metric_mappings,fs_div,varchar(5),NO,UK,"재무제표 범위: CFS=연결, OFS=별도",*,N
+mysql:dart_big_in,financial_metric_mappings,applies_to_corp_code,varchar(8),NO,UK,"특정 기업 전용 매핑이면 corp_code, 공통이면 '*'",*,N
+mysql:dart_big_in,financial_metric_mappings,mapping_status,varchar(30),NO,,매핑 상태(approved / review_required),approved,N
+mysql:dart_big_in,financial_metric_mappings,mapping_confidence,varchar(20),NO,,매핑 신뢰도(high/medium),high,N
+mysql:dart_big_in,financial_metric_mappings,tag_class,varchar(40),NO,,태그 분류(현재 official_standard_tag만 사용),official_standard_tag,N
+mysql:dart_big_in,financial_metric_mappings,priority,int,NO,,같은 KPI 후보 중 우선순위(작을수록 우선),10,N
+mysql:dart_big_in,financial_metric_mappings,valid_from,date,YES,,매핑 적용 시작일,,N
+mysql:dart_big_in,financial_metric_mappings,valid_to,date,YES,,매핑 적용 종료일,,N
+mysql:dart_big_in,financial_metric_mappings,review_note,varchar(500),YES,,검토 메모,,N
+mysql:dart_big_in,financial_metric_values,metric_value_id,bigint,NO,PK,내부 번호. 조인은 자연키 사용,18536,N
+mysql:dart_big_in,financial_metric_values,corp_code,char(8),NO,FK/UK,DART 고유번호(8자리). 모든 기업 데이터의 기준 키,01135941,Y
+mysql:dart_big_in,financial_metric_values,year,smallint,NO,UK,사업연도,2026,Y
+mysql:dart_big_in,financial_metric_values,report_type,"enum('Q1','H1','Q3','FY')",NO,UK,"보고 기간: Q1(1분기), H1(반기), Q3(3분기), FY(사업보고서)",H1,Y
+mysql:dart_big_in,financial_metric_values,metric_code,varchar(60),NO,FK/UK,KPI 코드(financial_metric_definitions 참조),INVENTORY_CHANGE,Y
+mysql:dart_big_in,financial_metric_values,value,bigint,YES,,"KPI 값. unit이 KRW면 원, BPS면 1/10000 (예: 1159 = 11.59%)",115013139983,Y
+mysql:dart_big_in,financial_metric_values,unit,varchar(20),YES,,KRW 또는 BPS,KRW,Y
+mysql:dart_big_in,financial_metric_values,value_type,varchar(20),NO,UK,"값 유형: cumulative 누적, quarterly 해당 분기 단독, annual 연간, point_in_time 시점 잔액, ratio 비율",quarterly,Y
+mysql:dart_big_in,financial_metric_values,fs_div,"enum('CFS','OFS')",NO,UK,"재무제표 범위: CFS=연결, OFS=별도",CFS,Y
+mysql:dart_big_in,financial_metric_values,scope,varchar(50),NO,UK,비교 범위(consolidated/separate/holding_consolidated/bank_separate),consolidated,Y
+mysql:dart_big_in,financial_metric_values,source_kind,"enum('DIRECT','DERIVED','DOCUMENT_EXTRACTED')",NO,UK,"DIRECT 공시 값, DERIVED 계산 값, DOCUMENT_EXTRACTED 원문 표·주석 추출",DERIVED,Y
+mysql:dart_big_in,financial_metric_values,source_type,varchar(40),NO,,"세부 출처(financial_statement, calculation, kpi_calculation, capex_facts, dart_document_xml 등)",kpi_calculation,N
+mysql:dart_big_in,financial_metric_values,source_rcept_no,char(14),YES,,근거 공시 접수번호,20260814001845,Y
+mysql:dart_big_in,financial_metric_values,source_document_id,varchar(255),YES,,정식 원문 문서 ID = SHA-256(rcept_no + '\0' + source_path). MySQL filing_source_documents.document_id와 같은 값,,Y
+mysql:dart_big_in,financial_metric_values,source_chunk_id,varchar(100),YES,,원문 추출 KPI의 근거 청크 ID,,Y
+mysql:dart_big_in,financial_metric_values,source_account_id,varchar(255),YES,,근거 계정 태그,,N
+mysql:dart_big_in,financial_metric_values,source_account_name,varchar(255),YES,,근거 계정명,,N
+mysql:dart_big_in,financial_metric_values,source_fact_key,char(64),YES,,근거 financial_facts 행의 해시 키,,N
+mysql:dart_big_in,financial_metric_values,calculation_method,varchar(500),YES,,계산식 설명(예: H1 cumulative - Q1 cumulative),INVENTORIES - previous INVENTORIES,N
+mysql:dart_big_in,financial_metric_values,source_values,text,YES,,"계산·추출 근거 JSON(입력값, 원문 위치 locator, 부호 처리 기록 등)","{""current"": {""metric"": ""INVENTORIES"", ""year"": 2026, ""report_type"": ""H1"", ""value_",N
+mysql:dart_big_in,financial_metric_values,review_status,varchar(30),NO,,"approved=검증 완료, review_required=값·근거는 보존하되 확정 표시 전 주의 필요",approved,Y
+mysql:dart_big_in,krx_index_constituents,index_code,varchar(30),NO,PK/FK,산업 그룹 코드,KRX_AUTO,Y
+mysql:dart_big_in,krx_index_constituents,corp_code,char(8),NO,PK/FK,DART 고유번호(8자리). 모든 기업 데이터의 기준 키,00106641,Y
+mysql:dart_big_in,krx_index_constituents,effective_from,date,NO,PK,구성 시작일,2026-10-07,N
+mysql:dart_big_in,krx_index_constituents,effective_to,date,YES,,구성 종료일(NULL=현재),,N
+mysql:dart_big_in,krx_index_constituents,source_as_of,date,NO,,구성 정보 기준일,2026-10-07,N
+mysql:dart_big_in,krx_index_constituents,weight,"decimal(16,10)",YES,,비중(미제공 시 NULL),,N
+mysql:dart_big_in,krx_index_constituents,is_current,tinyint(1),NO,,1=현재 구성,1,Y
+mysql:dart_big_in,krx_index_constituents,created_at,datetime,NO,,행 생성 시각,2026-10-07 18:10:32,N
+mysql:dart_big_in,krx_index_constituents,updated_at,datetime,NO,,행 갱신 시각,2026-10-07 18:10:32,N
+mysql:dart_big_in,krx_indices,index_code,varchar(30),NO,PK,프로젝트 산업 그룹 코드(KRX_SEMI 등),KRX_AUTO,Y
+mysql:dart_big_in,krx_indices,official_index_code,varchar(30),YES,UK,KRX 공식 지수 코드(없으면 NULL),,N
+mysql:dart_big_in,krx_indices,index_name,varchar(100),NO,,지수명,KRX 자동차,N
+mysql:dart_big_in,krx_indices,display_name,varchar(50),NO,,"화면 표시명(반도체, 자동차 등)",자동차,Y
+mysql:dart_big_in,krx_indices,source_as_of,date,YES,,기준일,2026-10-07,N
+mysql:dart_big_in,krx_indices,source_url,varchar(500),YES,,출처,,N
+mysql:dart_big_in,krx_indices,is_active,tinyint(1),NO,,"1=현재 활성 행, 0=이전 버전에만 있던 행(삭제 대신 비활성)",1,Y
+mysql:dart_big_in,krx_indices,created_at,datetime,NO,,행 생성 시각,2026-10-06 15:02:37,N
+mysql:dart_big_in,krx_indices,updated_at,datetime,NO,,행 갱신 시각,2026-10-07 18:10:32,N
+mysql:dart_big_in,periods,year,smallint,NO,PK,사업연도,2026,Y
+mysql:dart_big_in,periods,report_type,"enum('Q1','H1','Q3','FY')",NO,PK,"보고 기간: Q1(1분기), H1(반기), Q3(3분기), FY(사업보고서)",H1,Y
+mysql:dart_big_in,periods,report_code,char(5),NO,,"DART 보고서 코드: 11013=Q1, 11012=H1, 11014=Q3, 11011=FY",11012,N
+mysql:dart_big_in,periods,report_name,varchar(30),NO,,보고서 이름,반기보고서,N
+mysql:dart_big_in,standard_account_mapping,mapping_id,bigint,NO,PK,매핑 내부 번호,1,N
+mysql:dart_big_in,standard_account_mapping,standard_account_nm,varchar(100),NO,FK/UK,프로젝트 표준 계정명,감가상각비,N
+mysql:dart_big_in,standard_account_mapping,original_account_nm,varchar(255),NO,UK,공시에 적힌 원래 계정명,감가상각비,N
+mysql:dart_big_in,standard_account_mapping,account_id,varchar(255),NO,UK,"XBRL 계정 태그(ifrs-full_*, dart_* 등)",dart_AdjustmentsForDepreciationExpense,N
+mysql:dart_big_in,standard_account_mapping,sj_div,varchar(5),NO,UK,"재무제표 구분: BS 재무상태표, IS 손익계산서, CIS 포괄손익, CF 현금흐름표, SCE 자본변동표",CF,N
+mysql:dart_big_in,standard_account_mapping,fs_div,"enum('CFS','OFS')",NO,UK,"재무제표 범위: CFS=연결, OFS=별도",CFS,N
+mysql:dart_big_in,standard_account_mapping,mapping_status,varchar(30),NO,,매핑 상태,approved,N
+mysql:dart_big_in,standard_account_mapping,mapping_confidence,varchar(20),YES,,매핑 신뢰도,high,N
+mysql:dart_big_in,standard_account_mapping,review_required,tinyint(1),NO,,1이면 확정값으로 표시하기 전 주의가 필요한 행(값과 근거는 보존),0,N
+mysql:dart_big_in,standard_account_mapping,review_note,varchar(500),YES,,검토 메모,공인 XBRL/DART ID와 제표구분 일치,N
+mysql:dart_big_in,standard_account_mapping,corp_names,text,YES,,관측 기업명 목록,원익IPS | 주성엔지니어링 | 한미반도체,N
+mysql:dart_big_in,standard_account_mapping,report_types,varchar(50),YES,,관측 보고 기간 목록,H1 | Q1,N
+mysql:dart_big_in,standard_account_mapping,data_version,varchar(50),NO,,이 행을 마지막으로 적재한 재무 데이터 버전(MySQL),2026-10-11-dart25-2026q1h1-v14,N
+mysql:dart_big_in,standard_accounts,standard_account_nm,varchar(100),NO,PK,프로젝트 표준 계정명,감가상각비,N
+mysql:dart_big_in,standard_accounts,category,varchar(20),NO,,계정 범주,cashflow,N
+mysql:dart_big_in,standard_accounts,sj_divs,json,NO,,해당 재무제표 구분 목록,"[""CF""]",N
+mysql:dart_big_in,standard_accounts,account_ids,json,NO,,공식 태그 목록,"[""ifrs-full_AdjustmentsForDepreciationExpense"", ""dart_AdjustmentsForDepreciation",N
+mysql:dart_big_in,standard_accounts,aliases,json,NO,,별칭 목록,"[""감가상각비""]",N
+mysql:dart_big_in,standard_accounts,period_nature,"enum('point_in_time','flow')",NO,,flow / point_in_time,flow,N
+mysql:dart_big_in,standard_accounts,display_order,smallint,NO,,표시 순서,23,N
+mysql:dart_big_in,sync_runs,sync_run_id,bigint,NO,PK,실행 번호,1,N
+mysql:dart_big_in,sync_runs,data_version,varchar(50),NO,,이 행을 마지막으로 적재한 재무 데이터 버전(MySQL),2026-10-06-dart5-v1,N
+mysql:dart_big_in,sync_runs,table_name,varchar(64),NO,,대상 테이블(또는 promote_current 같은 단계명),periods,N
+mysql:dart_big_in,sync_runs,started_at,datetime,NO,,시작 시각,2026-10-06 13:58:47,N
+mysql:dart_big_in,sync_runs,finished_at,datetime,YES,,종료 시각,2026-10-06 13:58:45,N
+mysql:dart_big_in,sync_runs,status,"enum('running','success','failed','aborted')",NO,,동기화 결과(success/failed),success,N
+mysql:dart_big_in,sync_runs,rows_source,bigint,YES,,원천 행 수,12,N
+mysql:dart_big_in,sync_runs,rows_inserted,bigint,YES,,신규 행 수,0,N
+mysql:dart_big_in,sync_runs,rows_updated,bigint,YES,,갱신 행 수,,N
+mysql:dart_big_in,sync_runs,rows_deactivated,bigint,YES,,비활성화 행 수,,N
+mysql:dart_big_in,sync_runs,error_message,text,YES,,실패 메시지,,N
+mysql:dart_big_in,standardized_financials (VIEW),corp_code,char(8),NO,,DART 고유번호(8자리). 모든 기업 데이터의 기준 키,00145880,Y
+mysql:dart_big_in,standardized_financials (VIEW),corp_name,varchar(100),NO,,기업명(표시용). 조인 키로 쓰지 말 것,현대제철,Y
+mysql:dart_big_in,standardized_financials (VIEW),year,smallint,NO,,사업연도,2026,Y
+mysql:dart_big_in,standardized_financials (VIEW),report_type,varchar(2),NO,,"보고 기간: Q1(1분기), H1(반기), Q3(3분기), FY(사업보고서)",H1,Y
+mysql:dart_big_in,standardized_financials (VIEW),rcept_no,char(14),YES,,DART 접수번호(14자리). 공시 원문 1건을 식별. 정정공시면 정정본 번호,20260814003379,Y
+mysql:dart_big_in,standardized_financials (VIEW),fs_div,varchar(3),NO,,"재무제표 범위: CFS=연결, OFS=별도",CFS,Y
+mysql:dart_big_in,standardized_financials (VIEW),sj_div,varchar(5),NO,,"재무제표 구분: BS 재무상태표, IS 손익계산서, CIS 포괄손익, CF 현금흐름표, SCE 자본변동표",CF,Y
+mysql:dart_big_in,standardized_financials (VIEW),standard_account,varchar(100),NO,,표준 계정명(공식 태그 매칭),유형자산취득(CAPEX),Y
+mysql:dart_big_in,standardized_financials (VIEW),account_id,varchar(255),YES,,"XBRL 계정 태그(ifrs-full_*, dart_* 등)",ifrs-full_PurchaseOfPropertyPlantAndEquipmentClassifiedAsInvestingActivities,Y
+mysql:dart_big_in,standardized_financials (VIEW),original_account_nm,varchar(255),NO,,공시에 적힌 원래 계정명,유형자산의 취득,Y
+mysql:dart_big_in,standardized_financials (VIEW),period_type,varchar(20),NO,,기간 유형: annual / cumulative / quarterly / point_in_time,quarterly,N
+mysql:dart_big_in,standardized_financials (VIEW),value_type,varchar(20),NO,,"값 유형: cumulative 누적, quarterly 해당 분기 단독, annual 연간, point_in_time 시점 잔액, ratio 비율",quarterly,Y
+mysql:dart_big_in,standardized_financials (VIEW),period_start,date,YES,,값이 적용되는 시작일,2026-04-01,N
+mysql:dart_big_in,standardized_financials (VIEW),period_end,date,NO,,값이 적용되는 종료일(시점 값이면 기준일),2026-06-30,N
+mysql:dart_big_in,standardized_financials (VIEW),value,bigint,YES,,"표시용 값(계산값 우선, CAPEX는 확정 지출액)",215256345454,Y
+mysql:dart_big_in,standardized_financials (VIEW),raw_value,varchar(100),YES,,DART API/공시 원값(문자열 보존),767945535814,N
+mysql:dart_big_in,standardized_financials (VIEW),is_calculated,tinyint,NO,,1이면 공시 원값이 아니라 계산값,1,Y
+mysql:dart_big_in,standardized_financials (VIEW),value_source,varchar(8),NO,,reported(공시) / direct·derived(CAPEX),direct,N
+mysql:dart_big_in,standardized_financials (VIEW),calculation_method,longtext,YES,,계산식 설명(예: H1 cumulative - Q1 cumulative),"H1 cumulative CAPEX - Q1 cumulative CAPEX [{""H1"": 767945535814, ""Q1"": 5526891903",N
+mysql:dart_big_in,standardized_financials (VIEW),source_values,longtext,YES,,"계산·추출 근거 JSON(입력값, 원문 위치 locator, 부호 처리 기록 등)","{""H1"": 767945535814, ""Q1"": 552689190360}",N
+mysql:dart_big_in,standardized_financials (VIEW),currency,varchar(10),YES,,통화(KRW),KRW,N
+mysql:dart_big_in,standardized_financials (VIEW),data_version,varchar(50),NO,,이 행을 마지막으로 적재한 재무 데이터 버전(MySQL),2026-10-11-dart25-2026q1h1-v14,Y

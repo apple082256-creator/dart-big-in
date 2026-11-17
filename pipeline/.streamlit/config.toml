@@ -1,0 +1,3 @@
+# 내부 데이터 검증 뷰어(app/app.py). 사용자 서비스(service/app.py)가 8501을 쓰므로 8502로 분리한다.
+[server]
+port = 8502

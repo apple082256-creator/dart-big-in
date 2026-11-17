@@ -1,0 +1,40 @@
+# Virtual environments
+.venv/
+venv/
+
+# Environment variables
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# macOS
+.DS_Store
+
+# Generated databases
+/db/
+/backups/
+
+# Generated data
+data/raw/
+data/processed/
+
+# Imported local build bundles
+bge_v2_bundle/
+
+# Logs
+*.log
+
+# Tooling
+.pytest_cache/
+.ruff_cache/
+.idea/
+.vscode/
+
+# Local exports
+*.sqlite3-journal
+
+# Windows download metadata
+*:Zone.Identifier

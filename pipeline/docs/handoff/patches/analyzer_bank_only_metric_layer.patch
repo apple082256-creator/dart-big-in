@@ -1,0 +1,24 @@
+--- a/src/llm/analyzer.py
++++ b/src/llm/analyzer.py
+@@ -5,6 +5,7 @@
+ 
+ from src.financial_units import extract_monetary_facts, format_eok, format_krw, format_trillion
+ from src.retrieval.financial_retriever import get_financial_context, get_financial_metrics
++from src.retrieval.industry_kpi import is_bank_company
+ from src.retrieval.operational_retriever import retrieve_filing_context
+ 
+ 
+@@ -74,7 +75,12 @@
+ def _financial_rows_for_account(
+     corp_name: str, year: int, report_type: str, account_name: str | None,
+ ) -> list[dict]:
+-    finance_rows = _finance_metric_context(corp_name, year, report_type, account_name)
++    # Industry KPIs for non-financial companies are an optional layer; keep the
++    # full-account path for them and use the metric layer only for banks.
++    finance_rows = (
++        _finance_metric_context(corp_name, year, report_type, account_name)
++        if is_bank_company(corp_name) else []
++    )
+     if finance_rows:
+         return finance_rows
+     return get_financial_context(corp_name, year, report_type, account_name=account_name)

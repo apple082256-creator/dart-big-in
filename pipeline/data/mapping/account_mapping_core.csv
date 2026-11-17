@@ -1,0 +1,79 @@
+﻿standard_account_nm,original_account_nm,account_id,sj_div,fs_div,mapping_status,mapping_confidence,review_required,review_note,corp_names,report_types
+감가상각비,감가상각비,dart_AdjustmentsForDepreciationExpense,CF,CFS,approved,high,False,공인 XBRL/DART ID와 제표구분 일치,원익IPS | 주성엔지니어링 | 한미반도체,H1 | Q1
+감가상각비,감가상각비,ifrs-full_AdjustmentsForDepreciationExpense,CF,CFS,approved,high,False,공인 XBRL/DART ID와 제표구분 일치,원익IPS | 주성엔지니어링 | 한미반도체,FY | H1 | Q1 | Q3
+감가상각비,감가상각비에 대한 조정,ifrs-full_AdjustmentsForDepreciationExpense,CF,CFS,approved,high,False,공인 XBRL/DART ID와 제표구분 일치,주성엔지니어링 | 한미반도체,FY | H1 | Q1 | Q3
+당기순이익,당기순손익,ifrs-full_ProfitLoss,CIS,CFS,approved,high,False,공인 XBRL/DART ID와 제표구분 일치,원익IPS,FY | H1 | Q1 | Q3
+당기순이익,당기순이익,ifrs-full_ProfitLoss,CIS,CFS,approved,high,False,공인 XBRL/DART ID와 제표구분 일치,삼성전자 | 주성엔지니어링 | 한미반도체,FY | H1 | Q1 | Q3
+당기순이익,당기순이익,ifrs-full_ProfitLoss,IS,CFS,approved,high,False,공인 XBRL/DART ID와 제표구분 일치,삼성전자,FY
+당기순이익,당기순이익(손실),ifrs-full_ProfitLoss,CIS,CFS,approved,high,False,공인 XBRL/DART ID와 제표구분 일치,SK하이닉스 | 삼성전자 | 주성엔지니어링 | 한미반도체,FY | H1 | Q1 | Q3
+당기순이익,당기순이익(손실),ifrs-full_ProfitLoss,IS,CFS,approved,high,False,공인 XBRL/DART ID와 제표구분 일치,삼성전자,FY | H1 | Q1 | Q3
+당기순이익,반기순손익,ifrs-full_ProfitLoss,CIS,CFS,approved,high,False,공인 XBRL/DART ID와 제표구분 일치,원익IPS,H1
+당기순이익,반기순이익,ifrs-full_ProfitLoss,CIS,CFS,approved,high,False,공인 XBRL/DART ID와 제표구분 일치,SK하이닉스 | 삼성전자 | 주성엔지니어링,H1
+당기순이익,반기순이익,ifrs-full_ProfitLoss,IS,CFS,approved,high,False,공인 XBRL/DART ID와 제표구분 일치,삼성전자,H1
+당기순이익,반기순이익(손실),ifrs-full_ProfitLoss,CIS,CFS,approved,high,False,공인 XBRL/DART ID와 제표구분 일치,SK하이닉스 | 주성엔지니어링,H1
+당기순이익,분기순손익,ifrs-full_ProfitLoss,CIS,CFS,approved,high,False,공인 XBRL/DART ID와 제표구분 일치,원익IPS,Q1 | Q3
+당기순이익,분기순이익,ifrs-full_ProfitLoss,CIS,CFS,approved,high,False,공인 XBRL/DART ID와 제표구분 일치,SK하이닉스 | 삼성전자 | 주성엔지니어링 | 한미반도체,Q1 | Q3
+당기순이익,분기순이익,ifrs-full_ProfitLoss,IS,CFS,approved,high,False,공인 XBRL/DART ID와 제표구분 일치,삼성전자,Q1 | Q3
+당기순이익,분기순이익(손실),ifrs-full_ProfitLoss,CIS,CFS,approved,high,False,공인 XBRL/DART ID와 제표구분 일치,SK하이닉스 | 삼성전자,Q1 | Q3
+당기순이익,분기순이익(손실),ifrs-full_ProfitLoss,IS,CFS,approved,high,False,공인 XBRL/DART ID와 제표구분 일치,삼성전자,Q1
+당기순이익,분기순이익,ifrs-full_ProfitLossAttributableToOwnersOfParent,IS,CFS,review_required,medium,True,계정명 기반 후보—확장 태그 여부 확인,삼성전자,Q1
+매출액,매출액,ifrs-full_Revenue,CIS,CFS,approved,high,False,공인 XBRL/DART ID와 제표구분 일치,SK하이닉스 | 원익IPS | 주성엔지니어링 | 한미반도체,FY | H1 | Q1 | Q3
+매출액,매출액,ifrs-full_Revenue,IS,CFS,approved,high,False,공인 XBRL/DART ID와 제표구분 일치,삼성전자,FY | H1 | Q1 | Q3
+매출액,수익(매출액),ifrs-full_Revenue,CIS,CFS,approved,high,False,공인 XBRL/DART ID와 제표구분 일치,원익IPS | 주성엔지니어링 | 한미반도체,FY | H1 | Q1 | Q3
+매출액,수익(매출액),ifrs-full_Revenue,IS,CFS,approved,high,False,공인 XBRL/DART ID와 제표구분 일치,삼성전자,H1 | Q1 | Q3
+매출액,영업수익,ifrs-full_Revenue,CIS,CFS,approved,high,False,공인 XBRL/DART ID와 제표구분 일치,SK하이닉스,Q1
+매출액,영업수익,ifrs-full_Revenue,IS,CFS,approved,high,False,공인 XBRL/DART ID와 제표구분 일치,삼성전자,FY
+매출원가,매출원가,ifrs-full_CostOfSales,CIS,CFS,approved,high,False,공인 XBRL/DART ID와 제표구분 일치,SK하이닉스 | 원익IPS | 주성엔지니어링 | 한미반도체,FY | H1 | Q1 | Q3
+매출원가,매출원가,ifrs-full_CostOfSales,IS,CFS,approved,high,False,공인 XBRL/DART ID와 제표구분 일치,삼성전자,FY | H1 | Q1 | Q3
+매출채권,매출채권,-표준계정코드 미사용-,BS,CFS,review_required,medium,True,계정명 기반 후보—확장 태그 여부 확인,삼성전자,Q3
+매출채권,매출채권,dart_ShortTermTradeReceivable,BS,CFS,approved,high,False,공인 XBRL/DART ID와 제표구분 일치,SK하이닉스 | 삼성전자 | 주성엔지니어링 | 한미반도체,FY | H1 | Q1 | Q3
+매출채권,매출채권,ifrs-full_CurrentTradeReceivables,BS,CFS,approved,high,False,공인 XBRL/DART ID와 제표구분 일치,SK하이닉스 | 삼성전자,FY | H1 | Q1 | Q3
+매출채권,유동매출채권,ifrs-full_CurrentTradeReceivables,BS,CFS,approved,high,False,공인 XBRL/DART ID와 제표구분 일치,주성엔지니어링 | 한미반도체,FY | H1 | Q1 | Q3
+매출채권,매출채권,ifrs-full_TradeAndOtherCurrentReceivables,BS,CFS,review_required,medium,True,계정명 기반 후보—확장 태그 여부 확인,주성엔지니어링,FY | H1 | Q1 | Q3
+매출총이익,매출총이익,ifrs-full_GrossProfit,CIS,CFS,approved,high,False,공인 XBRL/DART ID와 제표구분 일치,SK하이닉스 | 원익IPS | 주성엔지니어링 | 한미반도체,FY | H1 | Q1 | Q3
+매출총이익,매출총이익,ifrs-full_GrossProfit,IS,CFS,approved,high,False,공인 XBRL/DART ID와 제표구분 일치,삼성전자,FY | H1 | Q1 | Q3
+매출총이익,매출총이익(손실),ifrs-full_GrossProfit,CIS,CFS,approved,high,False,공인 XBRL/DART ID와 제표구분 일치,SK하이닉스,FY | H1 | Q1 | Q3
+무형자산,무형자산,-표준계정코드 미사용-,BS,CFS,review_required,medium,True,계정명 기반 후보—확장 태그 여부 확인,SK하이닉스 | 삼성전자,Q3
+무형자산,무형자산,ifrs-full_IntangibleAssetsAndGoodwill,BS,CFS,approved,high,False,공인 XBRL/DART ID와 제표구분 일치,SK하이닉스 | 삼성전자 | 원익IPS,FY | H1 | Q1 | Q3
+무형자산,무형자산,ifrs-full_IntangibleAssetsOtherThanGoodwill,BS,CFS,approved,high,False,공인 XBRL/DART ID와 제표구분 일치,SK하이닉스 | 삼성전자 | 원익IPS | 주성엔지니어링 | 한미반도체,FY | H1 | Q1 | Q3
+무형자산,영업권 이외의 무형자산,ifrs-full_IntangibleAssetsOtherThanGoodwill,BS,CFS,approved,high,False,공인 XBRL/DART ID와 제표구분 일치,주성엔지니어링 | 한미반도체,FY | H1 | Q1 | Q3
+무형자산취득,무형자산의 취득,ifrs-full_PurchaseOfIntangibleAssetsClassifiedAsInvestingActivities,CF,CFS,approved,high,False,공인 XBRL/DART ID와 제표구분 일치,SK하이닉스 | 삼성전자 | 원익IPS | 한미반도체,FY | H1 | Q1 | Q3
+법인세비용차감전순이익,법인세비용차감전계속영업순이익,ifrs-full_ProfitLossBeforeTax,CIS,CFS,approved,high,False,공인 XBRL/DART ID와 제표구분 일치,한미반도체,Q3
+법인세비용차감전순이익,법인세비용차감전순손익,ifrs-full_ProfitLossBeforeTax,CIS,CFS,approved,high,False,공인 XBRL/DART ID와 제표구분 일치,원익IPS,FY | H1 | Q1 | Q3
+법인세비용차감전순이익,법인세비용차감전순이익,ifrs-full_ProfitLossBeforeTax,CIS,CFS,approved,high,False,공인 XBRL/DART ID와 제표구분 일치,SK하이닉스 | 주성엔지니어링 | 한미반도체,FY | H1 | Q1 | Q3
+법인세비용차감전순이익,법인세비용차감전순이익,ifrs-full_ProfitLossBeforeTax,IS,CFS,approved,high,False,공인 XBRL/DART ID와 제표구분 일치,삼성전자,FY | H1 | Q1 | Q3
+법인세비용차감전순이익,법인세비용차감전순이익(손실),ifrs-full_ProfitLossBeforeTax,CIS,CFS,approved,high,False,공인 XBRL/DART ID와 제표구분 일치,SK하이닉스 | 원익IPS | 주성엔지니어링 | 한미반도체,FY | H1 | Q1 | Q3
+법인세비용차감전순이익,법인세비용차감전순이익(손실),ifrs-full_ProfitLossBeforeTax,IS,CFS,approved,high,False,공인 XBRL/DART ID와 제표구분 일치,삼성전자,FY | H1 | Q1 | Q3
+부채총계,부 채 총 계,ifrs-full_Liabilities,BS,CFS,approved,high,False,공인 XBRL/DART ID와 제표구분 일치,주성엔지니어링,FY | H1 | Q1 | Q3
+부채총계,부채총계,ifrs-full_Liabilities,BS,CFS,approved,high,False,공인 XBRL/DART ID와 제표구분 일치,SK하이닉스 | 삼성전자 | 원익IPS | 주성엔지니어링 | 한미반도체,FY | H1 | Q1 | Q3
+연구개발비,경상연구개발비,-표준계정코드 미사용-,CIS,CFS,review_required,medium,True,계정명 기반 후보—확장 태그 여부 확인,원익IPS,FY | H1 | Q1 | Q3
+연구개발비,연구개발비,-표준계정코드 미사용-,CIS,CFS,review_required,medium,True,계정명 기반 후보—확장 태그 여부 확인,한미반도체,FY | H1 | Q1 | Q3
+연구개발비,경상연구개발비,ifrs-full_ResearchAndDevelopmentExpense,CIS,CFS,review_required,medium,True,계정명 기반 후보—확장 태그 여부 확인,원익IPS,FY | H1 | Q1 | Q3
+영업이익,영업손익,dart_OperatingIncomeLoss,CIS,CFS,approved,high,False,공인 XBRL/DART ID와 제표구분 일치,원익IPS,H1 | Q3
+영업이익,영업순손익,dart_OperatingIncomeLoss,CIS,CFS,approved,high,False,공인 XBRL/DART ID와 제표구분 일치,원익IPS,FY | H1 | Q1 | Q3
+영업이익,영업이익,dart_OperatingIncomeLoss,CIS,CFS,approved,high,False,공인 XBRL/DART ID와 제표구분 일치,SK하이닉스 | 원익IPS | 주성엔지니어링 | 한미반도체,FY | H1 | Q1 | Q3
+영업이익,영업이익,dart_OperatingIncomeLoss,IS,CFS,approved,high,False,공인 XBRL/DART ID와 제표구분 일치,삼성전자,FY | H1 | Q1 | Q3
+영업이익,영업이익(손실),dart_OperatingIncomeLoss,CIS,CFS,approved,high,False,공인 XBRL/DART ID와 제표구분 일치,SK하이닉스 | 주성엔지니어링 | 한미반도체,FY | H1 | Q1 | Q3
+영업활동현금흐름,영업활동 현금흐름,ifrs-full_CashFlowsFromUsedInOperatingActivities,CF,CFS,approved,high,False,공인 XBRL/DART ID와 제표구분 일치,SK하이닉스 | 삼성전자,FY | H1 | Q1 | Q3
+영업활동현금흐름,영업활동으로 인한 현금흐름,ifrs-full_CashFlowsFromUsedInOperatingActivities,CF,CFS,approved,high,False,공인 XBRL/DART ID와 제표구분 일치,주성엔지니어링,FY | H1 | Q1 | Q3
+영업활동현금흐름,영업활동현금흐름,ifrs-full_CashFlowsFromUsedInOperatingActivities,CF,CFS,approved,high,False,공인 XBRL/DART ID와 제표구분 일치,SK하이닉스 | 삼성전자 | 원익IPS | 주성엔지니어링 | 한미반도체,FY | H1 | Q1 | Q3
+유동부채,유동부채,ifrs-full_CurrentLiabilities,BS,CFS,approved,high,False,공인 XBRL/DART ID와 제표구분 일치,SK하이닉스 | 삼성전자 | 원익IPS | 주성엔지니어링 | 한미반도체,FY | H1 | Q1 | Q3
+유동자산,유동자산,ifrs-full_CurrentAssets,BS,CFS,approved,high,False,공인 XBRL/DART ID와 제표구분 일치,SK하이닉스 | 삼성전자 | 원익IPS | 주성엔지니어링 | 한미반도체,FY | H1 | Q1 | Q3
+유형자산,유형자산,ifrs-full_PropertyPlantAndEquipment,BS,CFS,approved,high,False,공인 XBRL/DART ID와 제표구분 일치,SK하이닉스 | 삼성전자 | 원익IPS | 주성엔지니어링 | 한미반도체,FY | H1 | Q1 | Q3
+유형자산취득(CAPEX),유형자산의 취득,ifrs-full_PurchaseOfPropertyPlantAndEquipmentClassifiedAsInvestingActivities,CF,CFS,approved,high,False,공인 XBRL/DART ID와 제표구분 일치,SK하이닉스 | 삼성전자 | 원익IPS | 한미반도체,FY | H1 | Q1 | Q3
+이익잉여금,이익잉여금,ifrs-full_RetainedEarnings,BS,CFS,approved,high,False,공인 XBRL/DART ID와 제표구분 일치,SK하이닉스 | 삼성전자 | 원익IPS | 주성엔지니어링 | 한미반도체,FY | H1 | Q1 | Q3
+이익잉여금,이익잉여금(결손금),ifrs-full_RetainedEarnings,BS,CFS,approved,high,False,공인 XBRL/DART ID와 제표구분 일치,삼성전자 | 주성엔지니어링 | 한미반도체,FY | H1 | Q1 | Q3
+자본총계,자 본 총 계,ifrs-full_Equity,BS,CFS,approved,high,False,공인 XBRL/DART ID와 제표구분 일치,주성엔지니어링,FY | H1 | Q1 | Q3
+자본총계,자본총계,ifrs-full_Equity,BS,CFS,approved,high,False,공인 XBRL/DART ID와 제표구분 일치,SK하이닉스 | 삼성전자 | 원익IPS | 주성엔지니어링 | 한미반도체,FY | H1 | Q1 | Q3
+자산총계,자 산 총 계,ifrs-full_Assets,BS,CFS,approved,high,False,공인 XBRL/DART ID와 제표구분 일치,주성엔지니어링,FY | H1 | Q1 | Q3
+자산총계,자산총계,ifrs-full_Assets,BS,CFS,approved,high,False,공인 XBRL/DART ID와 제표구분 일치,SK하이닉스 | 삼성전자 | 원익IPS | 주성엔지니어링 | 한미반도체,FY | H1 | Q1 | Q3
+재고자산,유동재고자산,ifrs-full_Inventories,BS,CFS,approved,high,False,공인 XBRL/DART ID와 제표구분 일치,주성엔지니어링 | 한미반도체,FY | H1 | Q1 | Q3
+재고자산,재고자산,ifrs-full_Inventories,BS,CFS,approved,high,False,공인 XBRL/DART ID와 제표구분 일치,SK하이닉스 | 삼성전자 | 원익IPS | 주성엔지니어링 | 한미반도체,FY | H1 | Q1 | Q3
+재고자산,재고자산,ifrs-full_InventoriesTotal,BS,CFS,approved,high,False,공인 XBRL/DART ID와 제표구분 일치,한미반도체,Q3
+재무활동현금흐름,재무활동 현금흐름,ifrs-full_CashFlowsFromUsedInFinancingActivities,CF,CFS,approved,high,False,공인 XBRL/DART ID와 제표구분 일치,SK하이닉스 | 삼성전자,FY | H1 | Q1 | Q3
+재무활동현금흐름,재무활동으로 인한 현금흐름,ifrs-full_CashFlowsFromUsedInFinancingActivities,CF,CFS,approved,high,False,공인 XBRL/DART ID와 제표구분 일치,주성엔지니어링,FY | H1 | Q1 | Q3
+재무활동현금흐름,재무활동현금흐름,ifrs-full_CashFlowsFromUsedInFinancingActivities,CF,CFS,approved,high,False,공인 XBRL/DART ID와 제표구분 일치,SK하이닉스 | 삼성전자 | 원익IPS | 주성엔지니어링 | 한미반도체,FY | H1 | Q1 | Q3
+투자활동현금흐름,투자활동 현금흐름,ifrs-full_CashFlowsFromUsedInInvestingActivities,CF,CFS,approved,high,False,공인 XBRL/DART ID와 제표구분 일치,SK하이닉스 | 삼성전자,FY | H1 | Q1 | Q3
+투자활동현금흐름,투자활동으로 인한 현금흐름,ifrs-full_CashFlowsFromUsedInInvestingActivities,CF,CFS,approved,high,False,공인 XBRL/DART ID와 제표구분 일치,주성엔지니어링,FY | H1 | Q1 | Q3
+투자활동현금흐름,투자활동현금흐름,ifrs-full_CashFlowsFromUsedInInvestingActivities,CF,CFS,approved,high,False,공인 XBRL/DART ID와 제표구분 일치,SK하이닉스 | 삼성전자 | 원익IPS | 주성엔지니어링 | 한미반도체,FY | H1 | Q1 | Q3
+현금및현금성자산,현금및현금성자산,ifrs-full_CashAndCashEquivalents,BS,CFS,approved,high,False,공인 XBRL/DART ID와 제표구분 일치,SK하이닉스 | 삼성전자 | 원익IPS | 주성엔지니어링 | 한미반도체,FY | H1 | Q1 | Q3

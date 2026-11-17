@@ -1,0 +1,14 @@
+classification,account_id,account_name,include_in_narrow_capex,note
+direct,ifrs-full_PurchaseOfPropertyPlantAndEquipmentClassifiedAsInvestingActivities,유형자산의 취득,True,직접 계정 최우선
+component,dart_PurchaseOfLand,토지의 취득,True,직접 계정 부재 시 fallback
+component,dart_PurchaseOfBuildings,건물의 취득,True,직접 계정 부재 시 fallback
+component,dart_PurchaseOfStructure,구축물의 취득,True,직접 계정 부재 시 fallback
+component,dart_PurchaseOfMachinery,기계장치의 취득,True,직접 계정 부재 시 fallback
+component,dart_PurchaseOfVehicles,차량운반구의 취득,True,직접 계정 부재 시 fallback
+component,dart_PurchaseOfFixturesAndFittings,공구와기구의 취득,True,직접 계정 부재 시 fallback
+component,dart_PurchaseOfOfficeEquipment,비품/사무용비품의 취득,True,직접 계정 부재 시 fallback
+component,dart_PurchaseOfConstructionInProgress,건설중인자산의 취득,True,직접 계정 부재 시 fallback
+excluded,ifrs-full_PurchaseOfIntangibleAssetsClassifiedAsInvestingActivities,무형자산의 취득,False,좁은 유형자산 CAPEX 제외
+excluded,dart_PurchaseOfComputerSoftware,소프트웨어의 취득,False,좁은 유형자산 CAPEX 제외
+excluded,-표준계정코드 미사용-,회원권의 취득,False,좁은 유형자산 CAPEX 제외
+excluded,ifrs-full_PurchaseOfInvestmentProperty,투자부동산의 취득,False,좁은 유형자산 CAPEX 제외

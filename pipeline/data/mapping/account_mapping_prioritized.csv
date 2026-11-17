@@ -1,0 +1,669 @@
+﻿account_key,account_id,sj_div,standard_account_name,source_account_names,company_count,observation_count,mapping_status,review_required,name_variant_count,report_types,fs_divs,review_priority,auto_mapping_candidate,priority_note
+dart_CurrentFirmCommitmentLiabilities,dart_CurrentFirmCommitmentLiabilities,BS,계약부채,계약부채,1,7,auto_account_id,False,1,FY | H1 | Q1 | Q3,CFS,high,False,statement/fs_div 의미 혼동 가능
+name:계약원가,,BS,계약원가,계약원가,1,6,review_required,True,1,FY | H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+ifrs-full_ContractAssets,ifrs-full_ContractAssets,BS,계약자산,계약자산,1,4,auto_account_id,False,1,FY | H1 | Q1 | Q3,CFS,high,False,statement/fs_div 의미 혼동 가능
+ifrs-full_AssetsRecognisedFromCostsToObtainOrFulfilContractsWithCustomers,ifrs-full_AssetsRecognisedFromCostsToObtainOrFulfilContractsWithCustomers,BS,고객과의 계약체결원가나 계약이행원가 중에서 인식한 자산,고객과의 계약체결원가나 계약이행원가 중에서 인식한 자산,1,5,auto_account_id,False,1,FY | H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+ifrs-full_CurrentFinancialAssetsMeasuredAtFairValueThroughOtherComprehensiveIncome,ifrs-full_CurrentFinancialAssetsMeasuredAtFairValueThroughOtherComprehensiveIncome,BS,공정가치측정금융자산,공정가치측정금융자산,1,1,auto_account_id,False,1,FY,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+name:공정가치측정금융자산,,BS,공정가치측정금융자산,공정가치측정금융자산,1,8,review_required,True,1,FY | H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+name:관계기업및공동기업투자,,BS,관계기업 및 공동기업 투자,관계기업 및 공동기업 투자,1,2,review_required,True,1,H1 | Q1,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+ifrs-full_InvestmentsInSubsidiariesJointVenturesAndAssociates,ifrs-full_InvestmentsInSubsidiariesJointVenturesAndAssociates,BS,관계기업 및 공동기업투자,관계기업 및 공동기업투자,1,3,auto_account_id,False,1,H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+ifrs-full_InvestmentsInAssociates,ifrs-full_InvestmentsInAssociates,BS,관계기업투자,관계기업및종속기업투자 | 관계기업투자,2,14,review_required,True,2,FY | H1 | Q1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+ifrs-full_OtherNoncurrentLiabilities,ifrs-full_OtherNoncurrentLiabilities,BS,기타 비유동 부채,기타 비유동 부채 | 기타부채 | 기타비유동부채,4,40,review_required,True,3,FY | H1 | Q1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+ifrs-full_OtherCurrentFinancialLiabilities,ifrs-full_OtherCurrentFinancialLiabilities,BS,기타금융부채,기타금융부채 | 기타유동금융부채,3,34,review_required,True,2,FY | H1 | Q1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+name:기타금융부채,,BS,기타금융부채,기타금융부채,1,2,review_required,True,1,H1 | Q1,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+name:기타금융자산,,BS,기타금융자산,기타금융자산,1,3,review_required,True,1,H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+ifrs-full_OtherNoncurrentFinancialLiabilities,ifrs-full_OtherNoncurrentFinancialLiabilities,BS,기타비유동금융부채,기타금융부채 | 기타비유동금융부채,4,39,review_required,True,2,FY | H1 | Q1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+ifrs-full_OtherNoncurrentFinancialAssets,ifrs-full_OtherNoncurrentFinancialAssets,BS,기타비유동금융자산,기타금융자산 | 기타비유동금융자산,3,33,review_required,True,2,FY | H1 | Q1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+dart_OtherNonCurrentLiabilities,dart_OtherNonCurrentLiabilities,BS,기타비유동부채,기타부채 | 기타비유동부채,4,8,review_required,True,2,H1 | Q1,CFS,high,False,statement/fs_div 의미 혼동 가능
+dart_OtherNonCurrentAssets,dart_OtherNonCurrentAssets,BS,기타비유동자산,기타비유동자산 | 기타자산,5,10,review_required,True,2,H1 | Q1,CFS,high,False,statement/fs_div 의미 혼동 가능
+ifrs-full_OtherNoncurrentAssets,ifrs-full_OtherNoncurrentAssets,BS,기타비유동자산,기타비유동자산 | 기타자산,5,50,review_required,True,2,FY | H1 | Q1 | Q3,CFS,high,False,statement/fs_div 의미 혼동 가능
+ifrs-full_CurrentLoansAndReceivables,ifrs-full_CurrentLoansAndReceivables,BS,기타수취채권,기타수취채권,1,4,auto_account_id,False,1,FY | H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+ifrs-full_NoncurrentLoansAndReceivables,ifrs-full_NoncurrentLoansAndReceivables,BS,기타수취채권,기타수취채권,1,4,auto_account_id,False,1,FY | H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+ifrs-full_OtherCurrentReceivables,ifrs-full_OtherCurrentReceivables,BS,기타수취채권,기타 유동채권 | 기타수취채권,2,14,review_required,True,2,FY | H1 | Q1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+ifrs-full_OtherNoncurrentReceivables,ifrs-full_OtherNoncurrentReceivables,BS,기타수취채권,기타 비유동채권 | 기타수취채권,2,14,review_required,True,2,FY | H1 | Q1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+name:기타수취채권,,BS,기타수취채권,기타수취채권,2,12,review_required,True,1,H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+ifrs-full_OtherCurrentFinancialAssets,ifrs-full_OtherCurrentFinancialAssets,BS,기타유동금융자산,기타금융자산 | 기타유동금융자산,3,35,review_required,True,2,FY | H1 | Q1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+dart_OtherCurrentLiabilities,dart_OtherCurrentLiabilities,BS,기타유동부채,기타부채 | 기타유동부채,5,10,review_required,True,2,H1 | Q1,CFS,high,False,statement/fs_div 의미 혼동 가능
+ifrs-full_OtherCurrentLiabilities,ifrs-full_OtherCurrentLiabilities,BS,기타유동부채,기타 유동부채 | 기타부채 | 기타유동부채,5,50,review_required,True,3,FY | H1 | Q1 | Q3,CFS,high,False,statement/fs_div 의미 혼동 가능
+dart_OtherCurrentAssets,dart_OtherCurrentAssets,BS,기타유동자산,기타유동자산 | 기타자산,5,10,review_required,True,2,H1 | Q1,CFS,high,False,statement/fs_div 의미 혼동 가능
+ifrs-full_OtherCurrentAssets,ifrs-full_OtherCurrentAssets,BS,기타유동자산,기타유동자산 | 기타자산,5,50,review_required,True,2,FY | H1 | Q1 | Q3,CFS,high,False,statement/fs_div 의미 혼동 가능
+dart_ElementsOfOtherStockholdersEquity,dart_ElementsOfOtherStockholdersEquity,BS,기타자본,기타자본 | 기타자본구성요소 | 기타자본항목,5,60,review_required,True,3,FY | H1 | Q1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+ifrs-full_NoncurrentProvisionsForEmployeeBenefits,ifrs-full_NoncurrentProvisionsForEmployeeBenefits,BS,기타장기종업원급여부채,기타장기종업원급여부채,2,19,auto_account_id,False,1,FY | H1 | Q1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+name:기타장기종업원급여부채,,BS,기타장기종업원급여부채,기타장기종업원급여부채,1,5,review_required,True,1,FY | H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+dart_CurrentNontradePayables,dart_CurrentNontradePayables,BS,기타지급채무,기타지급채무,1,9,auto_account_id,False,1,FY | H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+dart_NoncurrentNontradePayables,dart_NoncurrentNontradePayables,BS,기타지급채무,기타지급채무,1,9,auto_account_id,False,1,FY | H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+name:기타지급채무,,BS,기타지급채무,기타지급채무,1,6,review_required,True,1,H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+dart_EquitySecuritiesAtFairValueThroughProfitOrLoss,dart_EquitySecuritiesAtFairValueThroughProfitOrLoss,BS,기타투자자산,기타투자자산,1,5,auto_account_id,False,1,FY | H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+dart_NonCurrentAvailableForSaleFinancialAssets,dart_NonCurrentAvailableForSaleFinancialAssets,BS,기타투자자산,기타투자자산,1,7,auto_account_id,False,1,FY | H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+ifrs-full_NoncurrentFinancialAssetsMeasuredAtFairValueThroughOtherComprehensiveIncome,ifrs-full_NoncurrentFinancialAssetsMeasuredAtFairValueThroughOtherComprehensiveIncome,BS,기타포괄손익-공정가치금융자산,공정가치측정금융자산 | 기타포괄손익-공정가치 측정 비유동금융자산 | 기타포괄손익-공정가치금융자산,2,16,review_required,True,3,FY | H1 | Q1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+ifrs-full_NoncurrentInvestmentsInEquityInstrumentsDesignatedAtFairValueThroughOtherComprehensiveIncome,ifrs-full_NoncurrentInvestmentsInEquityInstrumentsDesignatedAtFairValueThroughOtherComprehensiveIncome,BS,기타포괄손익-공정가치금융자산,기타포괄손익-공정가치금융자산,1,1,auto_account_id,False,1,FY,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+name:기타포괄손익공정가치금융자산,,BS,기타포괄손익-공정가치금융자산,기타포괄손익-공정가치금융자산,1,2,review_required,True,1,H1 | Q1,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+dart_OtherComprehensiveIncomeLossAccumulatedAmount,dart_OtherComprehensiveIncomeLossAccumulatedAmount,BS,기타포괄손익누계액,기타포괄손익누계액,4,43,auto_account_id,False,1,FY | H1 | Q1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+ifrs-full_AccumulatedOtherComprehensiveIncome,ifrs-full_AccumulatedOtherComprehensiveIncome,BS,기타포괄손익누계액,기타포괄손익누계액,1,5,auto_account_id,False,1,FY | H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+dart_ShortTermDepositsNotClassifiedAsCashEquivalents,dart_ShortTermDepositsNotClassifiedAsCashEquivalents,BS,단기금융상품,단기금융상품,4,8,auto_account_id,False,1,H1 | Q1,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+ifrs-full_ShorttermDepositsNotClassifiedAsCashEquivalents,ifrs-full_ShorttermDepositsNotClassifiedAsCashEquivalents,BS,단기금융상품,단기금융상품,4,29,auto_account_id,False,1,FY | H1 | Q1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+name:단기금융상품,,BS,단기금융상품,단기금융상품,1,3,review_required,True,1,H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+ifrs-full_CurrentFinancialAssetsAtFairValueThroughProfitOrLoss,ifrs-full_CurrentFinancialAssetsAtFairValueThroughProfitOrLoss,BS,단기당기손익-공정가치금융자산,단기당기손익-공정가치금융자산 | 유동 당기손익인식금융자산,2,14,review_required,True,2,FY | H1 | Q1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+ifrs-full_CurrentFinancialAssetsAtFairValueThroughProfitOrLossMandatorilyMeasuredAtFairValue,ifrs-full_CurrentFinancialAssetsAtFairValueThroughProfitOrLossMandatorilyMeasuredAtFairValue,BS,단기당기손익-공정가치금융자산,"단기당기손익-공정가치금융자산 | 유동 당기손익인식금융자산, 의무적으로 측정된 공정가치",2,4,review_required,True,2,FY | H1 | Q1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+ifrs-full_CurrentFinancialAssetsAtAmortisedCost,ifrs-full_CurrentFinancialAssetsAtAmortisedCost,BS,단기상각후원가금융자산,단기상각후원가금융자산,1,7,auto_account_id,False,1,FY | H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+name:단기상각후원가금융자산,,BS,단기상각후원가금융자산,단기상각후원가금융자산,1,2,review_required,True,1,H1 | Q1,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+ifrs-full_ShorttermBorrowings,ifrs-full_ShorttermBorrowings,BS,단기차입금,단기차입금 | 차입금,3,7,review_required,True,2,FY | H1 | Q1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+name:단기차입금,,BS,단기차입금,단기차입금,2,10,review_required,True,1,FY | H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+ifrs-full_CurrentInvestments,ifrs-full_CurrentInvestments,BS,단기투자자산,단기투자자산,1,9,auto_account_id,False,1,FY | H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+name:단기투자자산,,BS,단기투자자산,단기투자자산,1,3,review_required,True,1,H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+ifrs-full_CurrentTaxLiabilities,ifrs-full_CurrentTaxLiabilities,BS,당기법인세부채,당기법인세부채,5,53,auto_account_id,False,1,FY | H1 | Q1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+ifrs-full_CurrentTaxAssets,ifrs-full_CurrentTaxAssets,BS,당기법인세자산,당기법인세자산,2,19,auto_account_id,False,1,FY | H1 | Q1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+ifrs-full_NoncurrentFinancialAssetsAtFairValueThroughProfitOrLoss,ifrs-full_NoncurrentFinancialAssetsAtFairValueThroughProfitOrLoss,BS,당기손익-공정가치금융자산,당기손익-공정가치금융자산 | 비유동 당기손익인식금융자산,2,14,review_required,True,2,FY | H1 | Q1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+ifrs-full_NoncurrentFinancialAssetsAtFairValueThroughProfitOrLossMandatorilyMeasuredAtFairValue,ifrs-full_NoncurrentFinancialAssetsAtFairValueThroughProfitOrLossMandatorilyMeasuredAtFairValue,BS,당기손익-공정가치금융자산,당기손익-공정가치금융자산,1,1,auto_account_id,False,1,Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+name:당기손익공정가치금융자산,,BS,당기손익-공정가치금융자산,당기손익-공정가치금융자산,1,2,review_required,True,1,H1 | Q1,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+ifrs-full_CurrentLeaseLiabilities,ifrs-full_CurrentLeaseLiabilities,BS,리스부채,리스부채 | 유동 리스부채 | 유동리스부채,4,48,review_required,True,3,FY | H1 | Q1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+ifrs-full_NoncurrentLeaseLiabilities,ifrs-full_NoncurrentLeaseLiabilities,BS,리스부채,리스부채 | 비유동 리스부채 | 비유동리스부채,4,48,review_required,True,3,FY | H1 | Q1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+ifrs-full_LiabilitiesIncludedInDisposalGroupsClassifiedAsHeldForSale,ifrs-full_LiabilitiesIncludedInDisposalGroupsClassifiedAsHeldForSale,BS,매각예정분류부채,매각예정부채 | 매각예정분류부채,2,10,review_required,True,2,FY | H1 | Q1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+ifrs-full_NoncurrentAssetsOrDisposalGroupsClassifiedAsHeldForSaleOrAsHeldForDistributionToOwners,ifrs-full_NoncurrentAssetsOrDisposalGroupsClassifiedAsHeldForSaleOrAsHeldForDistributionToOwners,BS,매각예정분류자산,매각예정분류자산 | 매각예정자산,2,13,review_required,True,2,FY | H1 | Q1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+ifrs-full_NoncurrentAssetsOrDisposalGroupsClassifiedAsHeldForSale,ifrs-full_NoncurrentAssetsOrDisposalGroupsClassifiedAsHeldForSale,BS,매각예정비유동자산,매각예정비유동자산,1,1,auto_account_id,False,1,FY,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+name:매각예정비유동자산,,BS,매각예정비유동자산,매각예정비유동자산,1,4,review_required,True,1,FY | H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+name:매각예정자산,,BS,매각예정자산,매각예정자산,1,2,review_required,True,1,FY | Q1,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+dart_ShortTermTradePayables,dart_ShortTermTradePayables,BS,매입채무,단기매입채무 | 매입채무,3,12,review_required,True,2,FY | H1 | Q1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+ifrs-full_TradeAndOtherCurrentPayablesToTradeSuppliers,ifrs-full_TradeAndOtherCurrentPayablesToTradeSuppliers,BS,매입채무,매입채무 | 유동매입채무,3,23,review_required,True,2,FY | H1 | Q1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+name:매입채무,,BS,매입채무,매입채무,1,2,review_required,True,1,H1 | Q1,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+ifrs-full_NoncurrentPayables,ifrs-full_NoncurrentPayables,BS,매입채무 및 기타비유동채무,매입채무 및 기타비유동채무,1,5,auto_account_id,False,1,FY | H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+ifrs-full_TradeAndOtherCurrentPayables,ifrs-full_TradeAndOtherCurrentPayables,BS,매입채무및기타유동채무,매입채무 | 매입채무및기타유동채무,3,23,review_required,True,2,FY | H1 | Q1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+dart_ShortTermTradeReceivable,dart_ShortTermTradeReceivable,BS,매출채권,매출채권,4,15,auto_account_id,False,1,FY | H1 | Q1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+ifrs-full_CurrentTradeReceivables,ifrs-full_CurrentTradeReceivables,BS,매출채권,매출채권 | 유동매출채권,4,28,review_required,True,2,FY | H1 | Q1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+name:매출채권,,BS,매출채권,매출채권,1,1,review_required,True,1,Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+ifrs-full_TradeAndOtherCurrentReceivables,ifrs-full_TradeAndOtherCurrentReceivables,BS,매출채권및기타유동채권,매출채권 | 매출채권및기타유동채권,2,16,review_required,True,2,FY | H1 | Q1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+ifrs-full_IntangibleAssetsAndGoodwill,ifrs-full_IntangibleAssetsAndGoodwill,BS,무형자산,무형자산,3,27,auto_account_id,False,1,FY | H1 | Q1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+ifrs-full_IntangibleAssetsOtherThanGoodwill,ifrs-full_IntangibleAssetsOtherThanGoodwill,BS,무형자산,무형자산 | 영업권 이외의 무형자산,5,31,review_required,True,2,FY | H1 | Q1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+name:무형자산,,BS,무형자산,무형자산,2,2,review_required,True,1,Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+dart_ShortTermOtherReceivables,dart_ShortTermOtherReceivables,BS,미수금,미수금,1,3,auto_account_id,False,1,FY | H1 | Q1,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+dart_ShortTermOtherReceivablesNet,dart_ShortTermOtherReceivablesNet,BS,미수금,미수금,1,6,auto_account_id,False,1,FY | H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+name:미수금,,BS,미수금,미수금,1,3,review_required,True,1,H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+dart_ShortTermOtherPayables,dart_ShortTermOtherPayables,BS,미지급금,미지급금,2,13,auto_account_id,False,1,FY | H1 | Q1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+ifrs-full_OtherCurrentPayables,ifrs-full_OtherCurrentPayables,BS,미지급금,미지급금,1,9,auto_account_id,False,1,FY | H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+name:미지급금,,BS,미지급금,미지급금,1,2,review_required,True,1,H1 | Q1,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+dart_PaymentsOfIncomeTaxesPayable,dart_PaymentsOfIncomeTaxesPayable,BS,미지급법인세,미지급법인세,1,7,auto_account_id,False,1,FY | H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+dart_ShortTermAccruedExpenses,dart_ShortTermAccruedExpenses,BS,미지급비용,미지급비용,1,1,auto_account_id,False,1,Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+ifrs-full_AccrualsClassifiedAsCurrent,ifrs-full_AccrualsClassifiedAsCurrent,BS,미지급비용,미지급비용,1,9,auto_account_id,False,1,FY | H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+name:미지급비용,,BS,미지급비용,미지급비용,1,2,review_required,True,1,H1 | Q1,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+dart_IssuedCapitalOfCommonStock,dart_IssuedCapitalOfCommonStock,BS,보통주자본금,보통주자본금,1,12,auto_account_id,False,1,FY | H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+ifrs-full_EquityAndLiabilities,ifrs-full_EquityAndLiabilities,BS,부채와자본총계,부 채 및 자 본 총 계 | 부채및자본총계 | 부채와 자본총계 | 부채와자본총계 | 자본과 부채 | 자본과부채총계,5,60,review_required,True,6,FY | H1 | Q1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+ifrs-full_Liabilities,ifrs-full_Liabilities,BS,부채총계,부 채 총 계 | 부채총계,5,60,review_required,True,2,FY | H1 | Q1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+ifrs-full_NoncurrentRecognisedAssetsDefinedBenefitPlan,ifrs-full_NoncurrentRecognisedAssetsDefinedBenefitPlan,BS,비유동 순확정급여자산,비유동 순확정급여자산 | 순확정급여자산 | 종업원급여자산 | 확정급여자산,4,32,review_required,True,4,FY | H1 | Q1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+ifrs-full_NoncurrentContractAssets,ifrs-full_NoncurrentContractAssets,BS,비유동계약자산,비유동계약자산,1,12,auto_account_id,False,1,FY | H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+name:비유동당기손익공정가치측정금융자산,,BS,비유동당기손익-공정가치측정금융자산,비유동당기손익-공정가치측정금융자산,1,7,review_required,True,1,FY | H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+ifrs-full_NoncurrentLiabilities,ifrs-full_NoncurrentLiabilities,BS,비유동부채,비유동부채,5,57,auto_account_id,False,1,FY | H1 | Q1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+name:비유동부채계,,BS,비유동부채 계,비유동부채 계,1,3,review_required,True,1,H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+ifrs-full_NoncurrentAssets,ifrs-full_NoncurrentAssets,BS,비유동자산,비유동자산,5,57,auto_account_id,False,1,FY | H1 | Q1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+name:비유동자산계,,BS,비유동자산 계,비유동자산 계,1,3,review_required,True,1,H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+ifrs-full_NoncurrentProvisions,ifrs-full_NoncurrentProvisions,BS,비유동충당부채,비유동충당부채 | 장기충당부채 | 충당부채,4,43,review_required,True,3,FY | H1 | Q1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+ifrs-full_NoncontrollingInterests,ifrs-full_NoncontrollingInterests,BS,비지배지분,비지배지분,4,37,auto_account_id,False,1,FY | H1 | Q1 | Q3,CFS,high,False,statement/fs_div 의미 혼동 가능
+ifrs-full_RightofuseAssets,ifrs-full_RightofuseAssets,BS,사용권자산,사용권자산,3,36,auto_account_id,False,1,FY | H1 | Q1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+dart_BondsIssued,dart_BondsIssued,BS,사채,사채,1,2,auto_account_id,False,1,H1 | Q1,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+ifrs-full_NoncurrentPortionOfNoncurrentBondsIssued,ifrs-full_NoncurrentPortionOfNoncurrentBondsIssued,BS,사채,사채,1,9,auto_account_id,False,1,FY | H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+name:사채,,BS,사채,사채,1,1,review_required,True,1,Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+dart_ShortTermPrepaidExpenses,dart_ShortTermPrepaidExpenses,BS,선급비용,선급비용,1,4,auto_account_id,False,1,FY | H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+ifrs-full_CurrentPrepaidExpenses,ifrs-full_CurrentPrepaidExpenses,BS,선급비용,선급비용,1,6,auto_account_id,False,1,FY | H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+name:선급비용,,BS,선급비용,선급비용,1,2,review_required,True,1,H1 | Q1,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+dart_ShortTermAdvancesCustomers,dart_ShortTermAdvancesCustomers,BS,선수금,선수금,1,4,auto_account_id,False,1,FY | H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+ifrs-full_CurrentAdvances,ifrs-full_CurrentAdvances,BS,선수금,선수금,1,6,auto_account_id,False,1,FY | H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+name:선수금,,BS,선수금,선수금,1,2,review_required,True,1,H1 | Q1,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+ifrs-full_NetDeferredTaxAssets,ifrs-full_NetDeferredTaxAssets,BS,순이연법인세자산,순이연법인세자산,1,5,auto_account_id,False,1,FY | H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+ifrs-full_NoncurrentRecognisedLiabilitiesDefinedBenefitPlan,ifrs-full_NoncurrentRecognisedLiabilitiesDefinedBenefitPlan,BS,순확정급여부채,비유동 순확정급여부채 | 순확정급여부채 | 확정급여부채,3,21,review_required,True,3,FY | H1 | Q1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+ifrs-full_RecognisedLiabilitiesDefinedBenefitPlan,ifrs-full_RecognisedLiabilitiesDefinedBenefitPlan,BS,순확정급여부채,순확정급여부채,1,1,auto_account_id,False,1,Q1,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+dart_DepositsForSeveranceInsurance,dart_DepositsForSeveranceInsurance,BS,순확정급여자산,순확정급여자산,1,3,auto_account_id,False,1,H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+dart_ShortTermWithholdings,dart_ShortTermWithholdings,BS,예수금,예수금,1,10,auto_account_id,False,1,FY | H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+name:예수금,,BS,예수금,예수금,1,2,review_required,True,1,H1 | Q1,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+dart_IssuedCapitalOfPreferredStock,dart_IssuedCapitalOfPreferredStock,BS,우선주자본금,우선주자본금,1,12,auto_account_id,False,1,FY | H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+ifrs-full_CurrentContractLiabilities,ifrs-full_CurrentContractLiabilities,BS,유동계약부채,계약부채 | 유동계약부채,2,17,review_required,True,2,FY | H1 | Q1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+ifrs-full_CurrentContractAssets,ifrs-full_CurrentContractAssets,BS,유동계약자산,계약자산 | 유동계약자산,2,20,review_required,True,2,FY | H1 | Q1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+dart_CurrentFinancialAssetDesignationAsAtFairValueThroughProfitOrLoss,dart_CurrentFinancialAssetDesignationAsAtFairValueThroughProfitOrLoss,BS,유동당기손익-공정가치측정금융자산,유동당기손익-공정가치측정금융자산,1,2,auto_account_id,False,1,H1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+ifrs-full_FinancialAssetsAtFairValueThroughProfitOrLoss,ifrs-full_FinancialAssetsAtFairValueThroughProfitOrLoss,BS,유동당기손익-공정가치측정금융자산,유동당기손익-공정가치측정금융자산,1,2,auto_account_id,False,1,FY | Q1,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+name:유동당기손익공정가치측정금융자산,,BS,유동당기손익-공정가치측정금융자산,유동당기손익-공정가치측정금융자산,1,2,review_required,True,1,H1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+ifrs-full_CurrentLiabilities,ifrs-full_CurrentLiabilities,BS,유동부채,유동부채,5,57,auto_account_id,False,1,FY | H1 | Q1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+name:유동부채계,,BS,유동부채 계,유동부채 계,1,3,review_required,True,1,H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+ifrs-full_CurrentPortionOfLongtermBorrowings,ifrs-full_CurrentPortionOfLongtermBorrowings,BS,유동성장기부채,유동성장기부채,1,10,auto_account_id,False,1,FY | H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+name:유동성장기부채,,BS,유동성장기부채,유동성장기부채,1,2,review_required,True,1,H1 | Q1,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+ifrs-full_CurrentAssets,ifrs-full_CurrentAssets,BS,유동자산,유동자산,5,57,auto_account_id,False,1,FY | H1 | Q1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+name:유동자산계,,BS,유동자산 계,유동자산 계,1,3,review_required,True,1,H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+ifrs-full_ShorttermWarrantyProvision,ifrs-full_ShorttermWarrantyProvision,BS,유동품질보증충당부채,유동품질보증충당부채,1,12,auto_account_id,False,1,FY | H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+ifrs-full_PropertyPlantAndEquipment,ifrs-full_PropertyPlantAndEquipment,BS,유형자산,유형자산,5,60,auto_account_id,False,1,FY | H1 | Q1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+ifrs-full_DeferredTaxLiabilities,ifrs-full_DeferredTaxLiabilities,BS,이연법인세부채,이연법인세부채,4,48,auto_account_id,False,1,FY | H1 | Q1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+ifrs-full_DeferredTaxAssets,ifrs-full_DeferredTaxAssets,BS,이연법인세자산,이연법인세자산,4,43,auto_account_id,False,1,FY | H1 | Q1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+ifrs-full_RetainedEarnings,ifrs-full_RetainedEarnings,BS,이익잉여금,이익잉여금 | 이익잉여금(결손금),5,60,review_required,True,2,FY | H1 | Q1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+dart_LongTermBorrowingsGross,dart_LongTermBorrowingsGross,BS,이자부차입금,이자부차입금 | 장기차입금 | 차입금,3,8,review_required,True,3,FY | H1 | Q1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+name:이자부차입금,,BS,이자부차입금,이자부차입금,1,3,review_required,True,1,H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+ifrs-full_IssuedCapital,ifrs-full_IssuedCapital,BS,자본금,자본금,5,60,auto_account_id,False,1,FY | H1 | Q1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+dart_CapitalSurplus,dart_CapitalSurplus,BS,자본잉여금,자본잉여금,4,47,auto_account_id,False,1,FY | H1 | Q1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+ifrs-full_Equity,ifrs-full_Equity,BS,자본총계,자 본 총 계 | 자본총계,5,60,review_required,True,2,FY | H1 | Q1 | Q3,CFS,high,False,statement/fs_div 의미 혼동 가능
+ifrs-full_Assets,ifrs-full_Assets,BS,자산총계,자 산 총 계 | 자산총계,5,60,review_required,True,2,FY | H1 | Q1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+dart_LongTermDepositsNotClassifiedAsCashEquivalents,dart_LongTermDepositsNotClassifiedAsCashEquivalents,BS,장기금융상품,장기금융상품,1,12,auto_account_id,False,1,FY | H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+dart_LongTermTradeAndOtherNonCurrentPayables,dart_LongTermTradeAndOtherNonCurrentPayables,BS,장기매입채무및기타비유동채무,장기매입채무및기타비유동채무,1,7,auto_account_id,False,1,FY | H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+dart_LongTermOtherPayablesGross,dart_LongTermOtherPayablesGross,BS,장기미지급금,장기미지급금,2,4,auto_account_id,False,1,H1 | Q1,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+ifrs-full_OtherNoncurrentPayables,ifrs-full_OtherNoncurrentPayables,BS,장기미지급금,장기미지급금,2,18,auto_account_id,False,1,FY | H1 | Q1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+name:장기미지급금,,BS,장기미지급금,장기미지급금,2,2,review_required,True,1,Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+ifrs-full_NoncurrentPortionOfNoncurrentLoansReceived,ifrs-full_NoncurrentPortionOfNoncurrentLoansReceived,BS,장기차입금,장기차입금,1,9,auto_account_id,False,1,FY | H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+name:장기차입금,,BS,장기차입금,장기차입금,1,1,review_required,True,1,Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+ifrs-full_OtherLongtermProvisions,ifrs-full_OtherLongtermProvisions,BS,장기충당부채,장기충당부채,1,2,auto_account_id,False,1,FY | Q1,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+ifrs-full_NoncurrentInvestmentsOtherThanInvestmentsAccountedForUsingEquityMethod,ifrs-full_NoncurrentInvestmentsOtherThanInvestmentsAccountedForUsingEquityMethod,BS,장기투자자산,장기투자자산,1,9,auto_account_id,False,1,FY | H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+name:장기투자자산,,BS,장기투자자산,장기투자자산,1,3,review_required,True,1,H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+ifrs-full_Inventories,ifrs-full_Inventories,BS,재고자산,유동재고자산 | 재고자산,5,59,review_required,True,2,FY | H1 | Q1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+ifrs-full_InventoriesTotal,ifrs-full_InventoriesTotal,BS,재고자산,재고자산,1,1,auto_account_id,False,1,Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+name:종업원급여자산,,BS,종업원급여자산,종업원급여자산,1,3,review_required,True,1,H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+ifrs-full_SharePremium,ifrs-full_SharePremium,BS,주식발행초과금,주식발행초과금,2,13,auto_account_id,False,1,FY | H1 | Q1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+ifrs-full_EquityAttributableToOwnersOfParent,ifrs-full_EquityAttributableToOwnersOfParent,BS,지배기업의 소유주에게 귀속되는 자본,지배기업 소유주지분 | 지배기업소유주지분 | 지배기업의 소유주에게 귀속되는 자본 | 지배기업의 소유지분 | 지배기업지분,5,60,review_required,True,5,FY | H1 | Q1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+ifrs-full_InvestmentAccountedForUsingEquityMethod,ifrs-full_InvestmentAccountedForUsingEquityMethod,BS,지분법적용 투자지분,관계기업 및 공동기업 투자 | 관계기업 및 공동기업투자 | 관계기업및공동기업투자 | 관계기업투자 | 관계종속기업투자자산-지분법 | 지분법적용 투자지분,5,41,review_required,True,6,FY | H1 | Q1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+ifrs-full_CurrentBorrowingsAndCurrentPortionOfNoncurrentBorrowings,ifrs-full_CurrentBorrowingsAndCurrentPortionOfNoncurrentBorrowings,BS,차입금,차입금,1,9,auto_account_id,False,1,FY | H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+ifrs-full_LongtermBorrowings,ifrs-full_LongtermBorrowings,BS,차입금,비유동차입금(사채 포함)의 비유동성 부분 | 차입금,2,14,review_required,True,2,FY | H1 | Q1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+name:차입금,,BS,차입금,차입금,1,1,review_required,True,1,Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+ifrs-full_CurrentProvisions,ifrs-full_CurrentProvisions,BS,충당부채,유동충당부채 | 충당부채,4,46,review_required,True,2,FY | H1 | Q1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+ifrs-full_OtherShorttermProvisions,ifrs-full_OtherShorttermProvisions,BS,충당부채,충당부채,1,2,auto_account_id,False,1,FY | Q1,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+dart_PostemploymentBenefitObligations,dart_PostemploymentBenefitObligations,BS,퇴직급여부채,순확정급여부채 | 퇴직급여부채 | 퇴직급여채무,3,8,review_required,True,3,FY | H1 | Q1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+dart_InvestedAssetForPostemploymentBenefit,dart_InvestedAssetForPostemploymentBenefit,BS,퇴직급여자산,퇴직급여자산,1,7,auto_account_id,False,1,FY | H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+ifrs-full_InvestmentProperty,ifrs-full_InvestmentProperty,BS,투자부동산,투자부동산,4,46,auto_account_id,False,1,FY | H1 | Q1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+ifrs-full_CashAndCashEquivalents,ifrs-full_CashAndCashEquivalents,BS,현금및현금성자산,현금및현금성자산,5,60,auto_account_id,False,1,FY | H1 | Q1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+dart_PresentValueOfDefinedBenefitObligation,dart_PresentValueOfDefinedBenefitObligation,BS,확정급여부채,확정급여부채,1,2,auto_account_id,False,1,H1 | Q1,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+name:확정급여부채,,BS,확정급여부채,확정급여부채,2,2,review_required,True,1,FY | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+name:확정급여자산,,BS,확정급여자산,확정급여자산,1,3,review_required,True,1,H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+dart_AdjustmentsForDepreciationExpense,dart_AdjustmentsForDepreciationExpense,CF,감가상각비,감가상각비,3,6,auto_account_id,False,1,H1 | Q1,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+ifrs-full_AdjustmentsForDepreciationExpense,ifrs-full_AdjustmentsForDepreciationExpense,CF,감가상각비,감가상각비 | 감가상각비에 대한 조정,3,30,review_required,True,2,FY | H1 | Q1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+dart_ProceedsFromSalesOfBuildings,dart_ProceedsFromSalesOfBuildings,CF,건물의 처분,건물의 처분,1,3,auto_account_id,False,1,FY,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+dart_PurchaseOfBuildings,dart_PurchaseOfBuildings,CF,건물의 취득,건물의 취득,1,9,auto_account_id,False,1,FY | H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+dart_PurchaseOfConstructionInProgress,dart_PurchaseOfConstructionInProgress,CF,건설중인자산의 취득,건설중인자산의 취득,1,12,auto_account_id,False,1,FY | H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+name:경상개발비,,CF,경상개발비,경상개발비,1,1,review_required,True,1,FY,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+name:경상개발비로인한조정,,CF,경상개발비로 인한 조정,경상개발비로 인한 조정,1,3,review_required,True,1,H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+name:계약부채,,CF,계약부채,계약부채,1,7,review_required,True,1,FY | H1 | Q1 | Q3,CFS,high,False,statement/fs_div 의미 혼동 가능
+name:계약부채의증가,,CF,계약부채의 증가,계약부채의 증가,1,1,review_required,True,1,H1,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+ifrs-full_AdjustmentsForIncreaseDecreaseInContractLiabilities,ifrs-full_AdjustmentsForIncreaseDecreaseInContractLiabilities,CF,계약부채의 증가(감소),계약부채의 증가 | 계약부채의 증가(감소),2,14,review_required,True,2,FY | H1 | Q1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+name:계약부채의증가감소,,CF,계약부채의 증가(감소),계약부채의 증가(감소),1,1,review_required,True,1,Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+name:계약원가의감소,,CF,계약원가의 감소,계약원가의 감소,1,4,review_required,True,1,FY | H1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+name:계약원가의감소증가,,CF,계약원가의 감소(증가),계약원가의 감소(증가),1,4,review_required,True,1,FY | H1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+name:계약자산,,CF,계약자산,계약자산,1,7,review_required,True,1,FY | H1 | Q1 | Q3,CFS,high,False,statement/fs_div 의미 혼동 가능
+name:계약자산의감소,,CF,계약자산의 감소,계약자산의 감소,1,2,review_required,True,1,H1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+ifrs-full_AdjustmentsForDecreaseIncreaseInContractAssets,ifrs-full_AdjustmentsForDecreaseIncreaseInContractAssets,CF,계약자산의 감소(증가),계약자산의 감소 | 계약자산의 감소(증가) | 계약자산의 증가,2,14,review_required,True,3,FY | H1 | Q1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+dart_ProceedsFromSalesOfFixturesAndFittings,dart_ProceedsFromSalesOfFixturesAndFittings,CF,공구와기구의 처분,공구와기구의 처분,1,3,auto_account_id,False,1,FY | H1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+name:공구와기구의처분,,CF,공구와기구의 처분,공구와기구의 처분,1,1,review_required,True,1,FY,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+dart_PurchaseOfFixturesAndFittings,dart_PurchaseOfFixturesAndFittings,CF,공구와기구의 취득,공구와기구의 취득,1,6,auto_account_id,False,1,FY | H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+name:공구와기구의취득,,CF,공구와기구의 취득,공구와기구의 취득,1,4,review_required,True,1,FY | H1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+ifrs-full_ProceedsFromSalesOfInvestmentsAccountedForUsingEquityMethod,ifrs-full_ProceedsFromSalesOfInvestmentsAccountedForUsingEquityMethod,CF,관계기업 및 공동기업 투자의 처분,관계기업 및 공동기업 투자의 처분 | 관계기업투자의 처분 | 관계기업투자주식의 처분,2,19,review_required,True,3,FY | H1 | Q1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+name:관계기업및공동기업투자의처분,,CF,관계기업 및 공동기업 투자의 처분,관계기업 및 공동기업 투자의 처분,1,2,review_required,True,1,H1 | Q1,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+ifrs-full_PurchaseOfInterestsInInvestmentsAccountedForUsingEquityMethod,ifrs-full_PurchaseOfInterestsInInvestmentsAccountedForUsingEquityMethod,CF,관계기업 및 공동기업 투자의 취득,관계기업 및 공동기업 투자의 취득 | 관계기업투자의 취득 | 관계기업투자주식의 취득,2,19,review_required,True,3,FY | H1 | Q1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+name:관계기업및공동기업투자의취득,,CF,관계기업 및 공동기업 투자의 취득,관계기업 및 공동기업 투자의 취득,1,2,review_required,True,1,H1 | Q1,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+dart_ProceedsFromSalesOfInvestmentsInSubsidiariesJointVenturesAndAssociates,dart_ProceedsFromSalesOfInvestmentsInSubsidiariesJointVenturesAndAssociates,CF,관계기업및종속기업투자주식의 감소,관계기업및종속기업투자주식의 감소 | 관계기업투자주식의 감소,1,3,review_required,True,2,FY | H1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+dart_ProceedsFromSalesOfInvestmentsInAssociates,dart_ProceedsFromSalesOfInvestmentsInAssociates,CF,관계기업투자의 처분,관계기업에 대한 투자자산의 처분 | 관계기업투자의 처분,3,8,review_required,True,2,FY | H1 | Q1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+name:관계기업투자의처분,,CF,관계기업투자의 처분,관계기업투자의 처분,1,2,review_required,True,1,H1 | Q1,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+dart_PurchaseOfInvestmentsInSubsidiaries,dart_PurchaseOfInvestmentsInSubsidiaries,CF,관계기업투자의 취득,관계기업투자의 취득,1,1,auto_account_id,False,1,Q1,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+name:관계기업투자의취득,,CF,관계기업투자의 취득,관계기업투자의 취득,1,2,review_required,True,1,H1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+ifrs-full_ProceedsFromSalesOfInterestsInAssociates,ifrs-full_ProceedsFromSalesOfInterestsInAssociates,CF,관계기업투자자산의 처분,관계기업 투자지분의 처분 | 관계기업투자자산의 처분,2,7,review_required,True,2,FY | H1 | Q1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+dart_AdjustmentsForGainOnDisposalOfInvestmentsInAssociates,dart_AdjustmentsForGainOnDisposalOfInvestmentsInAssociates,CF,관계기업투자자산처분이익 조정,관계기업투자자산처분이익 조정,1,3,auto_account_id,False,1,FY | H1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+ifrs-full_PurchaseOfInterestsInAssociates,ifrs-full_PurchaseOfInterestsInAssociates,CF,관계기업투자주식의 취득,관계기업투자의 취득 | 관계기업투자주식의 취득,2,2,review_required,True,2,FY,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+name:관계기업투자주식처분이익,,CF,관계기업투자주식처분이익,관계기업투자주식처분이익,1,1,review_required,True,1,H1,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+dart_PurchaseOfStructure,dart_PurchaseOfStructure,CF,구축물의 취득,구축물의 취득,1,12,auto_account_id,False,1,FY | H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+ifrs-full_OtherAdjustmentsForNoncashItems,ifrs-full_OtherAdjustmentsForNoncashItems,CF,국민연금전환금의 감소,국민연금전환금의 감소,1,3,auto_account_id,False,1,H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+dart_ProceedsFromSalesOfMachinery,dart_ProceedsFromSalesOfMachinery,CF,기계장치의 처분,기계장치의 처분,1,4,auto_account_id,False,1,FY | H1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+dart_PurchaseOfMachinery,dart_PurchaseOfMachinery,CF,기계장치의 취득,기계장치의 취득,1,12,auto_account_id,False,1,FY | H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+dart_CashAndCashEquivalentsAtEndOfPeriodCf,dart_CashAndCashEquivalentsAtEndOfPeriodCf,CF,기말현금및현금성자산,기말 현금및현금성자산 | 기말의 현금및현금성자산 | 기말현금및현금성자산 | 반기말 현금및현금성자산 | 반기말의 현금및현금성자산 | 분기말 현금및현금성자산 | 분기말의 현금및현금성자산,5,60,review_required,True,7,FY | H1 | Q1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+dart_CashAndCashEquivalentsAtBeginningOfPeriodCf,dart_CashAndCashEquivalentsAtBeginningOfPeriodCf,CF,기초현금및현금성자산,기초 현금및현금성자산 | 기초의 현금및현금성자산 | 기초현금및현금성자산,5,60,review_required,True,3,FY | H1 | Q1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+ifrs-full_OtherInflowsOutflowsOfCashClassifiedAsFinancingActivities,ifrs-full_OtherInflowsOutflowsOfCashClassifiedAsFinancingActivities,CF,기타,기타,1,2,auto_account_id,False,1,H1 | Q3,CFS,high,False,statement/fs_div 의미 혼동 가능
+ifrs-full_AdjustmentsForDecreaseIncreaseInOtherOperatingReceivables,ifrs-full_AdjustmentsForDecreaseIncreaseInOtherOperatingReceivables,CF,기타 영업활동 관련 채권의 감소(증가),기타 영업활동 관련 채권의 감소(증가),1,5,auto_account_id,False,1,FY | H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+ifrs-full_AdjustmentsForIncreaseDecreaseInOtherOperatingPayables,ifrs-full_AdjustmentsForIncreaseDecreaseInOtherOperatingPayables,CF,기타 영업활동 관련 채무의 증가(감소),기타 영업활동 관련 채무의 증가(감소),1,5,auto_account_id,False,1,FY | H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+dart_AdjustmentsForOtherGainsWithoutCashFlowIn,dart_AdjustmentsForOtherGainsWithoutCashFlowIn,CF,기타 현금의 유입 없는 수익등,기타 현금 유출입이 없는 비용(수익) | 기타 현금의 유입 없는 비용 등 | 기타 현금의 유입 없는 수익등 | 기타 현금의 유출 없는 비용 등 | 기타현금유출입이없는비용(수익),1,7,review_required,True,5,FY | H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+dart_AdjustmentsForOtherLossesWithoutCashFlowOut,dart_AdjustmentsForOtherLossesWithoutCashFlowOut,CF,기타 현금의 유출입 없는 비용(수익)등,기타 현금의 유출 없는 비용등 | 기타 현금의 유출입 없는 비용(수익)등,1,5,review_required,True,2,FY | H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+dart_ProceedsFromSalesOfOtherFinancialAssets,dart_ProceedsFromSalesOfOtherFinancialAssets,CF,기타금융자산의 감소,기타금융자산의 감소,1,9,auto_account_id,False,1,FY | H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+dart_PurchaseOfOtherFinancialAssets,dart_PurchaseOfOtherFinancialAssets,CF,기타금융자산의 증가,기타금융자산의 증가 | 기타금융자산의 처분(취득),1,8,review_required,True,2,FY | H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+dart_AdjustmentsForIncreasedecreaseInOtherNonCurrentFinancialLiabilities,dart_AdjustmentsForIncreasedecreaseInOtherNonCurrentFinancialLiabilities,CF,기타비유동금융부채의 증가(감소),기타비유동금융부채의 증가 | 기타비유동금융부채의 증가(감소),1,7,review_required,True,2,FY | H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+dart_AdjustmentsForDecreaseincreaseInOtherNonCurrentFinancialAssets,dart_AdjustmentsForDecreaseincreaseInOtherNonCurrentFinancialAssets,CF,기타비유동금융자산의 감소(증가),기타비유동금융자산의 감소(증가),1,2,auto_account_id,False,1,H1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+dart_AdjustmentsForIncreaseDecreaseInOtherNonCurrentLiabilities,dart_AdjustmentsForIncreaseDecreaseInOtherNonCurrentLiabilities,CF,기타비유동부채,기타비유동부채 | 기타비유동부채의 증가(감소),2,18,review_required,True,2,FY | H1 | Q1 | Q3,CFS,high,False,statement/fs_div 의미 혼동 가능
+dart_AdjustmentsForIncreasedecreaseInOtherNonCurrentNonFinancialLiabilities,dart_AdjustmentsForIncreasedecreaseInOtherNonCurrentNonFinancialLiabilities,CF,기타비유동비금융부채의 증가(감소),기타비유동비금융부채의 증가(감소),1,5,auto_account_id,False,1,FY | H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+dart_AdjustmentsForDecreaseincreaseInOtherNonCurrentNonFinancialAssets,dart_AdjustmentsForDecreaseincreaseInOtherNonCurrentNonFinancialAssets,CF,기타비유동비금융자산의 감소(증가),기타비유동비금융자산의 감소(증가) | 기타비유동자산의 감소(증가),2,6,review_required,True,2,FY | H1 | Q1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+name:기타비유동자산,,CF,기타비유동자산,기타비유동자산,1,7,review_required,True,1,FY | H1 | Q1 | Q3,CFS,high,False,statement/fs_div 의미 혼동 가능
+name:기타비유동자산의감소증가,,CF,기타비유동자산의 감소(증가),기타비유동자산의 감소(증가),1,2,review_required,True,1,H1 | Q1,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+dart_ProceedsFromSalesOfLoansAndReceivables,dart_ProceedsFromSalesOfLoansAndReceivables,CF,기타수취채권의 감소,기타수취채권의 감소,1,12,auto_account_id,False,1,FY | H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+dart_PurchaseOfLoansAndReceivables,dart_PurchaseOfLoansAndReceivables,CF,기타수취채권의 증가,기타수취채권의 증가,1,12,auto_account_id,False,1,FY | H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+dart_AdjustmentsForIncreasedecreaseInOtherCurrentFinancialLiabilities,dart_AdjustmentsForIncreasedecreaseInOtherCurrentFinancialLiabilities,CF,기타유동금융부채의 증가(감소),기타유동금융부채의 감소 | 기타유동금융부채의 증가(감소),1,12,review_required,True,2,FY | H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+dart_AdjustmentsForDecreaseincreaseInOtherCurrentFinancialAssets,dart_AdjustmentsForDecreaseincreaseInOtherCurrentFinancialAssets,CF,기타유동금융자산의 감소(증가),기타유동금융자산의 감소(증가) | 기타유동금융자산의 증가,1,12,review_required,True,2,FY | H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+ifrs-full_AdjustmentsForIncreaseDecreaseInOtherCurrentLiabilities,ifrs-full_AdjustmentsForIncreaseDecreaseInOtherCurrentLiabilities,CF,기타유동부채,기타유동부채 | 기타유동부채의 증가 | 기타유동부채의 증가(감소),2,20,review_required,True,3,FY | H1 | Q1 | Q3,CFS,high,False,statement/fs_div 의미 혼동 가능
+dart_AdjustmentsForIncreaseDecreaseInOtherCurrentLiabilities,dart_AdjustmentsForIncreaseDecreaseInOtherCurrentLiabilities,CF,기타유동부채의 증가(감소),기타유동부채 | 기타유동부채의 증가(감소),2,4,review_required,True,2,H1 | Q1,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+ifrs-full_AdjustmentsForDecreaseIncreaseInOtherCurrentAssets,ifrs-full_AdjustmentsForDecreaseIncreaseInOtherCurrentAssets,CF,기타유동자산,기타유동자산 | 기타유동자산의 감소(증가) | 기타유동자산의 감소(증가) 조정,2,20,review_required,True,3,FY | H1 | Q1 | Q3,CFS,high,False,statement/fs_div 의미 혼동 가능
+dart_AdjustmentsForDecreaseIncreaseInOtherCurrentAssets,dart_AdjustmentsForDecreaseIncreaseInOtherCurrentAssets,CF,기타유동자산의 감소(증가),기타유동자산 | 기타유동자산의 감소(증가),2,4,review_required,True,2,H1 | Q1,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+dart_AdjustmentsForOtherBadDebtExpenses,dart_AdjustmentsForOtherBadDebtExpenses,CF,기타의 대손상각비 조정,기타의 대손상각비 | 기타의 대손상각비 조정,2,4,review_required,True,2,FY | H1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+dart_AdjustmentsForOtherLongtermEmployeeBenefits,dart_AdjustmentsForOtherLongtermEmployeeBenefits,CF,기타장기종업원급여,기타장기종업원급여 | 장기종업원급여,2,6,review_required,True,2,FY | H1 | Q1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+name:기타장기종업원급여조정,,CF,기타장기종업원급여 조정,기타장기종업원급여 조정,1,2,review_required,True,1,FY,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+dart_AdjustmentsForIncreaseDecreaseInOtherLongtermEmployeeBenefitLiabilities,dart_AdjustmentsForIncreaseDecreaseInOtherLongtermEmployeeBenefitLiabilities,CF,기타장기종업원급여부채의 증가(감소),기타장기종업원급여부채의 증가(감소),1,3,auto_account_id,False,1,FY | Q1,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+name:기타장기종업원급여부채의지급,,CF,기타장기종업원급여부채의 지급,기타장기종업원급여부채의 지급,1,1,review_required,True,1,FY,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+dart_AdjustmentsForDecreaseincreaseInTradeAndOtherReceivables,dart_AdjustmentsForDecreaseincreaseInTradeAndOtherReceivables,CF,기타채권,기타채권 | 매출채권 및 계약자산의 감소(증가),2,3,review_required,True,2,H1 | Q1,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+name:기타채권,,CF,기타채권,기타채권,1,5,review_required,True,1,FY | H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+dart_AdjustmentsForIncreasedecreaseInTradeAndOtherPayables,dart_AdjustmentsForIncreasedecreaseInTradeAndOtherPayables,CF,기타채무,기타채무,1,2,auto_account_id,False,1,H1 | Q1,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+name:기타채무,,CF,기타채무,기타채무,1,5,review_required,True,1,FY | H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+ifrs-full_OtherInflowsOutflowsOfCashClassifiedAsInvestingActivities,ifrs-full_OtherInflowsOutflowsOfCashClassifiedAsInvestingActivities,CF,기타투자활동으로 인한 현금유출입액,기타 | 기타 투자활동으로 인한 현금유출입 | 기타투자활동으로 인한 현금유출입액,2,14,review_required,True,3,FY | H1 | Q1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+name:기타투자활동으로인한현금유출입액,,CF,기타투자활동으로 인한 현금유출입액,기타투자활동으로 인한 현금유출입액,1,2,review_required,True,1,H1 | Q1,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+name:기타포괄공정가치측정금융자산의처분,,CF,기타포괄-공정가치 측정 금융자산의 처분,기타포괄-공정가치 측정 금융자산의 처분 | 기타포괄-공정가치측정 금융자산의 처분,1,3,review_required,True,2,H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+dart_ProceedsFromSalesOfFinancialAssetsAtFairValueThroughOtherComprehensiveIncome,dart_ProceedsFromSalesOfFinancialAssetsAtFairValueThroughOtherComprehensiveIncome,CF,기타포괄손익-공정가치금융자산의 처분,기타포괄-공정가치 측정 금융자산의 처분 | 기타포괄-공정가치측정 금융자산의 처분 | 기타포괄손익-공정가치금융자산의 처분 | 기타포괄손익-공정가치측정 금융자산의 처분 | 기타포괄손익-공정가치측정금융자산의처분,2,15,review_required,True,5,FY | H1 | Q1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+name:기타포괄손익공정가치금융자산의처분,,CF,기타포괄손익-공정가치금융자산의 처분,기타포괄손익-공정가치금융자산의 처분,1,3,review_required,True,1,H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+dart_PurchaseOfFinancialAssetsAtFairValueThroughOtherComprehensiveIncome,dart_PurchaseOfFinancialAssetsAtFairValueThroughOtherComprehensiveIncome,CF,기타포괄손익-공정가치금융자산의 취득,기타포괄손익-공정가치금융자산의 취득 | 기타포괄손익-공정가치측정금융자산의취득,2,11,review_required,True,2,FY | H1 | Q1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+name:기타포괄손익공정가치금융자산의취득,,CF,기타포괄손익-공정가치금융자산의 취득,기타포괄손익-공정가치금융자산의 취득,1,3,review_required,True,1,H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+dart_ProceedsFromSalesOfShortTermFinancialInstruments,dart_ProceedsFromSalesOfShortTermFinancialInstruments,CF,단기금융상품의 감소,단기금융상품의 감소 | 단기금융상품의 처분,3,22,review_required,True,2,FY | H1 | Q1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+name:단기금융상품의순감소증가,,CF,단기금융상품의 순감소(증가),단기금융상품의 순감소(증가),1,12,review_required,True,1,FY | H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+dart_PurchaseOfShortTermFinancialInstruments,dart_PurchaseOfShortTermFinancialInstruments,CF,단기금융상품의 증가,단기금융상품의 증가 | 단기금융상품의 취득,3,25,review_required,True,2,FY | H1 | Q1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+name:단기당기손익공정가치금융자산의순감소증가,,CF,단기당기손익-공정가치금융자산의 순감소(증가),단기당기손익-공정가치금융자산의 순감소(증가),1,12,review_required,True,1,FY | H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+dart_ProceedsFromSalesOfShortTermLoansAndReceivables,dart_ProceedsFromSalesOfShortTermLoansAndReceivables,CF,단기대여금의 감소,단기대여금의 감소,1,5,auto_account_id,False,1,FY | H1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+dart_PurchaseOfShortTermLoansAndReceivables,dart_PurchaseOfShortTermLoansAndReceivables,CF,단기대여금의 증가,단기대여금의 증가,1,4,auto_account_id,False,1,FY | H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+dart_AdjustmentsForIncreasedecreaseInShortTermOtherPayables,dart_AdjustmentsForIncreasedecreaseInShortTermOtherPayables,CF,단기미지급금의 증가(감소),단기미지급금의 증가(감소),1,5,auto_account_id,False,1,FY | H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+name:단기상각후원가금융자산의순감소증가,,CF,단기상각후원가금융자산의 순감소(증가),단기상각후원가금융자산의 순감소(증가),1,12,review_required,True,1,FY | H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+dart_RepaymentsOfShortTermBorrowings,dart_RepaymentsOfShortTermBorrowings,CF,단기차입금의 상환,단기차입금의 상환,3,14,auto_account_id,False,1,FY | H1 | Q1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+ifrs-full_CashFlowsFromUsedInIncreaseDecreaseInCurrentBorrowings,ifrs-full_CashFlowsFromUsedInIncreaseDecreaseInCurrentBorrowings,CF,단기차입금의 순증가(감소),단기차입금의 순증가(감소) | 단기차입금의 순증가(감소) (주27),1,9,review_required,True,2,FY | H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+name:단기차입금의순증가감소,,CF,단기차입금의 순증가(감소),단기차입금의 순증가(감소),1,3,review_required,True,1,H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+dart_ProceedsFromShortTermBorrowings,dart_ProceedsFromShortTermBorrowings,CF,단기차입금의 증가,단기차입금의 증가,2,15,auto_account_id,False,1,FY | H1 | Q1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+ifrs-full_CashFlowsFromUsedInDecreaseIncreaseInShorttermDepositsAndInvestments,ifrs-full_CashFlowsFromUsedInDecreaseIncreaseInShorttermDepositsAndInvestments,CF,단기투자자산의 순증감,단기투자자산의 순증감,1,9,auto_account_id,False,1,FY | H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+name:단기투자자산의순증감,,CF,단기투자자산의 순증감,단기투자자산의 순증감,1,3,review_required,True,1,H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+dart_AdjustmentsForLossesOnDisposalsOfFinancialAssets,dart_AdjustmentsForLossesOnDisposalsOfFinancialAssets,CF,당기손익-공정가치 측정 금융자산 처분손실,당기손익-공정가치 측정 금융자산 처분손실 | 당기손익-공정가치측정 금융자산 처분손실,1,4,review_required,True,2,H1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+dart_ProceedsFromSalesOfFairValueFinancialAsset,dart_ProceedsFromSalesOfFairValueFinancialAsset,CF,당기손익-공정가치금융자산의 처분,당기손익-공정가치 측정 금융자산의 처분 | 당기손익-공정가치금융자산의 처분 | 당기손익-공정가치측정금융자산의 처분 | 당기손익-공정가치측정금융자산의처분 | 당기손익인식금융자산의 처분,3,24,review_required,True,5,FY | H1 | Q1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+dart_ProceedsFromSalesOfNonCurrentFairValueFinancialAsset,dart_ProceedsFromSalesOfNonCurrentFairValueFinancialAsset,CF,당기손익-공정가치금융자산의 처분,당기손익-공정가치금융자산의 처분,1,1,auto_account_id,False,1,Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+name:당기손익공정가치금융자산의처분,,CF,당기손익-공정가치금융자산의 처분,당기손익-공정가치금융자산의 처분,1,2,review_required,True,1,H1 | Q1,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+dart_PurchaseOfFairValueFinancialAsset,dart_PurchaseOfFairValueFinancialAsset,CF,당기손익-공정가치금융자산의 취득,당기손익-공정가치 측정 금융자산의 취득 | 당기손익-공정가치금융자산의 취득 | 당기손익-공정가치측정금융자산의 취득 | 당기손익인식금융자산의 취득,3,17,review_required,True,4,FY | H1 | Q1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+dart_PurchaseOfNonCurrentFairValueFinancialAsset,dart_PurchaseOfNonCurrentFairValueFinancialAsset,CF,당기손익-공정가치금융자산의 취득,당기손익-공정가치금융자산의 취득,1,1,auto_account_id,False,1,Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+name:당기손익공정가치금융자산의취득,,CF,당기손익-공정가치금융자산의 취득,당기손익-공정가치금융자산의 취득,1,2,review_required,True,1,H1 | Q1,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+dart_LossesOnChangeInFairValueOfFinancialInstrumentsAtFairValueThroughProfitOrLoss,dart_LossesOnChangeInFairValueOfFinancialInstrumentsAtFairValueThroughProfitOrLoss,CF,당기손익-공정가치측정금융상품평가손실,당기손익-공정가치측정금융상품평가손실,1,1,auto_account_id,False,1,Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+dart_LossesOnValuationOfFairValueFinancialAsset,dart_LossesOnValuationOfFairValueFinancialAsset,CF,당기손익-공정가치측정금융자산 평가손실,당기손익-공정가치측정 금융자산평가손실 | 당기손익-공정가치측정금융자산 평가손실,2,2,review_required,True,2,FY,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+dart_ProceedsFromDisposalOfFinancialAssetsAtFairValueThroughProfitOrLossClassifiedAsInvestingActivities,dart_ProceedsFromDisposalOfFinancialAssetsAtFairValueThroughProfitOrLossClassifiedAsInvestingActivities,CF,당기손익-공정가치측정금융자산의 처분,당기손익-공정가치 측정 금융자산의 처분 | 당기손익-공정가치측정 금융자산의 처분 | 당기손익-공정가치측정금융자산의 처분,2,12,review_required,True,3,FY | H1 | Q1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+name:당기손익공정가치측정금융자산의처분,,CF,당기손익-공정가치측정금융자산의 처분,당기손익-공정가치측정금융자산의 처분,1,3,review_required,True,1,H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+dart_PurchaseOfFinancialAssetsAtFairValueThroughProfitOrLossClassifiedAsInvestingActivities,dart_PurchaseOfFinancialAssetsAtFairValueThroughProfitOrLossClassifiedAsInvestingActivities,CF,당기손익-공정가치측정금융자산의 취득,당기손익-공정가치 측정 금융자산의 취득 | 당기손익-공정가치측정 금융자산의 취득 | 당기손익-공정가치측정금융자산의 취득,2,11,review_required,True,3,FY | H1 | Q1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+name:당기손익공정가치측정금융자산의취득,,CF,당기손익-공정가치측정금융자산의 취득,당기손익-공정가치측정금융자산의 취득,1,3,review_required,True,1,H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+dart_LossesOnDisposalOfFairValueFinancialAsset,dart_LossesOnDisposalOfFairValueFinancialAsset,CF,당기손익-공정가치측정금융자산처분손실,당기손익-공정가치측정 금융자산처분손실 | 당기손익-공정가치측정금융자산처분손실 | 당기손익-공정가치측정금융자산처분손실(이익) | 당기손익인식금융자산처분손실 조정,3,9,review_required,True,4,FY | H1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+name:당기손익공정가치측정금융자산처분손실,,CF,당기손익-공정가치측정금융자산처분손실,당기손익-공정가치측정금융자산처분손실,1,5,review_required,True,1,FY | H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+dart_GainsOnDisposalsOfFairValueFinancialAsset,dart_GainsOnDisposalsOfFairValueFinancialAsset,CF,당기손익-공정가치측정금융자산처분이익,당기손익-공정가치측정 금융자산처분이익 | 당기손익-공정가치측정금융자산처분이익 | 당기손익인식금융자산처분이익 조정,3,9,review_required,True,3,FY | H1 | Q1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+name:당기손익공정가치측정금융자산처분이익,,CF,당기손익-공정가치측정금융자산처분이익,당기손익-공정가치측정금융자산 처분이익 | 당기손익-공정가치측정금융자산처분이익,2,8,review_required,True,2,FY | H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+name:당기손익공정가치측정금융자산평가손실,,CF,당기손익-공정가치측정금융자산평가손실,당기손익-공정가치측정금융자산평가손실,1,1,review_required,True,1,FY,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+dart_GainsOnValuationOfFairValueFinancialAsset,dart_GainsOnValuationOfFairValueFinancialAsset,CF,당기손익-공정가치측정금융자산평가이익,당기손익-공정가치측정 금융자산 평가이익 | 당기손익-공정가치측정 금융자산평가이익 | 당기손익-공정가치측정금융자산평가이익,2,4,review_required,True,3,FY | H1 | Q1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+name:당기손익공정가치측정금융자산평가이익,,CF,당기손익-공정가치측정금융자산평가이익,당기손익-공정가치측정금융자산평가이익,1,4,review_required,True,1,FY | H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+name:당기손익인식금융자산처분손실조정,,CF,당기손익인식금융자산처분손실 조정,당기손익인식금융자산처분손실 조정,1,2,review_required,True,1,FY,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+name:당기손익인식금융자산처분손실의조정,,CF,당기손익인식금융자산처분손실의 조정,당기손익인식금융자산처분손실의 조정,1,3,review_required,True,1,FY | Q1,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+name:당기손익인식금융자산처분이익,,CF,당기손익인식금융자산처분이익,당기손익인식금융자산처분이익,1,1,review_required,True,1,Q1,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+name:당기손익인식금융자산처분이익조정,,CF,당기손익인식금융자산처분이익 조정,당기손익인식금융자산처분이익 조정,1,2,review_required,True,1,FY,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+name:당기손익인식금융자산처분이익의조정,,CF,당기손익인식금융자산처분이익의 조정,당기손익인식금융자산처분이익의 조정,1,5,review_required,True,1,FY | H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+dart_AdjustmentsForLossesOnEvaluationOfFairValueFinancialAssets,dart_AdjustmentsForLossesOnEvaluationOfFairValueFinancialAssets,CF,당기손익인식금융자산평가손실 조정,당기손익-공정가치 측정 금융자산 평가손실 | 당기손익-공정가치측정 금융자산 평가손실 | 당기손익-공정가치측정 금융자산평가손실 | 당기손익-공정가치측정금융자산평가손실 | 당기손익인식금융자산평가손실 조정,3,17,review_required,True,5,FY | H1 | Q1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+dart_AdjustmentsForGainsOnEvaluationOfFairValueFinancialAssets,dart_AdjustmentsForGainsOnEvaluationOfFairValueFinancialAssets,CF,당기손익인식금융자산평가이익 조정,당기손익-공정가치 측정 금융자산 평가이익 | 당기손익-공정가치측정 금융자산 평가이익 | 당기손익-공정가치측정 금융자산평가이익 | 당기손익-공정가치측정금융자산 평가이익 | 당기손익-공정가치측정금융자산평가이익 | 당기손익인식금융자산평가이익 | 당기손익인식금융자산평가이익 조정,3,22,review_required,True,7,FY | H1 | Q1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+name:당기순이익,,CF,당기순이익,당기순이익,1,2,review_required,True,1,H1 | Q1,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+dart_ProfitLossForStatementOfCashFlows,dart_ProfitLossForStatementOfCashFlows,CF,당기순이익(손실),당기순이익(손실) | 반기순손익 | 반기순이익 | 분기순손익 | 분기순이익,3,6,review_required,True,5,H1 | Q1,CFS,high,False,statement/fs_div 의미 혼동 가능
+ifrs-full_ProfitLoss,ifrs-full_ProfitLoss,CF,당기순이익(손실),당기순손익 | 당기순이익 | 당기순이익(손실) | 반기순이익 | 분기순손익 | 분기순이익 | 분기순이익(손실),4,39,review_required,True,7,FY | H1 | Q1 | Q3,CFS,high,False,statement/fs_div 의미 혼동 가능
+dart_AdjustmentsForBadDebtExpenses,dart_AdjustmentsForBadDebtExpenses,CF,대손상각비,대손상각비 | 대손상각비 조정 | 대손상각비(환입) | 대손상각비(환입) 조정 | 대손상각비환입,3,25,review_required,True,5,FY | H1 | Q1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+dart_BadDebtExpenses,dart_BadDebtExpenses,CF,대손상각비(환입),대손상각비(환입) | 대손충당금환입,1,4,review_required,True,2,FY | H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+dart_AdjustmentsForReversalAllowanceDoubtfulAccounts,dart_AdjustmentsForReversalAllowanceDoubtfulAccounts,CF,대손충당금환입,대손충당금 환입 | 대손충당금환입,2,9,review_required,True,2,FY | H1 | Q1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+dart_DecreaseInLoans,dart_DecreaseInLoans,CF,대여금의 감소,대여금의 감소,2,17,auto_account_id,False,1,FY | H1 | Q1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+dart_IncreaseInLoans,dart_IncreaseInLoans,CF,대여금의 증가,대여금의 증가,2,14,auto_account_id,False,1,FY | H1 | Q1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+ifrs-full_PaymentsOfLeaseLiabilitiesClassifiedAsFinancingActivities,ifrs-full_PaymentsOfLeaseLiabilitiesClassifiedAsFinancingActivities,CF,리스부채의 상환,리스부채의 상환 | 리스부채의 지급 | 재무활동으로 분류된 리스부채의 지급,3,18,review_required,True,3,FY | H1 | Q1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+dart_PaymentsOfFinanceLeaseLiabilitiesClassifiedAsFinancingActivities,dart_PaymentsOfFinanceLeaseLiabilitiesClassifiedAsFinancingActivities,CF,리스부채의 지급,리스부채상환 | 리스부채의 상환 | 리스부채의 지급 | 리스부채의상환,4,22,review_required,True,4,FY | H1 | Q1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+ifrs-full_PaymentsOfFinanceLeaseLiabilitiesClassifiedAsFinancingActivities,ifrs-full_PaymentsOfFinanceLeaseLiabilitiesClassifiedAsFinancingActivities,CF,리스부채의 지급,리스부채의 상환 | 리스부채의 지급 | 리스부채의상환,4,8,review_required,True,3,H1 | Q1,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+dart_NetLeaseProfitLoss,dart_NetLeaseProfitLoss,CF,리스상환이익,리스상환이익,1,1,auto_account_id,False,1,FY,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+name:리스이자비용,,CF,리스이자비용,리스이자비용,1,7,review_required,True,1,FY | H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+name:리스이자비용조정,,CF,리스이자비용 조정,리스이자비용 조정,1,5,review_required,True,1,FY | H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+name:매각예정분류,,CF,매각예정분류,매각예정분류,2,7,review_required,True,1,FY | H1 | Q3,CFS,high,False,statement/fs_div 의미 혼동 가능
+dart_ProceedsFromSalesOfNonCurrentAssetsOrDisposalGroupsClassifiedAsHeldForSale,dart_ProceedsFromSalesOfNonCurrentAssetsOrDisposalGroupsClassifiedAsHeldForSale,CF,매각예정비유동자산의 처분,매각예정분류자산 처분으로 인한 현금유입액 | 매각예정분류자산의 처분 | 매각예정분류자산의 처분으로 인한 현금유입액 | 매각예정비유동자산의 처분 | 매각예정으로 분류된 비유동자산이나 처분자산집단의 처분 | 매각예정자산의 처분 | 매각예정자산의 처분으로 인한 현금유입액,4,21,review_required,True,7,FY | H1 | Q1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+name:매각예정비유동자산의처분을위한선수금수령,,CF,매각예정비유동자산의 처분을 위한 선수금 수령,매각예정비유동자산의 처분을 위한 선수금 수령,1,1,review_required,True,1,H1,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+dart_AdjustmentsForGainsOnDisposalsOfNoncurrentAssetsOrDisposalGroupsClassifiedAsHeldForSale,dart_AdjustmentsForGainsOnDisposalsOfNoncurrentAssetsOrDisposalGroupsClassifiedAsHeldForSale,CF,매각예정비유동자산처분이익,매각예정비유동관련처분이익 | 매각예정비유동자산처분이익,1,2,review_required,True,2,FY,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+dart_ProceedsFromSalesOfLiabilitiesIncludedInDisposalGroupsClassifiedAsHeldForSale,dart_ProceedsFromSalesOfLiabilitiesIncludedInDisposalGroupsClassifiedAsHeldForSale,CF,매각예정자산의 처분,매각예정자산의 처분,1,2,auto_account_id,False,1,FY | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+dart_GainsOnDisposalsOfNoncurrentAssetsOrDisposalGroupsClassifiedAsHeldForSale,dart_GainsOnDisposalsOfNoncurrentAssetsOrDisposalGroupsClassifiedAsHeldForSale,CF,매각예정자산처분이익,매각예정자산처분이익,1,1,auto_account_id,False,1,FY,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+ifrs-full_AdjustmentsForIncreaseDecreaseInTradeAccountPayable,ifrs-full_AdjustmentsForIncreaseDecreaseInTradeAccountPayable,CF,매입채무의 증가(감소),매입채무 | 매입채무의 감소 | 매입채무의 증가(감소),3,36,review_required,True,3,FY | H1 | Q1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+ifrs-full_AdjustmentsForDecreaseIncreaseInTradeAccountReceivable,ifrs-full_AdjustmentsForDecreaseIncreaseInTradeAccountReceivable,CF,매출채권의 감소(증가),매출채권 | 매출채권의 감소 | 매출채권의 감소(증가) | 매출채권의 증가,3,35,review_required,True,4,FY | H1 | Q1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+dart_AdjustmentsForAmortisationExpense,dart_AdjustmentsForAmortisationExpense,CF,무형자산상각비,무형자산상각비,3,6,auto_account_id,False,1,H1 | Q1,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+ifrs-full_AdjustmentsForAmortisationExpense,ifrs-full_AdjustmentsForAmortisationExpense,CF,무형자산상각비,무형자산상각비 | 무형자산상각비에 대한 조정,3,30,review_required,True,2,FY | H1 | Q1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+dart_AdjustmentsForImpairmentLossesOfIntangibleAssets,dart_AdjustmentsForImpairmentLossesOfIntangibleAssets,CF,무형자산손상차손,무형자산손상차손 | 무형자산손상차손 조정,2,11,review_required,True,2,FY | H1 | Q1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+dart_AdjustmentsForReversalsOfImpairmentLossesOnIntangibleAssets,dart_AdjustmentsForReversalsOfImpairmentLossesOnIntangibleAssets,CF,무형자산손상차손환입,무형자산손상차손(환입) | 무형자산손상차손환입 | 무형자산손상차손환입 조정,2,8,review_required,True,3,FY | H1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+ifrs-full_ProceedsFromSalesOfIntangibleAssetsClassifiedAsInvestingActivities,ifrs-full_ProceedsFromSalesOfIntangibleAssetsClassifiedAsInvestingActivities,CF,무형자산의 처분,무형자산의 처분 | 회원권의 처분,5,39,review_required,True,2,FY | H1 | Q1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+ifrs-full_PurchaseOfIntangibleAssetsClassifiedAsInvestingActivities,ifrs-full_PurchaseOfIntangibleAssetsClassifiedAsInvestingActivities,CF,무형자산의 취득,무형자산의 취득,4,48,auto_account_id,False,1,FY | H1 | Q1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+dart_AdjustmentsForLossesOnDisposalsOfIntangibleAssets,dart_AdjustmentsForLossesOnDisposalsOfIntangibleAssets,CF,무형자산처분손실,무형자산처분손실 | 무형자산처분손실 조정,3,28,review_required,True,2,FY | H1 | Q1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+dart_GainsOnDisposalsOfIntangibleAssets,dart_GainsOnDisposalsOfIntangibleAssets,CF,무형자산처분이익,무형자산처분이익,1,4,auto_account_id,False,1,FY | H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+name:무형자산처분이익,,CF,무형자산처분이익,무형자산처분이익,1,1,review_required,True,1,Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+dart_AdjustmentsForGainsOnDisposalsOfIntangibleAssets,dart_AdjustmentsForGainsOnDisposalsOfIntangibleAssets,CF,무형자산처분이익 조정,무형자산처분이익 | 무형자산처분이익 조정,3,12,review_required,True,2,FY | H1 | Q1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+dart_AdjustmentsForDecreaseincreaseInOtherReceivables,dart_AdjustmentsForDecreaseincreaseInOtherReceivables,CF,미수금의 감소(증가),미수금의 감소(증가) | 미수금의 증가,1,12,review_required,True,2,FY | H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+dart_AdjustmentsForIncreasedecreaseInOtherPayables,dart_AdjustmentsForIncreasedecreaseInOtherPayables,CF,미지급금의 증가(감소),미지급금의 감소 | 미지급금의 증가(감소),1,7,review_required,True,2,FY | H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+dart_AdjustmentsForIncreasedecreaseInAccruedExpenses,dart_AdjustmentsForIncreasedecreaseInAccruedExpenses,CF,미지급비용의 증가(감소),미지급비용의 증가 | 미지급비용의 증가(감소),1,5,review_required,True,2,FY | H1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+ifrs-full_DividendsReceivedClassifiedAsOperatingActivities,ifrs-full_DividendsReceivedClassifiedAsOperatingActivities,CF,배당금 수입,배당금 수입 | 배당금수취 | 배당금수취(영업) | 배당금의 수취,3,29,review_required,True,4,FY | H1 | Q1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+ifrs-full_RevenueFromDividends,ifrs-full_RevenueFromDividends,CF,배당금수익,배당금수익,1,1,auto_account_id,False,1,FY,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+name:배당금수익,,CF,배당금수익,배당금수익,2,3,review_required,True,1,H1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+name:배당금의수취,,CF,배당금의수취,배당금의수취,1,1,review_required,True,1,H1,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+ifrs-full_DividendsPaidClassifiedAsFinancingActivities,ifrs-full_DividendsPaidClassifiedAsFinancingActivities,CF,배당금지급,배당금의 지급 | 배당금의지급 | 배당금지급,4,43,review_required,True,3,FY | H1 | Q1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+ifrs-full_DividendsPaidClassifiedAsOperatingActivities,ifrs-full_DividendsPaidClassifiedAsOperatingActivities,CF,배당금지급,배당금지급 | 배당금지급(영업),1,9,review_required,True,2,FY | H1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+ifrs-full_AdjustmentsForDividendIncome,ifrs-full_AdjustmentsForDividendIncome,CF,배당수익에 대한 조정,배당금수익 | 배당수익에 대한 조정,2,7,review_required,True,2,FY | H1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+dart_GainsOnReimbursementOrCompensation,dart_GainsOnReimbursementOrCompensation,CF,배상금수익,배상금수익 | 보상 및 배상금수익,1,8,review_required,True,2,FY | H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+ifrs-full_AdjustmentsForIncomeTaxExpense,ifrs-full_AdjustmentsForIncomeTaxExpense,CF,법인세비용,법인세비용 | 법인세비용 조정 | 법인세비용(수익) | 법인세비용(이익),3,36,review_required,True,4,FY | H1 | Q1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+ifrs-full_IncomeTaxesPaidRefundClassifiedAsOperatingActivities,ifrs-full_IncomeTaxesPaidRefundClassifiedAsOperatingActivities,CF,법인세의 납부,법인세 납부액 | 법인세납부 | 법인세납부(영업) | 법인세의 납부 | 법인세환급(납부),5,60,review_required,True,5,FY | H1 | Q1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+name:보상및배상금수익으로인한조정,,CF,보상 및 배상금수익으로 인한 조정,보상 및 배상금수익으로 인한 조정,1,1,review_required,True,1,FY,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+dart_AdjustmentsForDecreaseIncreaseInLeaseholdDeposits,dart_AdjustmentsForDecreaseIncreaseInLeaseholdDeposits,CF,보증금의 감소,보증금의 감소,1,2,auto_account_id,False,1,H1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+name:분기순손익,,CF,분기순손익,분기순손익,1,1,review_required,True,1,Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+dart_DecreaseInNoncontrollingInterests,dart_DecreaseInNoncontrollingInterests,CF,비지배지분의 증감,비지배지분의 증감,1,1,auto_account_id,False,1,FY,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+name:비지배지분의증감,,CF,비지배지분의 증감,비지배지분의 증감,1,11,review_required,True,1,FY | H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+dart_PurchaseOfOfficeEquipment,dart_PurchaseOfOfficeEquipment,CF,비품의 취득,비품의 취득 | 사무용비품의 취득,1,12,review_required,True,2,FY | H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+dart_ProceedsFromSalesOfOfficeEquipment,dart_ProceedsFromSalesOfOfficeEquipment,CF,사무용비품의 처분,사무용비품의 처분,1,2,auto_account_id,False,1,FY,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+name:사업결합관련선급금회수,,CF,사업결합 관련 선급금 회수,사업결합 관련 선급금 회수,1,1,review_required,True,1,FY,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+name:사업결합으로인한순현금유출,,CF,사업결합으로 인한 순현금유출,사업결합으로 인한 순현금유출,1,5,review_required,True,1,FY | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+name:사업결합으로인한현금유출,,CF,사업결합으로 인한 현금유출,사업결합으로 인한 현금유출,1,4,review_required,True,1,FY | H1 | Q1,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+ifrs-full_CashFlowsUsedInObtainingControlOfSubsidiariesOrOtherBusinessesClassifiedAsInvestingActivities,ifrs-full_CashFlowsUsedInObtainingControlOfSubsidiariesOrOtherBusinessesClassifiedAsInvestingActivities,CF,사업결합으로 인한 현금유출액,사업결합으로 인한 순현금유출액 | 사업결합으로 인한 현금유출액,1,8,review_required,True,2,FY | H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+name:사업결합으로인한현금유출액,,CF,사업결합으로 인한 현금유출액,사업결합으로 인한 현금유출액,1,2,review_required,True,1,H1 | Q1,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+ifrs-full_CashFlowsFromLosingControlOfSubsidiariesOrOtherBusinessesClassifiedAsInvestingActivities,ifrs-full_CashFlowsFromLosingControlOfSubsidiariesOrOtherBusinessesClassifiedAsInvestingActivities,CF,사업양도로 인한 현금유입액,사업양도로 인한 현금유입액 | 종속기업과 기타 사업의 지배력 상실에 따른 현금흐름 | 투자활동으로 분류된 종속기업과 기타 사업의 지배력 상실에 따른 현금흐름,2,3,review_required,True,3,FY,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+name:사외적립자산기여금납입,,CF,사외적립자산 기여금 납입,사외적립자산 기여금 납입,1,3,review_required,True,1,FY | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+dart_AdjustmentsForDecreaseincreaseInFairValueOfPlanAssets,dart_AdjustmentsForDecreaseincreaseInFairValueOfPlanAssets,CF,사외적립자산의공정가치의 감소(증가),사외적립자산의 감소 | 사외적립자산의공정가치의 감소(증가) | 사외적립자산의공정가치의감소(증가) | 퇴직연금운용자산의 감소,3,13,review_required,True,4,FY | H1 | Q1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+dart_AdjustmentsForDepreciationRightofuseAssets,dart_AdjustmentsForDepreciationRightofuseAssets,CF,사용권자산상각비,사용권자산감가상각비 | 사용권자산상각비,2,13,review_required,True,2,FY | H1 | Q1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+name:사용권자산상각비,,CF,사용권자산상각비,사용권자산상각비,2,6,review_required,True,1,H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+name:사용권자산상각비에대한조정,,CF,사용권자산상각비에 대한 조정,사용권자산상각비에 대한 조정,1,5,review_required,True,1,FY | H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+name:사용권자산처분손실,,CF,사용권자산처분손실,사용권자산처분손실,1,5,review_required,True,1,FY | H1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+name:사용권자산처분손실조정,,CF,사용권자산처분손실 조정,사용권자산처분손실 조정,1,2,review_required,True,1,FY,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+name:사용권자산처분이익,,CF,사용권자산처분이익,사용권자산처분이익,1,4,review_required,True,1,FY | H1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+name:사용권자산처분이익조정,,CF,사용권자산처분이익 조정,사용권자산처분이익 조정,1,5,review_required,True,1,FY | H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+dart_RepaymentsOfLongTermBorrowings,dart_RepaymentsOfLongTermBorrowings,CF,사채 및 장기차입금의 상환,사채 및 장기차입금의 상환 | 사채 및 장기차입금의 상환 (주27),1,6,review_required,True,2,FY | H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+ifrs-full_RepaymentsOfNoncurrentBorrowings,ifrs-full_RepaymentsOfNoncurrentBorrowings,CF,사채 및 장기차입금의 상환,사채 및 장기차입금의 상환,1,3,auto_account_id,False,1,FY | H1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+name:사채및장기차입금의상환,,CF,사채 및 장기차입금의 상환,사채 및 장기차입금의 상환,1,3,review_required,True,1,FY | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+dart_PurchaseOfCopyrightsPatentsAndOtherIndustrialPropertyRightsServiceAndOperatingRights,dart_PurchaseOfCopyrightsPatentsAndOtherIndustrialPropertyRightsServiceAndOperatingRights,CF,산업재산권의 취득,산업재산권의 취득,1,1,auto_account_id,False,1,FY,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+name:상각후원가측정금융자산처분,,CF,상각후원가측정금융자산 처분,상각후원가측정금융자산 처분,1,1,review_required,True,1,H1,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+name:상각후원가측정금융자산의처분,,CF,상각후원가측정금융자산의 처분,상각후원가측정금융자산의 처분,1,2,review_required,True,1,Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+name:상각후원가측정금융자산의취득,,CF,상각후원가측정금융자산의 취득,상각후원가측정금융자산의 취득,1,1,review_required,True,1,Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+dart_ProceedsFromSalesOfFinancialAssetsAtAmortisedCostClassifiedAsInvestingActivities,dart_ProceedsFromSalesOfFinancialAssetsAtAmortisedCostClassifiedAsInvestingActivities,CF,상각후원가측정금융자산의처분,상각후원가측정금융자산 처분 | 상각후원가측정금융자산의 처분 | 상각후원가측정금융자산의처분,1,9,review_required,True,3,FY | H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+dart_PurchaseOfFinancialAssetsAtAmortisedCostClassifiedAsInvestingActivities,dart_PurchaseOfFinancialAssetsAtAmortisedCostClassifiedAsInvestingActivities,CF,상각후원가측정금융자산의취득,상각후원가측정금융자산 취득 | 상각후원가측정금융자산의취득,1,8,review_required,True,2,FY | H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+dart_AdjustmentsForDecreaseincreaseInAdvancePayments,dart_AdjustmentsForDecreaseincreaseInAdvancePayments,CF,선급금의 감소(증가),선급금의 감소(증가) | 선급금의 증가,1,12,review_required,True,2,FY | H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+dart_AdjustmentsForDecreaseincreaseInPrepaidExpenses,dart_AdjustmentsForDecreaseincreaseInPrepaidExpenses,CF,선급비용의 증가,선급비용의 증가,1,2,auto_account_id,False,1,H1 | Q1,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+ifrs-full_AdjustmentsForDecreaseIncreaseInPrepaidExpenses,ifrs-full_AdjustmentsForDecreaseIncreaseInPrepaidExpenses,CF,선급비용의 증가,선급비용의 감소 (증가) | 선급비용의 증가,1,10,review_required,True,2,FY | H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+dart_AdjustmentsForIncreasedecreaseInAdvancesCustomers,dart_AdjustmentsForIncreasedecreaseInAdvancesCustomers,CF,선수금의 증가(감소),선수금 및 계약부채의 증가 | 선수금의 증가 | 선수금의 증가(감소),1,12,review_required,True,3,FY | H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+dart_PurchaseOfComputerSoftware,dart_PurchaseOfComputerSoftware,CF,소프트웨어의 취득,소프트웨어의 취득 | 컴퓨터소프트웨어의 취득,1,12,review_required,True,2,FY | H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+ifrs-full_CashFlowsFromUsedInOperations,ifrs-full_CashFlowsFromUsedInOperations,CF,영업에서 창출된 현금흐름,영업에서 창출된 현금흐름 | 영업으로부터 창출된 현금 | 영업으로부터 창출된 현금흐름,2,18,review_required,True,3,FY | H1 | Q1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+name:영업에서창출된현금흐름,,CF,영업에서 창출된 현금흐름,영업에서 창출된 현금흐름,1,3,review_required,True,1,H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+name:영업으로부터창출된현금흐름,,CF,영업으로부터 창출된 현금흐름,영업으로부터 창출된 현금흐름,1,2,review_required,True,1,H1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+name:영업으로부터창출된사용된현금흐름,,CF,영업으로부터 창출된(사용된) 현금흐름,영업으로부터 창출된(사용된) 현금흐름,1,1,review_required,True,1,Q1,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+dart_AdjustmentsForAssetsLiabilitiesOfOperatingActivities,dart_AdjustmentsForAssetsLiabilitiesOfOperatingActivities,CF,영업활동으로 인한 자산 부채의 변동,영업활동으로 인한 자산 부채의 변동 | 영업활동으로 인한 자산·부채의 변동 | 영업활동으로 인한 자산부채의 변동 | 영업활동으로 인한 자산부채의 변동 (주27) | 영업활동으로인한자산ㆍ부채의변동 | 자산ㆍ부채의증감,4,46,review_required,True,6,FY | H1 | Q1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+name:영업활동으로인한자산부채의변동,,CF,영업활동으로 인한 자산부채의 변동,영업활동으로 인한 자산부채의 변동,1,2,review_required,True,1,H1 | Q1,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+ifrs-full_CashFlowsFromUsedInOperatingActivities,ifrs-full_CashFlowsFromUsedInOperatingActivities,CF,영업활동현금흐름,영업활동 현금흐름 | 영업활동으로 인한 현금흐름 | 영업활동현금흐름,5,60,review_required,True,3,FY | H1 | Q1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+dart_AdjustmentsForIncreasedecreaseInWithholdingsBanks,dart_AdjustmentsForIncreasedecreaseInWithholdingsBanks,CF,예수금의 증가(감소),예수금의 감소 | 예수금의 증가(감소),1,12,review_required,True,2,FY | H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+name:외화표시현금및현금성자산에대한환율변동효과,,CF,외화표시 현금및현금성자산에 대한 환율변동효과,외화표시 현금및현금성자산에 대한 환율변동효과,1,3,review_required,True,1,H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+name:외화표시현금및현금성자산의환율변동효과,,CF,외화표시현금및현금성자산의환율변동효과,외화표시 현금및현금성자산의 환율변동효과 | 외화표시현금및현금성자산의환율변동효과,1,7,review_required,True,2,FY | H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+dart_AdjustmentsForLossesOnForeignExchangeTranslations,dart_AdjustmentsForLossesOnForeignExchangeTranslations,CF,외화환산손실,외화환산손실 | 외화환산손실 조정,3,31,review_required,True,2,FY | H1 | Q1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+dart_AdjustmentsForGainOnForeignExchangeTranslations,dart_AdjustmentsForGainOnForeignExchangeTranslations,CF,외화환산이익,외화환산이익 | 외화환산이익 조정,3,30,review_required,True,2,FY | H1 | Q1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+dart_GainOnForeignExchangeTranslations,dart_GainOnForeignExchangeTranslations,CF,외화환산이익,외화환산이익,1,4,auto_account_id,False,1,FY | H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+name:외화환산이익,,CF,외화환산이익,외화환산이익,2,2,review_required,True,1,FY | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+name:유동성자기부채의상환,,CF,유동성자기부채의 상환,유동성자기부채의 상환 | 유동성자기부채의상환,1,3,review_required,True,2,H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+name:유동성장기부채의상환,,CF,유동성장기부채의 상환,유동성장기부채의 상환,1,1,review_required,True,1,FY,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+name:유동성장기부채의증가,,CF,유동성장기부채의 증가,유동성장기부채의 증가,1,1,review_required,True,1,FY,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+dart_AdjustmentsForImpairmentLossesOfPropertyPlantAndEquipment,dart_AdjustmentsForImpairmentLossesOfPropertyPlantAndEquipment,CF,유형자산손상차손,유형자산손상차손,1,5,auto_account_id,False,1,FY | H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+ifrs-full_ProceedsFromSalesOfPropertyPlantAndEquipmentClassifiedAsInvestingActivities,ifrs-full_ProceedsFromSalesOfPropertyPlantAndEquipmentClassifiedAsInvestingActivities,CF,유형자산의 처분,유형자산의 처분,4,47,auto_account_id,False,1,FY | H1 | Q1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+ifrs-full_PurchaseOfPropertyPlantAndEquipmentClassifiedAsInvestingActivities,ifrs-full_PurchaseOfPropertyPlantAndEquipmentClassifiedAsInvestingActivities,CF,유형자산의 취득,유형자산의 취득,4,48,auto_account_id,False,1,FY | H1 | Q1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+dart_AdjustmentsForLossesOnDispositionOfPropertyPlantAndEquipment,dart_AdjustmentsForLossesOnDispositionOfPropertyPlantAndEquipment,CF,유형자산처분손실,유형자산처분손실 | 유형자산처분손실 조정,3,29,review_required,True,2,FY | H1 | Q1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+dart_AdjustmentsForGainOnDispositionOfTangibleAssets,dart_AdjustmentsForGainOnDispositionOfTangibleAssets,CF,유형자산처분이익,유형자산처분이익 | 유형자산처분이익 조정,3,19,review_required,True,2,FY | H1 | Q1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+dart_AdjustmentsForGainsOnDisposalsOfPropertyPlantAndEquipment,dart_AdjustmentsForGainsOnDisposalsOfPropertyPlantAndEquipment,CF,유형자산처분이익,유형자산처분이익,1,5,auto_account_id,False,1,FY | H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+ifrs-full_GainsOnDisposalsOfPropertyPlantAndEquipment,ifrs-full_GainsOnDisposalsOfPropertyPlantAndEquipment,CF,유형자산처분이익,유형자산처분이익,1,4,auto_account_id,False,1,FY | H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+name:유형자산처분이익,,CF,유형자산처분이익,유형자산처분이익,1,1,review_required,True,1,Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+dart_AdjustmentsForLossesOnAbandonmentOfPropertyPlantAndEquipment,dart_AdjustmentsForLossesOnAbandonmentOfPropertyPlantAndEquipment,CF,유형자산폐기손실,유형자산폐기손실 | 유형자산폐기손실 조정,1,12,review_required,True,2,FY | H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+dart_AdjustmentsForInterestExpenses,dart_AdjustmentsForInterestExpenses,CF,이자비용,이자비용 | 이자비용 조정,3,36,review_required,True,2,FY | H1 | Q1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+dart_AdjustmentsForInterestIncome,dart_AdjustmentsForInterestIncome,CF,이자수익,이자수익,3,6,auto_account_id,False,1,H1 | Q1,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+ifrs-full_RevenueFromInterest,ifrs-full_RevenueFromInterest,CF,이자수익,이자수익,1,4,auto_account_id,False,1,FY | H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+name:이자수익,,CF,이자수익,이자수익,1,1,review_required,True,1,Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+ifrs-full_AdjustmentsForInterestIncome,ifrs-full_AdjustmentsForInterestIncome,CF,이자수익에 대한 조정,이자수익 | 이자수익에 대한 조정,3,25,review_required,True,2,FY | H1 | Q1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+ifrs-full_InterestReceivedClassifiedAsInvestingActivities,ifrs-full_InterestReceivedClassifiedAsInvestingActivities,CF,이자의 수취,이자의 수취,1,12,auto_account_id,False,1,FY | H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+ifrs-full_InterestReceivedClassifiedAsOperatingActivities,ifrs-full_InterestReceivedClassifiedAsOperatingActivities,CF,이자의 수취,영업활동으로 분류된 이자수취 | 이자수취 | 이자수취(영업) | 이자의 수취,4,48,review_required,True,4,FY | H1 | Q1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+ifrs-full_InterestPaidClassifiedAsFinancingActivities,ifrs-full_InterestPaidClassifiedAsFinancingActivities,CF,이자의 지급,이자의 지급,1,9,auto_account_id,False,1,FY | H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+ifrs-full_InterestPaidClassifiedAsInvestingActivities,ifrs-full_InterestPaidClassifiedAsInvestingActivities,CF,이자의 지급,이자의 지급,1,2,auto_account_id,False,1,H1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+ifrs-full_InterestPaidClassifiedAsOperatingActivities,ifrs-full_InterestPaidClassifiedAsOperatingActivities,CF,이자의 지급,이자의 지급 | 이자지급 | 이자지급(영업),4,48,review_required,True,3,FY | H1 | Q1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+ifrs-full_RentalIncome,ifrs-full_RentalIncome,CF,임대료수익,임대료수익,1,4,auto_account_id,False,1,FY | H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+name:임대료수익,,CF,임대료수익,임대료수익,1,3,review_required,True,1,H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+name:임대료수익조정,,CF,임대료수익 조정,임대료수익 조정,1,5,review_required,True,1,FY | H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+dart_DecreaseInGuaranteeDepositsAsFinancialActivities,dart_DecreaseInGuaranteeDepositsAsFinancialActivities,CF,임대보증금의 감소,임대보증금의 감소,2,5,auto_account_id,False,1,FY | H1 | Q1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+dart_IncreaseInGuaranteeDepositsAsFinancialActivities,dart_IncreaseInGuaranteeDepositsAsFinancialActivities,CF,임대보증금의 증가,보증금의 증가 | 임대보증금의 증가,3,6,review_required,True,2,FY | H1 | Q1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+dart_DecreaseInGuaranteeDeposits,dart_DecreaseInGuaranteeDeposits,CF,임차보증금의 감소,보증금의 감소 | 임차보증금의 감소,3,32,review_required,True,2,FY | H1 | Q1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+dart_IncreaseInGuaranteeDeposits,dart_IncreaseInGuaranteeDeposits,CF,임차보증금의 증가,보증금의 증가 | 임차보증금의 증가,3,35,review_required,True,2,FY | H1 | Q1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+name:입목의취득,,CF,입목의 취득,입목의 취득,1,3,review_required,True,1,FY | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+name:자기주식처분,,CF,자기주식 처분,자기주식 처분,1,1,review_required,True,1,FY,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+dart_DispositionOfTreasuryShares,dart_DispositionOfTreasuryShares,CF,자기주식의 처분,자기주식의 처분 | 자기주식의 처분 등,2,16,review_required,True,2,FY | H1 | Q1 | Q3,CFS,high,False,statement/fs_div 의미 혼동 가능
+ifrs-full_ProceedsFromSaleOrIssueOfTreasuryShares,ifrs-full_ProceedsFromSaleOrIssueOfTreasuryShares,CF,자기주식의 처분 및 발행 현금흐름,자기주식의 처분 및 발행 현금흐름,1,2,auto_account_id,False,1,FY,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+dart_AcquisitionOfTreasuryShares,dart_AcquisitionOfTreasuryShares,CF,자기주식의 취득,자기주식의 취득 | 자기주식의 취득으로 인한 현금의 유출,4,24,review_required,True,2,FY | H1 | Q1 | Q3,CFS,high,False,statement/fs_div 의미 혼동 가능
+ifrs-full_PurchaseOfTreasuryShares,ifrs-full_PurchaseOfTreasuryShares,CF,자기주식의 취득,자기주식의 취득,2,3,auto_account_id,False,1,FY | H1 | Q3,CFS,high,False,statement/fs_div 의미 혼동 가능
+dart_AdjustmentsForMiscellaneousLosses,dart_AdjustmentsForMiscellaneousLosses,CF,잡손실 조정,잡손실 조정,1,4,auto_account_id,False,1,FY | H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+dart_AdjustmentsForMiscellaneousIncome,dart_AdjustmentsForMiscellaneousIncome,CF,잡이익 조정,잡이익 | 잡이익 조정,1,6,review_required,True,2,FY | H1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+dart_ProceedsFromSalesOfLongTermFinancialInstruments,dart_ProceedsFromSalesOfLongTermFinancialInstruments,CF,장기금융상품의 처분,장기금융상품의 처분,1,12,auto_account_id,False,1,FY | H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+dart_PurchaseOfLongTermFinancialInstruments,dart_PurchaseOfLongTermFinancialInstruments,CF,장기금융상품의 취득,장기금융상품의 증가 | 장기금융상품의 취득,2,24,review_required,True,2,FY | H1 | Q1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+dart_ProceedsFromSalesOfLongTermLoansAndReceivables,dart_ProceedsFromSalesOfLongTermLoansAndReceivables,CF,장기대여금의 감소,장기대여금의 감소,1,7,auto_account_id,False,1,FY | H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+dart_PurchaseOfLongTermLoansAndReceivables,dart_PurchaseOfLongTermLoansAndReceivables,CF,장기대여금의 증가,장기대여금의 증가,1,6,auto_account_id,False,1,FY | H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+dart_AdjustmentsForIncreasedecreaseInLongTermOtherPayables,dart_AdjustmentsForIncreasedecreaseInLongTermOtherPayables,CF,장기미지급금의 증가,장기미지급금의 증가 | 장기미지급금의 증가(감소),1,12,review_required,True,2,FY | H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+ifrs-full_OtherLongtermBenefits,ifrs-full_OtherLongtermBenefits,CF,장기종업원급여,장기종업원급여,1,4,auto_account_id,False,1,FY | H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+name:장기종업원급여,,CF,장기종업원급여,장기종업원급여,1,3,review_required,True,1,H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+dart_ProceedsFromLongTermBorrowings,dart_ProceedsFromLongTermBorrowings,CF,장기차입금의 차입,장기차입금의 증가 | 장기차입금의 차입 | 장기차입금의 차입 (주27),2,11,review_required,True,3,FY | H1 | Q1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+name:장기차입금의차입,,CF,장기차입금의 차입,장기차입금의 차입,1,2,review_required,True,1,H1 | Q1,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+dart_ProceedsFromSalesOfInvestmentsInSubsidiaries,dart_ProceedsFromSalesOfInvestmentsInSubsidiaries,CF,장기투자자산의 처분,장기투자자산의 처분,1,2,auto_account_id,False,1,H1 | Q1,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+name:장기투자자산의처분,,CF,장기투자자산의 처분,장기투자자산의 처분,1,10,review_required,True,1,FY | H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+dart_PurchaseOfInvestmentsInSubsidiariesJointVenturesAndAssociates,dart_PurchaseOfInvestmentsInSubsidiariesJointVenturesAndAssociates,CF,장기투자자산의 취득,관계기업투자주식의 증가 | 장기투자자산의 취득,2,3,review_required,True,2,FY | H1 | Q1,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+name:장기투자자산의취득,,CF,장기투자자산의 취득,장기투자자산의 취득,1,10,review_required,True,1,FY | H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+ifrs-full_AdjustmentsForDecreaseIncreaseInInventories,ifrs-full_AdjustmentsForDecreaseIncreaseInInventories,CF,재고자산의 감소(증가),재고자산 | 재고자산의 감소(증가) | 재고자산의 증가,3,36,review_required,True,3,FY | H1 | Q1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+dart_AdjustmentsForWritedownsOfInventories,dart_AdjustmentsForWritedownsOfInventories,CF,재고자산평가손실,재고자산평가손실 | 재고자산평가손실 조정 | 재고자산평가손실(환입) | 재고자산평가충당금전입(환입)액,3,33,review_required,True,4,FY | H1 | Q1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+dart_AdjustmentsForReversalsOfInventories,dart_AdjustmentsForReversalsOfInventories,CF,재고자산평가손실환입 조정,재고자산평가손실(환입) | 재고자산평가손실환입 | 재고자산평가손실환입 조정,1,7,review_required,True,3,FY | H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+name:재무활동으로인한현금유입액,,CF,재무활동으로 인한 현금유입액,재무활동으로 인한 현금유입액,1,1,review_required,True,1,FY,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+name:재무활동으로인한현금유출액,,CF,재무활동으로 인한 현금유출액,재무활동으로 인한 현금유출액,1,7,review_required,True,1,FY | H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+name:재무활동으로부터의현금유출,,CF,재무활동으로부터의 현금유출,재무활동으로부터의 현금유출,1,5,review_required,True,1,FY | H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+ifrs-full_CashFlowsFromUsedInFinancingActivities,ifrs-full_CashFlowsFromUsedInFinancingActivities,CF,재무활동현금흐름,재무활동 현금흐름 | 재무활동으로 인한 현금흐름 | 재무활동현금흐름,5,60,review_required,True,3,FY | H1 | Q1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+ifrs-full_ProceedsFromGovernmentGrantsClassifiedAsInvestingActivities,ifrs-full_ProceedsFromGovernmentGrantsClassifiedAsInvestingActivities,CF,정부보조금의 수취,정부보조금의 수령 | 정부보조금의 수취,4,21,review_required,True,2,FY | H1 | Q1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+dart_AdjustmentsForIncreasedecreaseInWarrantyProvision,dart_AdjustmentsForIncreasedecreaseInWarrantyProvision,CF,제품보증충당부채의 증가(감소),제품보증충당부채의 증가(감소),1,5,auto_account_id,False,1,FY | H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+ifrs-full_AdjustmentsForReconcileProfitLoss,ifrs-full_AdjustmentsForReconcileProfitLoss,CF,조정,당기순손익 조정을 위한 가감 | 당기순이익조정을 위한 가감 | 반기순손익 조정을 위한 가감 | 반기순손익조정을 위한 가감 | 분기순손익 조정을 위한 가감 | 분기순손익조정을 위한 가감 | 비현금항목의 조정 | 조정 | 조정 (주27),4,46,review_required,True,9,FY | H1 | Q1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+name:조정,,CF,조정,조정,1,2,review_required,True,1,H1 | Q1,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+name:종속기업유상증자및소유지분변동,,CF,종속기업 유상증자 및 소유지분변동,종속기업 유상증자 및 소유지분변동,1,3,review_required,True,1,FY,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+dart_AdjustmentsForImpairmentLossesOnInvestmentsInAssociates,dart_AdjustmentsForImpairmentLossesOnInvestmentsInAssociates,CF,종속기업/관계기업/공동기업투자손상차손,종속기업/관계기업/공동기업투자손상차손,1,1,auto_account_id,False,1,FY,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+dart_AdjustmentsForLossesOnDisposalsofInvestmentsInAssociates,dart_AdjustmentsForLossesOnDisposalsofInvestmentsInAssociates,CF,종속기업/관계기업/공동기업투자처분손실,종속기업/관계기업/공동기업투자처분손실,2,3,auto_account_id,False,1,FY,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+dart_AdjustmentsForGainsOnDisposalsOfInvestmentsInAssociates,dart_AdjustmentsForGainsOnDisposalsOfInvestmentsInAssociates,CF,종속기업/관계기업/공동기업투자처분이익,관계기업투자주식처분이익 | 관계기업투자처분이익 | 종속기업/관계기업/공동기업투자처분이익 | 지분법적용투자주식처분이익,2,6,review_required,True,4,FY | H1 | Q1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+name:종속회사유상증자및소유지분변동,,CF,종속회사 유상증자 및 소유지분변동,종속회사 유상증자 및 소유지분변동,1,4,review_required,True,1,H1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+ifrs-full_PaymentsFromChangesInOwnershipInterestsInSubsidiaries,ifrs-full_PaymentsFromChangesInOwnershipInterestsInSubsidiaries,CF,종속회사 지분 추가취득,종속회사 지분 추가취득,1,1,auto_account_id,False,1,H1,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+name:종속회사지분추가취득,,CF,종속회사 지분 추가취득,종속회사 지분 추가취득,1,1,review_required,True,1,Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+dart_AdjustmentsForShareBasedPayment,dart_AdjustmentsForShareBasedPayment,CF,주식보상비용(환입) 조정,주식보상비용 | 주식보상비용(환입) 조정,1,9,review_required,True,2,FY | H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+dart_ProceedsFromExerciseOfShareOptions,dart_ProceedsFromExerciseOfShareOptions,CF,주식선택권의 행사,주식선택권의 행사,1,4,auto_account_id,False,1,FY | Q3,CFS,high,False,statement/fs_div 의미 혼동 가능
+name:주식선택권의행사,,CF,주식선택권의 행사,주식선택권의 행사,1,1,review_required,True,1,H1,CFS,high,False,statement/fs_div 의미 혼동 가능
+dart_AdjustmentsForLossesOfAssociatesAndJointVenturesAccountedForUsingEquityMethod,dart_AdjustmentsForLossesOfAssociatesAndJointVenturesAccountedForUsingEquityMethod,CF,지분법손실(이익),지분법손실 | 지분법손실(이익),1,5,review_required,True,2,FY | H1 | Q1 | Q3,CFS,high,False,statement/fs_div 의미 혼동 가능
+name:지분법손실이익,,CF,지분법손실(이익),지분법손실(이익),1,1,review_required,True,1,Q1,CFS,high,False,statement/fs_div 의미 혼동 가능
+dart_AdjustmentsForProfitsOfAssociatesAndJointVenturesAccountedForUsingEquityMethod,dart_AdjustmentsForProfitsOfAssociatesAndJointVenturesAccountedForUsingEquityMethod,CF,지분법손익,지분법손익 | 지분법이익 | 지분법이익 조정 | 지분법적용투자주식처분이익,3,24,review_required,True,4,FY | H1 | Q1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+name:지분법손익,,CF,지분법손익,지분법손익,1,2,review_required,True,1,H1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+ifrs-full_AdjustmentsForUndistributedProfitsOfInvestmentsAccountedForUsingEquityMethod,ifrs-full_AdjustmentsForUndistributedProfitsOfInvestmentsAccountedForUsingEquityMethod,CF,지분법적용 투자지분의 미분배 수익,지분법적용 투자지분의 미분배 수익,1,2,auto_account_id,False,1,FY,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+dart_LossesOnSaleOfInvestmentAccountedForUsingEquityMethod,dart_LossesOnSaleOfInvestmentAccountedForUsingEquityMethod,CF,지분법적용투자주식처분손실,지분법적용투자주식처분손실,1,1,auto_account_id,False,1,FY,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+name:지분법적용투자주식처분이익,,CF,지분법적용투자주식처분이익,지분법적용투자주식처분이익,1,4,review_required,True,1,FY | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+dart_ProceedsFromSalesOfVehicles,dart_ProceedsFromSalesOfVehicles,CF,차량운반구의 처분,차량운반구의 처분,1,2,auto_account_id,False,1,FY,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+dart_PurchaseOfVehicles,dart_PurchaseOfVehicles,CF,차량운반구의 취득,차량운반구의 취득,1,12,auto_account_id,False,1,FY | H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+ifrs-full_RepaymentsOfBorrowingsClassifiedAsFinancingActivities,ifrs-full_RepaymentsOfBorrowingsClassifiedAsFinancingActivities,CF,차입금의 상환,유동성 장기부채의 상환 | 차입금의 상환,2,13,review_required,True,2,FY | H1 | Q1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+ifrs-full_ProceedsFromBorrowingsClassifiedAsFinancingActivities,ifrs-full_ProceedsFromBorrowingsClassifiedAsFinancingActivities,CF,차입금의 차입,차입금의 차입,1,12,auto_account_id,False,1,FY | H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+dart_GainOnExemptionOfDebts,dart_GainOnExemptionOfDebts,CF,채무면제이익,채무면제이익,1,2,auto_account_id,False,1,FY,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+name:채무면제이익,,CF,채무면제이익,채무면제이익,1,2,review_required,True,1,H1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+dart_AdjustmentsForIncreasedecreaseInProvisions,dart_AdjustmentsForIncreasedecreaseInProvisions,CF,충당부채의 증가(감소),충당부채의 증가(감소),1,12,auto_account_id,False,1,FY | H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+dart_IncomeTaxRefunds,dart_IncomeTaxRefunds,CF,토지 및 건물의 취득세 환입,토지 및 건물의 취득세 환입,1,3,auto_account_id,False,1,H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+name:토지및건물의취득세환입,,CF,토지 및 건물의 취득세 환입,토지 및 건물의 취득세 환입,1,5,review_required,True,1,FY | H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+dart_ProceedsFromSalesOfLand,dart_ProceedsFromSalesOfLand,CF,토지의 처분,토지의 처분,1,3,auto_account_id,False,1,FY,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+dart_PurchaseOfLand,dart_PurchaseOfLand,CF,토지의 취득,토지의 취득,1,8,auto_account_id,False,1,FY | H1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+name:통화선도의정산현금유입,,CF,통화선도의 정산(현금유입),통화선도의 정산(현금유입),1,1,review_required,True,1,FY,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+name:통화선도의정산현금유출,,CF,통화선도의 정산(현금유출),통화선도의 정산(현금유출),1,1,review_required,True,1,FY,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+name:통화선도처분손실,,CF,통화선도처분손실,통화선도처분손실,1,1,review_required,True,1,FY,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+name:통화선도처분이익,,CF,통화선도처분이익,통화선도처분이익,1,1,review_required,True,1,FY,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+dart_CashOutflowForSeverancePay,dart_CashOutflowForSeverancePay,CF,퇴직금의 지급,퇴직금의 지급,1,4,auto_account_id,False,1,FY | H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+name:퇴직금의지급,,CF,퇴직금의 지급,퇴직금의 지급,1,8,review_required,True,1,FY | H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+dart_AdjustmentsForProvisionForSeveranceIndemnities,dart_AdjustmentsForProvisionForSeveranceIndemnities,CF,퇴직급여,퇴직급여 | 퇴직급여 조정,3,36,review_required,True,2,FY | H1 | Q1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+ifrs-full_AdjustmentsForIncreaseDecreaseInEmployeeBenefitLiabilities,ifrs-full_AdjustmentsForIncreaseDecreaseInEmployeeBenefitLiabilities,CF,퇴직급여부채의 증가(감소),순확정급여부채 증가(감소) | 퇴직급여부채의 증가(감소),1,4,review_required,True,2,FY | H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+name:퇴직급여자산의감소증가,,CF,퇴직급여자산의 감소(증가),퇴직급여자산의 감소(증가),1,5,review_required,True,1,FY | H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+dart_AdjustmentsForIncreasedecreaseInPostemploymentBenefitObligations,dart_AdjustmentsForIncreasedecreaseInPostemploymentBenefitObligations,CF,퇴직급여채무의 증가,퇴직급여부채(자산)의 증가(감소) | 퇴직급여채무 | 퇴직급여채무의 증가 | 퇴직급여충당부채의 증가(감소),2,15,review_required,True,4,FY | H1 | Q1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+dart_ProceedsFromSalesOfInvestmentProperty,dart_ProceedsFromSalesOfInvestmentProperty,CF,투자부동산의 처분,투자부동산의 처분,1,1,auto_account_id,False,1,H1,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+ifrs-full_ProceedsFromSalesOfInvestmentProperty,ifrs-full_ProceedsFromSalesOfInvestmentProperty,CF,투자부동산의 처분,투자부동산의 처분,1,3,auto_account_id,False,1,FY | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+dart_PurchaseOfInvestmentProperty,dart_PurchaseOfInvestmentProperty,CF,투자부동산의 취득,투자부동산의 취득,1,1,auto_account_id,False,1,H1,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+ifrs-full_PurchaseOfInvestmentProperty,ifrs-full_PurchaseOfInvestmentProperty,CF,투자부동산의 취득,투자부동산의 취득,2,7,auto_account_id,False,1,FY | H1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+dart_AdjustmentsForGainsOnEvaluationOfInvestmentProperty,dart_AdjustmentsForGainsOnEvaluationOfInvestmentProperty,CF,투자부동산평가이익 조정,투자부동산평가이익 | 투자부동산평가이익 조정,1,3,review_required,True,2,FY,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+name:투자활동으로인한현금유입액,,CF,투자활동으로 인한 현금유입액,투자활동으로 인한 현금유입액,1,3,review_required,True,1,H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+name:투자활동으로인한현금유출액,,CF,투자활동으로 인한 현금유출액,투자활동으로 인한 현금유출액,1,3,review_required,True,1,H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+ifrs-full_InflowsOfCashFromInvestingActivities,ifrs-full_InflowsOfCashFromInvestingActivities,CF,투자활동으로부터의 현금유입,투자활동으로 인한 현금유입액 | 투자활동으로부터의 현금유입,1,9,review_required,True,2,FY | H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+ifrs-full_OutflowsOfCashFromInvestingActivities,ifrs-full_OutflowsOfCashFromInvestingActivities,CF,투자활동으로부터의 현금유출,투자활동으로 인한 현금유출액 | 투자활동으로부터의 현금유출,1,9,review_required,True,2,FY | H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+ifrs-full_CashFlowsFromUsedInInvestingActivities,ifrs-full_CashFlowsFromUsedInInvestingActivities,CF,투자활동현금흐름,투자활동 현금흐름 | 투자활동으로 인한 현금흐름 | 투자활동현금흐름,5,60,review_required,True,3,FY | H1 | Q1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+dart_AdjustmentsForIncreasedecreaseInLongTermWarrantyProvision,dart_AdjustmentsForIncreasedecreaseInLongTermWarrantyProvision,CF,품질보증충당부채,품질보증충당부채,1,7,auto_account_id,False,1,FY | H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+dart_AdjustmentsForProductWarrantyExpenses,dart_AdjustmentsForProductWarrantyExpenses,CF,품질보증충당부채전입액,품질보증충당부채전입액,1,12,auto_account_id,False,1,FY | H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+dart_AdjustmentsForWarrantyExpenses,dart_AdjustmentsForWarrantyExpenses,CF,하자보수전입액,하자보수비 조정 | 하자보수전입액,1,12,review_required,True,2,FY | H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+dart_AdjustmentsForIncreaseDecreaseInProvisionsForConstructionWarranties,dart_AdjustmentsForIncreaseDecreaseInProvisionsForConstructionWarranties,CF,하자보수충당부채의 감소,하자보수충당부채의 감소 | 하자보수충당부채의 증가(감소),1,12,review_required,True,2,FY | H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+ifrs-full_EffectOfExchangeRateChangesOnCashAndCashEquivalents,ifrs-full_EffectOfExchangeRateChangesOnCashAndCashEquivalents,CF,현금및현금성자산에 대한 환율변동효과,외화표시 현금및현금성자산에 대한 환율변동효과 | 외화환산으로 인한 현금의 변동 | 현금및현금성자산에 대한 환율변동효과 | 현금및현금성자산의 환율변동효과 | 현금성자산 환율효과,5,50,review_required,True,5,FY | H1 | Q1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+ifrs-full_IncreaseDecreaseInCashAndCashEquivalents,ifrs-full_IncreaseDecreaseInCashAndCashEquivalents,CF,현금및현금성자산의 순증감,현금및현금성자산의 순증감 | 현금및현금성자산의 증가(감소) | 현금및현금성자산의순증가(감소) | 현금및현금성자산의순증감,4,43,review_required,True,4,FY | H1 | Q1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+ifrs-full_IncreaseDecreaseInCashAndCashEquivalentsBeforeEffectOfExchangeRateChanges,ifrs-full_IncreaseDecreaseInCashAndCashEquivalentsBeforeEffectOfExchangeRateChanges,CF,환율변동효과 반영전 현금및현금성자산의 순증가(감소),현금의 증감 | 환율변동효과 반영전 현금및현금성자산의 순증가(감소),2,17,review_required,True,2,FY | H1 | Q1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+name:회원권의처분,,CF,회원권의 처분,회원권의 처분,1,5,review_required,True,1,FY | H1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+name:회원권의취득,,CF,회원권의 취득,회원권의 취득,1,11,review_required,True,1,FY | H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+name:경상연구개발비,,CIS,경상연구개발비,경상연구개발비,1,7,review_required,True,1,FY | H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+name:공정가치측정금융자산평가손익,,CIS,공정가치 측정 금융자산 평가손익,공정가치 측정 금융자산 평가손익,1,2,review_required,True,1,H1 | Q3,CFS,high,False,statement/fs_div 의미 혼동 가능
+dart_ShareOfOtherComprehensiveIncomeOfAssociatesAndJointVenturesAccountedForUsingEquityMethodThatWillBeReclassifiedToProfitOrLossNetOfTax,dart_ShareOfOtherComprehensiveIncomeOfAssociatesAndJointVenturesAccountedForUsingEquityMethodThatWillBeReclassifiedToProfitOrLossNetOfTax,CIS,관계기업 및 공동기업의 기타포괄손익에 대한 지분,관계기업 및 공동기업의 기타포괄손익에 대한 지분 | 관계기업의 기타포괄손익에 대한 지분 | 지분법자본변동,3,6,review_required,True,3,H1 | Q1,CFS,high,False,statement/fs_div 의미 혼동 가능
+dart_ShareOfOtherComprehensiveIncomeOfAssociatesAndJointVenturesAccountedForUsingEquityMethodThatWillNotBeReclassifiedToProfitOrLossNetOfTax,dart_ShareOfOtherComprehensiveIncomeOfAssociatesAndJointVenturesAccountedForUsingEquityMethodThatWillNotBeReclassifiedToProfitOrLossNetOfTax,CIS,관계기업 및 공동기업의 기타포괄손익에 대한 지분,관계기업 및 공동기업의 기타포괄손익에 대한 지분,1,2,auto_account_id,False,1,H1 | Q1,CFS,high,False,statement/fs_div 의미 혼동 가능
+ifrs-full_ShareOfOtherComprehensiveIncomeOfAssociatesAndJointVenturesAccountedForUsingEquityMethodThatWillBeReclassifiedToProfitOrLossNetOfTax,ifrs-full_ShareOfOtherComprehensiveIncomeOfAssociatesAndJointVenturesAccountedForUsingEquityMethodThatWillBeReclassifiedToProfitOrLossNetOfTax,CIS,관계기업 및 공동기업의 기타포괄손익에 대한 지분,관계기업 기타포괄손익지분 | 관계기업 및 공동기업의 기타포괄손익에 대한 지분 | 관계기업의 기타포괄손익에 대한 지분 | 지분법 적용대상 관계기업과 공동기업의 기타포괄손익에 대한 지분(세후기타포괄손익) | 지분법자본변동,4,32,review_required,True,5,FY | H1 | Q1 | Q3,CFS,high,False,statement/fs_div 의미 혼동 가능
+ifrs-full_ShareOfOtherComprehensiveIncomeOfAssociatesAndJointVenturesAccountedForUsingEquityMethodThatWillNotBeReclassifiedToProfitOrLossNetOfTax,ifrs-full_ShareOfOtherComprehensiveIncomeOfAssociatesAndJointVenturesAccountedForUsingEquityMethodThatWillNotBeReclassifiedToProfitOrLossNetOfTax,CIS,관계기업 및 공동기업의 기타포괄손익에 대한 지분,관계기업 및 공동기업의 기타포괄손익에 대한 지분,1,10,auto_account_id,False,1,FY | H1 | Q1 | Q3,CFS,high,False,statement/fs_div 의미 혼동 가능
+name:관계기업및공동기업에대한투자비용,,CIS,관계기업및공동기업에 대한 투자비용,관계기업및공동기업에 대한 투자비용,1,1,review_required,True,1,Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+name:관계기업및공동기업에대한투자손실,,CIS,관계기업및공동기업에 대한 투자손실,관계기업및공동기업에 대한 투자손실,1,5,review_required,True,1,FY | H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+name:관계기업및공동기업에대한투자수익,,CIS,관계기업및공동기업에 대한 투자수익,관계기업및공동기업에 대한 투자수익,1,1,review_required,True,1,Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+name:관계기업및공동기업에대한투자이익,,CIS,관계기업및공동기업에 대한 투자이익,관계기업및공동기업에 대한 투자이익,1,3,review_required,True,1,FY | H1 | Q1,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+dart_LossesOfAssociatesAndJointVenturesAccountedForUsingEquityMethod,dart_LossesOfAssociatesAndJointVenturesAccountedForUsingEquityMethod,CIS,관계기업투자손실,관계기업투자손실 | 관계기업투자이익(손실),1,3,review_required,True,2,H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+name:관계기업투자손실,,CIS,관계기업투자손실,관계기업투자손실,1,1,review_required,True,1,Q1,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+name:관계기업투자손익,,CIS,관계기업투자손익,관계기업투자손익,1,7,review_required,True,1,FY | H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+dart_ProfitsOfAssociatesAndJointVenturesAccountedForUsingEquityMethod,dart_ProfitsOfAssociatesAndJointVenturesAccountedForUsingEquityMethod,CIS,관계기업투자이익(손실),관계기업투자이익(손실),1,1,auto_account_id,False,1,FY,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+name:관계기업투자이익손실,,CIS,관계기업투자이익(손실),관계기업투자이익(손실),1,2,review_required,True,1,H1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+ifrs-full_FinanceCosts,ifrs-full_FinanceCosts,CIS,금융비용,금융비용 | 금융원가,4,48,review_required,True,2,FY | H1 | Q1 | Q3,CFS,high,False,statement/fs_div 의미 혼동 가능
+ifrs-full_FinanceIncome,ifrs-full_FinanceIncome,CIS,금융수익,금융수익,4,48,auto_account_id,False,1,FY | H1 | Q1 | Q3,CFS,high,False,statement/fs_div 의미 혼동 가능
+ifrs-full_BasicEarningsLossPerShare,ifrs-full_BasicEarningsLossPerShare,CIS,기본주당이익(손실),기본주당반기순이익 | 기본주당반기순이익(손실) | 기본주당분기순이익 | 기본주당분기순이익(손실) | 기본주당손익 | 기본주당순이익(손실) | 기본주당이익 | 기본주당이익(손실),4,48,review_required,True,8,FY | H1 | Q1 | Q3,CFS,high,False,statement/fs_div 의미 혼동 가능
+dart_OtherLosses,dart_OtherLosses,CIS,기타비용,기타비용 | 기타영업외비용,3,29,review_required,True,2,FY | H1 | Q1 | Q3,CFS,high,False,statement/fs_div 의미 혼동 가능
+dart_OtherGains,dart_OtherGains,CIS,기타수익,기타수익 | 기타영업외수익,4,36,review_required,True,2,FY | H1 | Q1 | Q3,CFS,high,False,statement/fs_div 의미 혼동 가능
+name:기타영업외비용,,CIS,기타영업외비용,기타영업외비용,2,9,review_required,True,1,FY | H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+name:기타영업외수익,,CIS,기타영업외수익,기타영업외수익,1,2,review_required,True,1,H1 | Q1,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+ifrs-full_OtherComprehensiveIncome,ifrs-full_OtherComprehensiveIncome,CIS,기타포괄손익,기타포괄손익 | 기타포괄손익 : | 기타포괄손익(*4) | 기타포괄손익: | 법인세차감후 기타포괄손익 | 연결기타포괄손익,5,57,review_required,True,6,FY | H1 | Q1 | Q3,CFS,high,False,statement/fs_div 의미 혼동 가능
+name:기타포괄손익계,,CIS,기타포괄손익 계,기타포괄손익 계,1,3,review_required,True,1,H1 | Q1 | Q3,CFS,high,False,statement/fs_div 의미 혼동 가능
+ifrs-full_OtherComprehensiveIncomeNetOfTaxGainsLossesFromInvestmentsInEquityInstruments,ifrs-full_OtherComprehensiveIncomeNetOfTaxGainsLossesFromInvestmentsInEquityInstruments,CIS,기타포괄손익-공정가치금융자산평가손익,"기타포괄손익-공정가치금융자산평가손익 | 기타포괄손익-공정가치측정지분상품평가손익 | 세후기타포괄손익, 지분상품에 대한 투자자산",2,12,review_required,True,3,FY | H1 | Q1 | Q3,CFS,high,False,statement/fs_div 의미 혼동 가능
+name:기타포괄손익공정가치금융자산평가손익,,CIS,기타포괄손익-공정가치금융자산평가손익,기타포괄손익-공정가치금융자산평가손익,1,2,review_required,True,1,H1 | Q1,CFS,high,False,statement/fs_div 의미 혼동 가능
+dart_OtherComprehensiveIncomeNetOfTaxChangeInFairValueOfFinancialAssetsMeasuredAtFairValueThroughOtherComprehensiveIncome,dart_OtherComprehensiveIncomeNetOfTaxChangeInFairValueOfFinancialAssetsMeasuredAtFairValueThroughOtherComprehensiveIncome,CIS,기타포괄손익-공정가치측정 금융자산 평가이익,공정가치측정 금융자산평가손익 | 기타포괄손익-공정가치측정 금융자산 평가이익,1,4,review_required,True,2,FY | H1 | Q1 | Q3,CFS,high,False,statement/fs_div 의미 혼동 가능
+name:기타포괄손익공정가치측정금융자산평가이익,,CIS,기타포괄손익-공정가치측정 금융자산 평가이익,기타포괄손익-공정가치측정 금융자산 평가이익,1,1,review_required,True,1,Q1,CFS,high,False,statement/fs_div 의미 혼동 가능
+dart_OtherComprehensiveIncomeThatWillNotBeReclassifiedToProfitOrLossBeforeTax,dart_OtherComprehensiveIncomeThatWillNotBeReclassifiedToProfitOrLossBeforeTax,CIS,당기손익으로 재분류되지 않는 항목(세전기타포괄손익),당기손익으로 재분류되지 않는 항목(세전기타포괄손익) | 후속기간에 당기손익으로 재분류되지않는 항목,1,2,review_required,True,2,H1 | Q1,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+ifrs-full_IncomeTaxRelatingToComponentsOfOtherComprehensiveIncomeThatWillNotBeReclassifiedToProfitOrLoss,ifrs-full_IncomeTaxRelatingToComponentsOfOtherComprehensiveIncomeThatWillNotBeReclassifiedToProfitOrLoss,CIS,당기손익으로 재분류되지 않는 항목과 관련된 법인세,당기손익으로 재분류되지 않는 항목과 관련된 법인세 | 법인세효과,1,7,review_required,True,2,FY | H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+dart_OtherComprehensiveIncomeThatWillBeReclassifiedToProfitOrLossBeforeTax,dart_OtherComprehensiveIncomeThatWillBeReclassifiedToProfitOrLossBeforeTax,CIS,당기손익으로 재분류될 수 있는 항목(세전기타포괄손익),당기손익으로 재분류될 수 있는 항목(세전기타포괄손익) | 후속기간에 당기손익으로 재분류되는 항목,1,2,review_required,True,2,H1 | Q1,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+ifrs-full_ProfitLoss,ifrs-full_ProfitLoss,CIS,당기순이익(손실),당기순손익 | 당기순이익 | 당기순이익(손실) | 반기순손익 | 반기순이익 | 반기순이익(손실) | 분기순손익 | 분기순이익 | 분기순이익(손실),5,60,review_required,True,9,FY | H1 | Q1 | Q3,CFS,high,False,statement/fs_div 의미 혼동 가능
+ifrs-full_Revenue,ifrs-full_Revenue,CIS,매출액,매출액 | 수익(매출액) | 영업수익,4,48,review_required,True,3,FY | H1 | Q1 | Q3,CFS,high,False,statement/fs_div 의미 혼동 가능
+ifrs-full_CostOfSales,ifrs-full_CostOfSales,CIS,매출원가,매출원가,4,48,auto_account_id,False,1,FY | H1 | Q1 | Q3,CFS,high,False,statement/fs_div 의미 혼동 가능
+ifrs-full_GrossProfit,ifrs-full_GrossProfit,CIS,매출총이익,매출총이익 | 매출총이익(손실),4,48,review_required,True,2,FY | H1 | Q1 | Q3,CFS,high,False,statement/fs_div 의미 혼동 가능
+ifrs-full_IncomeTaxExpenseContinuingOperations,ifrs-full_IncomeTaxExpenseContinuingOperations,CIS,법인세비용(수익),법인세비용 | 법인세비용(수익) | 법인세비용(이익) | 법인세수익(비용),4,48,review_required,True,4,FY | H1 | Q1 | Q3,CFS,high,False,statement/fs_div 의미 혼동 가능
+ifrs-full_ProfitLossBeforeTax,ifrs-full_ProfitLossBeforeTax,CIS,법인세비용차감전순이익(손실),법인세비용차감전계속영업순이익 | 법인세비용차감전순손익 | 법인세비용차감전순이익 | 법인세비용차감전순이익(손실),4,48,review_required,True,4,FY | H1 | Q1 | Q3,CFS,high,False,statement/fs_div 의미 혼동 가능
+dart_IncomeTaxRelatingToComponentsOfOtherComprehensiveIncomeThatWillNotBeReclassifiedToProfitOrLoss,dart_IncomeTaxRelatingToComponentsOfOtherComprehensiveIncomeThatWillNotBeReclassifiedToProfitOrLoss,CIS,법인세효과,법인세효과,1,1,auto_account_id,False,1,H1,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+name:법인세효과,,CIS,법인세효과,법인세효과,1,3,review_required,True,1,H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+ifrs-full_ComprehensiveIncomeAttributableToNoncontrollingInterests,ifrs-full_ComprehensiveIncomeAttributableToNoncontrollingInterests,CIS,비지배지분,비지배지분 | 비지배지분포괄이익,3,30,review_required,True,2,FY | H1 | Q1 | Q3,CFS,high,False,statement/fs_div 의미 혼동 가능
+ifrs-full_ProfitLossAttributableToNoncontrollingInterests,ifrs-full_ProfitLossAttributableToNoncontrollingInterests,CIS,비지배지분,비지배지분 | 비지배지분순이익,2,18,review_required,True,2,FY | H1 | Q1 | Q3,CFS,high,False,statement/fs_div 의미 혼동 가능
+name:연구개발비,,CIS,연구개발비,연구개발비,1,7,review_required,True,1,FY | H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+ifrs-full_ResearchAndDevelopmentExpense,ifrs-full_ResearchAndDevelopmentExpense,CIS,연구와 개발 비용,경상연구개발비 | 연구와 개발 비용,2,10,review_required,True,2,FY | H1 | Q1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+dart_NonOperatingExpense,dart_NonOperatingExpense,CIS,영업외비용,영업외비용,2,10,auto_account_id,False,1,FY | H1 | Q1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+dart_NonOperatingIncome,dart_NonOperatingIncome,CIS,영업외수익,영업외수익,2,10,auto_account_id,False,1,FY | H1 | Q1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+dart_OperatingIncomeLoss,dart_OperatingIncomeLoss,CIS,영업이익(손실),영업손익 | 영업순손익 | 영업이익 | 영업이익(손실),4,48,review_required,True,4,FY | H1 | Q1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+ifrs-full_OtherComprehensiveIncomeNetOfTaxGainsLossesOnRevaluation,ifrs-full_OtherComprehensiveIncomeNetOfTaxGainsLossesOnRevaluation,CIS,자산재평가손익(세후기타포괄손익),자산재평가손익(세후기타포괄손익),1,2,auto_account_id,False,1,FY,CFS,high,False,statement/fs_div 의미 혼동 가능
+ifrs-full_ComprehensiveIncomeAttributableToOwnersOfParent,ifrs-full_ComprehensiveIncomeAttributableToOwnersOfParent,CIS,지배기업 소유주지분,"지배기업 소유주지분 | 지배기업소유주지분에게 귀속되는 총포괄손익 | 지배기업의 소유주지분 | 지배기업지분포괄이익 | 포괄손익, 지배기업의 소유주에게 귀속되는 지분",5,60,review_required,True,5,FY | H1 | Q1 | Q3,CFS,high,False,statement/fs_div 의미 혼동 가능
+ifrs-full_ProfitLossAttributableToOwnersOfParent,ifrs-full_ProfitLossAttributableToOwnersOfParent,CIS,지배기업의 소유주지분,지배기업 소유주지분 | 지배기업의 소유주에게 귀속되는 당기순손익 | 지배기업의 소유주에게 귀속되는 당기순이익(손실) | 지배기업의 소유주에게 귀속되는 반기순손익 | 지배기업의 소유주에게 귀속되는 분기순손익 | 지배기업의 소유주지분 | 지배기업지분순이익 | 지배기업지분순이익(손실),4,48,review_required,True,8,FY | H1 | Q1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+dart_ShareOfOtherComprehensiveIncomeOfAssociatesAndJointVenturesAccountedForUsingEquityMethodThatWillBeReclassifiedToProfitOrLossBeforeTax,dart_ShareOfOtherComprehensiveIncomeOfAssociatesAndJointVenturesAccountedForUsingEquityMethodThatWillBeReclassifiedToProfitOrLossBeforeTax,CIS,지분법 자본변동,지분법 자본변동,1,2,auto_account_id,False,1,H1 | Q1,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+ifrs-full_ShareOfOtherComprehensiveIncomeOfAssociatesAndJointVenturesAccountedForUsingEquityMethodThatWillBeReclassifiedToProfitOrLossBeforeTax,ifrs-full_ShareOfOtherComprehensiveIncomeOfAssociatesAndJointVenturesAccountedForUsingEquityMethodThatWillBeReclassifiedToProfitOrLossBeforeTax,CIS,지분법 자본변동,지분법 자본변동 | 지분법자본변동,1,2,review_required,True,2,FY | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+name:지분법손실이익,,CIS,지분법손실(이익),지분법손실(이익),1,1,review_required,True,1,H1,CFS,high,False,statement/fs_div 의미 혼동 가능
+ifrs-full_ShareOfProfitLossOfAssociatesAndJointVenturesAccountedForUsingEquityMethod,ifrs-full_ShareOfProfitLossOfAssociatesAndJointVenturesAccountedForUsingEquityMethod,CIS,지분법투자 관련 손익,지분법 적용대상인 관계기업과 공동기업의 당기순손익에 대한 지분 | 지분법투자 관련 손익 | 지분법투자주식평가이익(손실),4,21,review_required,True,3,FY | H1 | Q1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+name:지분법투자관련손익,,CIS,지분법투자 관련 손익,지분법투자 관련 손익,1,3,review_required,True,1,H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+ifrs-full_ComprehensiveIncome,ifrs-full_ComprehensiveIncome,CIS,총포괄손익,반기총포괄손익 | 반기총포괄이익 | 반기총포괄이익(손실) | 분기총포괄손익 | 분기총포괄이익 | 분기총포괄이익(손실) | 총포괄손익 | 총포괄손익(*3) | 총포괄이익 | 총포괄이익(손실),5,60,review_required,True,10,FY | H1 | Q1 | Q3,CFS,high,False,statement/fs_div 의미 혼동 가능
+dart_AdjustmentsForGainsOnRevaluationOfPropertyPlantAndEquipment,dart_AdjustmentsForGainsOnRevaluationOfPropertyPlantAndEquipment,CIS,토지재평가차익,토지재평가차익,1,1,auto_account_id,False,1,FY,CFS,high,False,statement/fs_div 의미 혼동 가능
+name:파생상품평가손익,,CIS,파생상품평가손익,파생상품평가손익,1,2,review_required,True,1,H1 | Q1,CFS,high,False,statement/fs_div 의미 혼동 가능
+dart_TotalSellingGeneralAdministrativeExpenses,dart_TotalSellingGeneralAdministrativeExpenses,CIS,판매비와관리비,판매비와관리비,4,48,auto_account_id,False,1,FY | H1 | Q1 | Q3,CFS,high,False,statement/fs_div 의미 혼동 가능
+ifrs-full_GainsLossesOnExchangeDifferencesOnTranslationNetOfTax,ifrs-full_GainsLossesOnExchangeDifferencesOnTranslationNetOfTax,CIS,해외사업장환산외환차이,해외사업장환산 외환이익(손실) | 해외사업장환산 외환차익 | 해외사업장환산외환차이 | 해외사업장환산외환차이(세후기타포괄손익) | 해외사업환산손익 | 해외사업환산이익,5,53,review_required,True,6,FY | H1 | Q1 | Q3,CFS,high,False,statement/fs_div 의미 혼동 가능
+ifrs-full_GainsLossesOnExchangeDifferencesOnTranslationBeforeTax,ifrs-full_GainsLossesOnExchangeDifferencesOnTranslationBeforeTax,CIS,해외사업환산손익,해외사업장환산외환차이(세전기타포괄이익) | 해외사업환산손익,1,7,review_required,True,2,FY | H1 | Q1 | Q3,CFS,high,False,statement/fs_div 의미 혼동 가능
+ifrs-full_GainsLossesOnCashFlowHedgesNetOfTax,ifrs-full_GainsLossesOnCashFlowHedgesNetOfTax,CIS,현금흐름위험회피파생상품평가손익,파생상품평가손익 | 파생상품평가이익 | 파생상품평가이익(손실) | 현금흐름위험회피파생상품평가손익,2,22,review_required,True,4,FY | H1 | Q1 | Q3,CFS,high,False,statement/fs_div 의미 혼동 가능
+dart_OtherComprehensiveIncomeBeforeTaxGainsLossesOnRemeasurementsOfDefinedBenefitPlans,dart_OtherComprehensiveIncomeBeforeTaxGainsLossesOnRemeasurementsOfDefinedBenefitPlans,CIS,확정급여제도의 재측정요소,확정급여제도의 재측정요소,1,2,auto_account_id,False,1,H1 | Q1,CFS,high,False,statement/fs_div 의미 혼동 가능
+dart_OtherComprehensiveIncomeNetOfTaxGainsLossesOnRemeasurementsOfDefinedBenefitPlans,dart_OtherComprehensiveIncomeNetOfTaxGainsLossesOnRemeasurementsOfDefinedBenefitPlans,CIS,확정급여제도의 재측정요소,순확정급여부채(자산) 재측정요소 | 확정급여제도의 재측정요소,4,8,review_required,True,2,H1 | Q1,CFS,high,False,statement/fs_div 의미 혼동 가능
+ifrs-full_OtherComprehensiveIncomeBeforeTaxGainsLossesOnRemeasurementsOfDefinedBenefitPlans,ifrs-full_OtherComprehensiveIncomeBeforeTaxGainsLossesOnRemeasurementsOfDefinedBenefitPlans,CIS,확정급여제도의 재측정요소,확정급여제도의 재측정손익(세전기타포괄손익) | 확정급여제도의 재측정요소,1,10,review_required,True,2,FY | H1 | Q1 | Q3,CFS,high,False,statement/fs_div 의미 혼동 가능
+ifrs-full_OtherComprehensiveIncomeNetOfTaxGainsLossesOnRemeasurementsOfDefinedBenefitPlans,ifrs-full_OtherComprehensiveIncomeNetOfTaxGainsLossesOnRemeasurementsOfDefinedBenefitPlans,CIS,확정급여제도의 재측정요소,순확정급여부채(자산) 재측정요소 | 확정급여부채의 재측정요소 | 확정급여제도의 재측정손익(세후기타포괄손익) | 확정급여제도의 재측정요소 | 확정급여제도의재측정요소,4,40,review_required,True,5,FY | H1 | Q1 | Q3,CFS,high,False,statement/fs_div 의미 혼동 가능
+ifrs-full_OtherComprehensiveIncomeThatWillBeReclassifiedToProfitOrLossBeforeTax,ifrs-full_OtherComprehensiveIncomeThatWillBeReclassifiedToProfitOrLossBeforeTax,CIS,후속기간에 당기손익으로 재분류되는 항목,당기손익으로 재분류될 수 있는 항목(세전기타포괄손익) | 후속기간에 당기손익으로 재분류되는 항목,1,5,review_required,True,2,FY | H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+ifrs-full_OtherComprehensiveIncomeThatWillNotBeReclassifiedToProfitOrLossBeforeTax,ifrs-full_OtherComprehensiveIncomeThatWillNotBeReclassifiedToProfitOrLossBeforeTax,CIS,후속기간에 당기손익으로 재분류되지않는 항목,당기손익으로 재분류되지 않는 세전기타포괄손익 | 후속기간에 당기손익으로 재분류되지 않는 항목 | 후속기간에 당기손익으로 재분류되지않는 항목,1,5,review_required,True,3,FY | H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+dart_OtherComprehensiveIncomeThatWillBeReclassifiedToProfitOrLossNetOfTax,dart_OtherComprehensiveIncomeThatWillBeReclassifiedToProfitOrLossNetOfTax,CIS,후속적으로 당기손익으로 재분류되는 포괄손익,당기손익으로 재분류되는 세후기타포괄손익 | 후속적으로 당기손익으로 재분류되는 포괄손익,2,4,review_required,True,2,H1 | Q1,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+ifrs-full_OtherComprehensiveIncomeThatWillBeReclassifiedToProfitOrLossNetOfTax,ifrs-full_OtherComprehensiveIncomeThatWillBeReclassifiedToProfitOrLossNetOfTax,CIS,후속적으로 당기손익으로 재분류되는 포괄손익,당기손익으로 재분류되는 세후기타포괄손익 | 당기손익으로 재분류될 수 있는 항목(세후기타포괄손익) | 후속적으로 당기손익으로 재분류되는 포괄손익,5,34,review_required,True,3,FY | H1 | Q1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+dart_OtherComprehensiveIncomeThatWillNotBeReclassifiedToProfitOrLossNetOfTax,dart_OtherComprehensiveIncomeThatWillNotBeReclassifiedToProfitOrLossNetOfTax,CIS,후속적으로 당기손익으로 재분류되지 않는 포괄손익,당기손익으로 재분류되지 않는 세후기타포괄손익 | 후속적으로 당기손익으로 재분류되지 않는 포괄손익,2,4,review_required,True,2,H1 | Q1,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+ifrs-full_OtherComprehensiveIncomeThatWillNotBeReclassifiedToProfitOrLossNetOfTax,ifrs-full_OtherComprehensiveIncomeThatWillNotBeReclassifiedToProfitOrLossNetOfTax,CIS,후속적으로 당기손익으로 재분류되지 않는 포괄손익,당기손익으로 재분류 되지않는 세후기타포괄손익 | 당기손익으로 재분류되지 않는 세후기타포괄손익 | 당기손익으로 재분류되지 않는항목(세후기타포괄손익) | 후속적으로 당기손익으로 재분류되지 않는 포괄손익,5,34,review_required,True,4,FY | H1 | Q1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+ifrs-full_DilutedEarningsLossPerShare,ifrs-full_DilutedEarningsLossPerShare,CIS,희석주당이익(손실),희석주당반기순이익 | 희석주당반기순이익(손실) | 희석주당분기순이익 | 희석주당분기순이익(손실) | 희석주당손익 | 희석주당순이익(손실) | 희석주당이익 | 희석주당이익(손실),4,48,review_required,True,8,FY | H1 | Q1 | Q3,CFS,high,False,statement/fs_div 의미 혼동 가능
+ifrs-full_ProfitLossFromContinuingOperations,ifrs-full_ProfitLossFromContinuingOperations,IS,계속영업이익(손실),계속영업이익(손실),1,6,auto_account_id,False,1,FY | H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+ifrs-full_FinanceCosts,ifrs-full_FinanceCosts,IS,금융비용,금융비용,1,10,auto_account_id,False,1,FY | H1 | Q1 | Q3,CFS,high,False,statement/fs_div 의미 혼동 가능
+name:금융비용,,IS,금융비용,금융비용,1,2,review_required,True,1,H1 | Q1,CFS,high,False,statement/fs_div 의미 혼동 가능
+ifrs-full_FinanceIncome,ifrs-full_FinanceIncome,IS,금융수익,금융수익,1,12,auto_account_id,False,1,FY | H1 | Q1 | Q3,CFS,high,False,statement/fs_div 의미 혼동 가능
+ifrs-full_BasicEarningsLossPerShare,ifrs-full_BasicEarningsLossPerShare,IS,기본주당이익(손실),기본주당이익 | 기본주당이익(손실),1,12,review_required,True,2,FY | H1 | Q1 | Q3,CFS,high,False,statement/fs_div 의미 혼동 가능
+dart_OtherLosses,dart_OtherLosses,IS,기타비용,기타비용 | 기타손실,1,12,review_required,True,2,FY | H1 | Q1 | Q3,CFS,high,False,statement/fs_div 의미 혼동 가능
+dart_OtherGains,dart_OtherGains,IS,기타수익,기타수익 | 기타이익,1,12,review_required,True,2,FY | H1 | Q1 | Q3,CFS,high,False,statement/fs_div 의미 혼동 가능
+ifrs-full_ProfitLoss,ifrs-full_ProfitLoss,IS,당기순이익(손실),당기순이익 | 당기순이익(손실) | 반기순이익 | 분기순이익 | 분기순이익(손실),1,12,review_required,True,5,FY | H1 | Q1 | Q3,CFS,high,False,statement/fs_div 의미 혼동 가능
+ifrs-full_Revenue,ifrs-full_Revenue,IS,매출액,매출액 | 수익(매출액) | 영업수익,1,12,review_required,True,3,FY | H1 | Q1 | Q3,CFS,high,False,statement/fs_div 의미 혼동 가능
+ifrs-full_CostOfSales,ifrs-full_CostOfSales,IS,매출원가,매출원가,1,12,auto_account_id,False,1,FY | H1 | Q1 | Q3,CFS,high,False,statement/fs_div 의미 혼동 가능
+ifrs-full_GrossProfit,ifrs-full_GrossProfit,IS,매출총이익,매출총이익,1,12,auto_account_id,False,1,FY | H1 | Q1 | Q3,CFS,high,False,statement/fs_div 의미 혼동 가능
+ifrs-full_IncomeTaxExpenseContinuingOperations,ifrs-full_IncomeTaxExpenseContinuingOperations,IS,법인세비용(수익),법인세비용 | 법인세비용(수익),1,12,review_required,True,2,FY | H1 | Q1 | Q3,CFS,high,False,statement/fs_div 의미 혼동 가능
+ifrs-full_ProfitLossBeforeTax,ifrs-full_ProfitLossBeforeTax,IS,법인세비용차감전순이익(손실),법인세비용차감전순이익 | 법인세비용차감전순이익(손실),1,12,review_required,True,2,FY | H1 | Q1 | Q3,CFS,high,False,statement/fs_div 의미 혼동 가능
+ifrs-full_ProfitLossAttributableToNoncontrollingInterests,ifrs-full_ProfitLossAttributableToNoncontrollingInterests,IS,비지배지분,비지배지분 | 비지배지분에 귀속되는 당기순이익(손실),1,12,review_required,True,2,FY | H1 | Q1 | Q3,CFS,high,False,statement/fs_div 의미 혼동 가능
+dart_OperatingIncomeLoss,dart_OperatingIncomeLoss,IS,영업이익,영업이익,1,12,auto_account_id,False,1,FY | H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+ifrs-full_ProfitLossAttributableToOwnersOfParent,ifrs-full_ProfitLossAttributableToOwnersOfParent,IS,지배기업 소유주지분,분기순이익 | 지배기업 소유주지분 | 지배기업 소유지분 | 지배기업의 소유주에게 귀속되는 당기순이익(손실),1,12,review_required,True,4,FY | H1 | Q1 | Q3,CFS,high,False,statement/fs_div 의미 혼동 가능
+ifrs-full_ShareOfProfitLossOfAssociatesAndJointVenturesAccountedForUsingEquityMethod,ifrs-full_ShareOfProfitLossOfAssociatesAndJointVenturesAccountedForUsingEquityMethod,IS,지분법이익,지분법이익,1,9,auto_account_id,False,1,FY | H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+name:지분법이익,,IS,지분법이익,지분법이익,1,3,review_required,True,1,H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+dart_TotalSellingGeneralAdministrativeExpenses,dart_TotalSellingGeneralAdministrativeExpenses,IS,판매비와관리비,판매비와관리비,1,12,auto_account_id,False,1,FY | H1 | Q1 | Q3,CFS,high,False,statement/fs_div 의미 혼동 가능
+ifrs-full_DilutedEarningsLossPerShare,ifrs-full_DilutedEarningsLossPerShare,IS,희석주당이익(손실),희석주당이익 | 희석주당이익(손실),1,12,review_required,True,2,FY | H1 | Q1 | Q3,CFS,high,False,statement/fs_div 의미 혼동 가능
+name:공정가치측정금융자산평가손익,,SCE,공정가치 측정 금융자산 평가손익,공정가치 측정 금융자산 평가손익,1,1,review_required,True,1,H1,CFS,high,False,statement/fs_div 의미 혼동 가능
+name:공정가치측정금융자산평가이익,,SCE,공정가치 측정 금융자산 평가이익,공정가치 측정 금융자산 평가이익,1,1,review_required,True,1,Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+dart_PurchaseDispostionOfAssociatesOrJointVenture,dart_PurchaseDispostionOfAssociatesOrJointVenture,SCE,관계기업 및 공동기업의 기타포괄손익에 대한 지분,관계기업 및 공동기업의 기타포괄손익에 대한 지분,1,2,auto_account_id,False,1,H1 | Q1,CFS,high,False,statement/fs_div 의미 혼동 가능
+ifrs-full_ShareOfOtherComprehensiveIncomeOfAssociatesAndJointVenturesAccountedForUsingEquityMethod,ifrs-full_ShareOfOtherComprehensiveIncomeOfAssociatesAndJointVenturesAccountedForUsingEquityMethod,SCE,관계기업 및 공동기업의 기타포괄손익에 대한 지분,관계기업 및 공동기업의 기타포괄손익에 대한 지분 | 지분법자본변동,2,15,review_required,True,2,FY | H1 | Q1 | Q3,CFS,high,False,statement/fs_div 의미 혼동 가능
+name:관계기업및공동기업의기타포괄손익에대한지분,,SCE,관계기업 및 공동기업의 기타포괄손익에 대한 지분,관계기업 및 공동기업의 기타포괄손익에 대한 지분,1,1,review_required,True,1,Q3,CFS,high,False,statement/fs_div 의미 혼동 가능
+ifrs-full_ShareOfOtherComprehensiveIncomeOfAssociatesAndJointVenturesAccountedForUsingEquityMethodThatWillBeReclassifiedToProfitOrLossNetOfTax,ifrs-full_ShareOfOtherComprehensiveIncomeOfAssociatesAndJointVenturesAccountedForUsingEquityMethodThatWillBeReclassifiedToProfitOrLossNetOfTax,SCE,관계기업의 기타포괄손익에 대한 지분,관계기업 기타포괄손익지분 | 관계기업의 기타포괄손익에 대한 지분 | 지분법 적용대상 관계기업과 공동기업의 기타포괄손익에 대한 지분(세후기타포괄손익) | 지분법자본변동,3,16,review_required,True,4,FY | H1 | Q1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+name:관계기업의기타포괄손익에대한지분,,SCE,관계기업의 기타포괄손익에 대한 지분,관계기업의 기타포괄손익에 대한 지분,1,3,review_required,True,1,H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+dart_EquityAtBeginningOfPeriod,dart_EquityAtBeginningOfPeriod,SCE,기초자본,기초자본 | 분기초자본,5,60,review_required,True,2,FY | H1 | Q1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+dart_OtherTransactions,dart_OtherTransactions,SCE,기타,기타 | 기타거래 | 기타자본조정,2,7,review_required,True,3,FY | H1 | Q1 | Q3,CFS,high,False,statement/fs_div 의미 혼동 가능
+ifrs-full_IncreaseDecreaseThroughTransfersAndOtherChangesEquity,ifrs-full_IncreaseDecreaseThroughTransfersAndOtherChangesEquity,SCE,기타,"기타 | 기타변동에 따른 증가(감소), 자본 | 기타포괄손익-공정가치 측정 금융자산 처분손익의 이익잉여금 대체 | 기타포괄손익-공정가치측정 금융자산 처분손익의 이익잉여금 대체",3,17,review_required,True,4,FY | H1 | Q1 | Q3,CFS,high,False,statement/fs_div 의미 혼동 가능
+name:기타,,SCE,기타,기타,1,2,review_required,True,1,H1 | Q3,CFS,high,False,statement/fs_div 의미 혼동 가능
+name:기타자본조정,,SCE,기타자본조정,기타자본조정,1,3,review_required,True,1,FY | H1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+ifrs-full_OtherComprehensiveIncome,ifrs-full_OtherComprehensiveIncome,SCE,기타포괄손익,기타포괄손익 | 기타포괄손익 : | 기타포괄손익:,2,10,review_required,True,3,FY | H1 | Q1 | Q3,CFS,high,False,statement/fs_div 의미 혼동 가능
+name:기타포괄손익계,,SCE,기타포괄손익 계,기타포괄손익 계,1,3,review_required,True,1,H1 | Q1 | Q3,CFS,high,False,statement/fs_div 의미 혼동 가능
+dart_ChangesInReserveOfGainsAndLossesOnFinancialAssetsMeasuredAtFairValueThroughOtherComprehensiveIncome,dart_ChangesInReserveOfGainsAndLossesOnFinancialAssetsMeasuredAtFairValueThroughOtherComprehensiveIncome,SCE,기타포괄손익-공정가치금융자산평가손익,기타포괄손익-공정가치금융자산평가손익,1,3,auto_account_id,False,1,H1 | Q1 | Q3,CFS,high,False,statement/fs_div 의미 혼동 가능
+ifrs-full_OtherComprehensiveIncomeNetOfTaxGainsLossesFromInvestmentsInEquityInstruments,ifrs-full_OtherComprehensiveIncomeNetOfTaxGainsLossesFromInvestmentsInEquityInstruments,SCE,기타포괄손익-공정가치금융자산평가손익,"기타포괄손익-공정가치금융자산평가손익 | 기타포괄손익-공정가치측정지분상품평가손익 | 세후기타포괄손익, 지분상품에 대한 투자자산",2,11,review_required,True,3,FY | H1 | Q1 | Q3,CFS,high,False,statement/fs_div 의미 혼동 가능
+dart_OtherComprehensiveIncomeNetOfTaxChangeInFairValueOfFinancialAssetsMeasuredAtFairValueThroughOtherComprehensiveIncome,dart_OtherComprehensiveIncomeNetOfTaxChangeInFairValueOfFinancialAssetsMeasuredAtFairValueThroughOtherComprehensiveIncome,SCE,기타포괄손익-공정가치측정 금융자산 평가이익,공정가치측정 금융자산평가손익 | 기타포괄손익-공정가치측정 금융자산 평가이익,1,4,review_required,True,2,FY | H1 | Q1 | Q3,CFS,high,False,statement/fs_div 의미 혼동 가능
+name:기타포괄손익공정가치측정금융자산평가이익,,SCE,기타포괄손익-공정가치측정 금융자산 평가이익,기타포괄손익-공정가치측정 금융자산 평가이익,1,1,review_required,True,1,Q1,CFS,high,False,statement/fs_div 의미 혼동 가능
+dart_TransferOfAmountRecognisedInOtherComprehensiveIncomeAndAccumulatedInEquityRelatingToDisposalOfInvestmentsInEquityInstruments,dart_TransferOfAmountRecognisedInOtherComprehensiveIncomeAndAccumulatedInEquityRelatingToDisposalOfInvestmentsInEquityInstruments,SCE,기타포괄손익지분증권처분이익잉여금대체,기타포괄손익지분증권처분이익잉여금대체,1,2,auto_account_id,False,1,FY,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+ifrs-full_ProfitLoss,ifrs-full_ProfitLoss,SCE,당기순이익(손실),당기순손익 | 당기순이익 | 당기순이익(손실) | 반기순손익 | 반기순이익 | 반기순이익(손실) | 분기순손익 | 분기순이익 | 분기순이익(손실),5,60,review_required,True,9,FY | H1 | Q1 | Q3,CFS,high,False,statement/fs_div 의미 혼동 가능
+name:매각예정분류,,SCE,매각예정분류,매각예정분류,1,1,review_required,True,1,FY,CFS,high,False,statement/fs_div 의미 혼동 가능
+name:배당금,,SCE,배당금,배당금,1,3,review_required,True,1,H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+ifrs-full_DividendsPaidClassifiedAsOperatingActivities,ifrs-full_DividendsPaidClassifiedAsOperatingActivities,SCE,배당금 지급,배당금 지급,1,1,auto_account_id,False,1,H1,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+name:배당금지급,,SCE,배당금 지급,배당금 지급 | 배당금지급,1,4,review_required,True,2,FY | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+dart_DecreaseInNoncontrollingInterests,dart_DecreaseInNoncontrollingInterests,SCE,비지배지분의 감소,비지배지분의 감소,1,1,auto_account_id,False,1,FY,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+name:비지배지분의감소,,SCE,비지배지분의 감소,비지배지분의 감소,1,1,review_required,True,1,FY,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+ifrs-full_OtherComprehensiveIncomeNetOfTaxExchangeDifferencesOnTranslation,ifrs-full_OtherComprehensiveIncomeNetOfTaxExchangeDifferencesOnTranslation,SCE,"세후기타포괄손익, 외화환산외환차이","세후기타포괄손익, 외화환산외환차이 | 해외사업장환산 | 해외사업장환산외환차이 | 해외사업환산손익",3,11,review_required,True,4,FY | H1 | Q1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+ifrs-full_DividendsPaid,ifrs-full_DividendsPaid,SCE,소유주에 대한 배분으로 인식된 배당금,배당 | 배당금 | 배당금의 지급 | 배당금지급 | 소유주에 대한 배분으로 인식된 배당금 | 현금배당,5,47,review_required,True,6,FY | H1 | Q1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+name:순확정급여부채자산재측정요소,,SCE,순확정급여부채(자산) 재측정요소,순확정급여부채(자산) 재측정요소,1,3,review_required,True,1,H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+dart_IntercompanyAcquisition,dart_IntercompanyAcquisition,SCE,연결실체내 자본거래 등,연결실체내 자본거래 등,1,12,auto_account_id,False,1,FY | H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+dart_ChangesInConsolidatedCompanies,dart_ChangesInConsolidatedCompanies,SCE,연결실체의 변동,연결대상 범위의 변동 | 연결대상범위의 변동 | 연결실체의 변동,3,14,review_required,True,3,FY | H1 | Q1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+name:연결실체의변동,,SCE,연결실체의 변동,연결실체의 변동,1,1,review_required,True,1,Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+name:자기주식거래로인한증감,,SCE,자기주식 거래로 인한 증감,자기주식 거래로 인한 증감,1,1,review_required,True,1,Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+ifrs-full_CancellationOfTreasuryShares,ifrs-full_CancellationOfTreasuryShares,SCE,자기주식 소각,자기주식 소각 | 자기주식의 소각,3,15,review_required,True,2,FY | H1 | Q1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+name:자기주식소각,,SCE,자기주식소각,자기주식소각,1,1,review_required,True,1,Q1,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+dart_DispositionOfTreasuryShares,dart_DispositionOfTreasuryShares,SCE,자기주식의 처분,자기주식의 처분,1,1,auto_account_id,False,1,FY,CFS,high,False,statement/fs_div 의미 혼동 가능
+ifrs-full_SaleOrIssueOfTreasuryShares,ifrs-full_SaleOrIssueOfTreasuryShares,SCE,자기주식의 처분,자기주식의 처분 | 자기주식의 처분 및 발행 | 자기주식처분,3,11,review_required,True,3,FY | H1 | Q1 | Q3,CFS,high,False,statement/fs_div 의미 혼동 가능
+name:자기주식의처분,,SCE,자기주식의 처분,자기주식의 처분,1,1,review_required,True,1,FY,CFS,high,False,statement/fs_div 의미 혼동 가능
+ifrs-full_PurchaseOfTreasuryShares,ifrs-full_PurchaseOfTreasuryShares,SCE,자기주식의 취득,자기주식 취득 | 자기주식의 취득,4,16,review_required,True,2,FY | H1 | Q1 | Q3,CFS,high,False,statement/fs_div 의미 혼동 가능
+name:자기주식처분,,SCE,자기주식처분,자기주식 처분 | 자기주식처분,2,3,review_required,True,2,FY | Q1,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+name:자기주식처분손익에따른증가감소자본,,SCE,"자기주식처분손익에 따른 증가(감소), 자본","자기주식처분손익에 따른 증가(감소), 자본",1,1,review_required,True,1,FY,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+name:자기주식처분이익,,SCE,자기주식처분이익,자기주식처분이익,1,3,review_required,True,1,H1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+dart_TreasuryShareTransactions,dart_TreasuryShareTransactions,SCE,자기주식취득,자기주식 | 자기주식 거래로 인한 증감 | 자기주식 취득 | 자기주식처분 | 자기주식처분이익 | 자기주식취득,3,15,review_required,True,6,FY | H1 | Q1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+ifrs-full_ChangesInEquity,ifrs-full_ChangesInEquity,SCE,자본 증가(감소) 합계,자본 증가(감소) 합계,1,5,auto_account_id,False,1,FY | H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+ifrs-full_IncreaseDecreaseThroughTransactionsWithOwners,ifrs-full_IncreaseDecreaseThroughTransactionsWithOwners,SCE,자본에 직접 반영된 소유주와의 거래 합계,"소유주와의 거래로 인한 증가(감소), 자본 | 자본에 직접 반영된 소유주와의 거래 합계",2,9,review_required,True,2,FY | H1 | Q1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+name:자본잉여금의이익잉여금전입,,SCE,자본잉여금의 이익잉여금 전입,자본잉여금의 이익잉여금 전입,1,4,review_required,True,1,FY | H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+ifrs-full_Equity,ifrs-full_Equity,SCE,자본총계,기말자본 | 반기말자본 | 분기말자본 | 자 본 총 계 | 자본총계,5,60,review_required,True,5,FY | H1 | Q1 | Q3,CFS,high,False,statement/fs_div 의미 혼동 가능
+ifrs-full_OtherComprehensiveIncomeNetOfTaxGainsLossesOnRevaluation,ifrs-full_OtherComprehensiveIncomeNetOfTaxGainsLossesOnRevaluation,SCE,자산재평가손익(세후기타포괄손익),자산재평가손익(세후기타포괄손익),1,2,auto_account_id,False,1,FY,CFS,high,False,statement/fs_div 의미 혼동 가능
+name:종속기업유상증자,,SCE,종속기업 유상증자,종속기업 유상증자,1,4,review_required,True,1,H1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+ifrs-full_IncreaseDecreaseThroughChangesInOwnershipInterestsInSubsidiariesThatDoNotResultInLossOfControl,ifrs-full_IncreaseDecreaseThroughChangesInOwnershipInterestsInSubsidiariesThatDoNotResultInLossOfControl,SCE,종속회사 지분 추가 취득,종속기업 소유지분변동 | 종속기업 유상증자 및 소유지분변동 | 종속회사 지분 추가 취득 | 지배력을 상실하지 않는 종속기업에 대한 소유지분의 변동에 따른 증가(감소) | 지분법자본변동,2,12,review_required,True,5,FY | H1 | Q1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+name:종속회사지분추가취득,,SCE,종속회사 지분 추가 취득,종속회사 지분 추가 취득,1,1,review_required,True,1,Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+dart_ExpenseFromSharebasedPaymentTransactionsWithEmployeesSellingGeneralAdministrativeExpenses,dart_ExpenseFromSharebasedPaymentTransactionsWithEmployeesSellingGeneralAdministrativeExpenses,SCE,주식보상비용,주식보상비용,1,1,auto_account_id,False,1,FY,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+name:주식선택권부여,,SCE,주식선택권 부여,주식선택권 부여,1,1,review_required,True,1,Q1,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+name:주식선택권부여행사,,SCE,주식선택권 부여/행사,주식선택권 부여/행사,1,2,review_required,True,1,Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+name:주식선택권조건변경,,SCE,주식선택권 조건변경,주식선택권 조건변경,1,5,review_required,True,1,FY | H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+name:주식선택권행사,,SCE,주식선택권 행사,주식선택권 행사,1,1,review_required,True,1,Q1,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+name:주식선택권의부여,,SCE,주식선택권의 부여,주식선택권의 부여,1,1,review_required,True,1,H1,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+ifrs-full_IncreaseDecreaseThroughSharebasedPaymentTransactions,ifrs-full_IncreaseDecreaseThroughSharebasedPaymentTransactions,SCE,주식선택권의 부여/행사,"주식기준보상 | 주식기준보상거래에 따른 증가(감소), 지분 | 주식보상비용 | 주식선택권의 부여/행사",3,17,review_required,True,4,FY | H1 | Q1 | Q3,CFS,low,True,동일 account_id·sj_div·fs_div가 여러 기업에서 반복
+name:주식선택권의부여행사,,SCE,주식선택권의 부여/행사,주식선택권의 부여/행사,1,3,review_required,True,1,FY | H1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+name:주식선택권의행사,,SCE,주식선택권의 행사,주식선택권의 행사,1,1,review_required,True,1,H1,CFS,high,False,statement/fs_div 의미 혼동 가능
+ifrs-full_IssueOfEquity,ifrs-full_IssueOfEquity,SCE,지분법자본변동,지분법자본변동,1,7,auto_account_id,False,1,FY | H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+ifrs-full_ComprehensiveIncome,ifrs-full_ComprehensiveIncome,SCE,총포괄손익,반기총포괄이익 | 반기총포괄이익(손실) | 분기총포괄이익 | 분기총포괄이익(손실) | 총포괄손익 | 총포괄이익 | 총포괄이익(손실),3,18,review_required,True,7,FY | H1 | Q1 | Q3,CFS,high,False,statement/fs_div 의미 혼동 가능
+name:총포괄손익,,SCE,총포괄손익,총포괄손익,1,3,review_required,True,1,H1 | Q1 | Q3,CFS,high,False,statement/fs_div 의미 혼동 가능
+dart_AdjustmentsForGainsOnRevaluationOfPropertyPlantAndEquipment,dart_AdjustmentsForGainsOnRevaluationOfPropertyPlantAndEquipment,SCE,토지재평가차익,토지재평가차익,1,1,auto_account_id,False,1,FY,CFS,high,False,statement/fs_div 의미 혼동 가능
+dart_ChangesInReserveOfGainsAndLossesOnHedgingInstrumentsThatHedgeInvestmentsInEquityInstruments,dart_ChangesInReserveOfGainsAndLossesOnHedgingInstrumentsThatHedgeInvestmentsInEquityInstruments,SCE,파생상품평가손익,파생상품평가손익,1,3,auto_account_id,False,1,H1 | Q1 | Q3,CFS,high,False,statement/fs_div 의미 혼동 가능
+ifrs-full_OtherComprehensiveIncomeNetOfTaxCashFlowHedges,ifrs-full_OtherComprehensiveIncomeNetOfTaxCashFlowHedges,SCE,파생상품평가손익,파생금융상품평가이익 | 파생상품평가손익,1,4,review_required,True,2,FY | H1 | Q1 | Q3,CFS,high,False,statement/fs_div 의미 혼동 가능
+dart_ChangesInForeignExchangeRates,dart_ChangesInForeignExchangeRates,SCE,해외사업장환산외환차이,해외사업장환산외환차이,2,7,auto_account_id,False,1,FY | H1 | Q1 | Q3,CFS,high,False,statement/fs_div 의미 혼동 가능
+ifrs-full_GainsLossesOnExchangeDifferencesOnTranslationNetOfTax,ifrs-full_GainsLossesOnExchangeDifferencesOnTranslationNetOfTax,SCE,해외사업장환산외환차이,해외사업장환산 외환이익(손실) | 해외사업장환산외환차이 | 해외사업장환산외환차이(세후기타포괄손익) | 해외사업환산이익,4,28,review_required,True,4,FY | H1 | Q1 | Q3,CFS,high,False,statement/fs_div 의미 혼동 가능
+name:해외사업장환산외환차이,,SCE,해외사업장환산외환차이,해외사업장환산 외환차이 | 해외사업장환산외환차이,2,6,review_required,True,2,H1 | Q1 | Q3,CFS,high,False,statement/fs_div 의미 혼동 가능
+name:해외사업환산손익,,SCE,해외사업환산손익,해외사업환산손익,1,5,review_required,True,1,H1 | Q1 | Q3,CFS,high,False,statement/fs_div 의미 혼동 가능
+name:해외사업환산이익,,SCE,해외사업환산이익,해외사업환산이익,1,3,review_required,True,1,H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+dart_AnnualDividendsPaid,dart_AnnualDividendsPaid,SCE,현금배당,현금배당,1,4,auto_account_id,False,1,FY | H1 | Q1 | Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+name:현금배당,,SCE,현금배당,현금배당,1,1,review_required,True,1,Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+ifrs-full_AmountRemovedFromReserveOfCashFlowHedgesAndIncludedInInitialCostOrOtherCarryingAmountOfNonfinancialAssetLiabilityOrFirmCommitmentForWhichFairValueHedgeAccountingIsApplied,ifrs-full_AmountRemovedFromReserveOfCashFlowHedgesAndIncludedInInitialCostOrOtherCarryingAmountOfNonfinancialAssetLiabilityOrFirmCommitmentForWhichFairValueHedgeAccountingIsApplied,SCE,현금흐름위험회피파생상품평가손익,현금흐름위험회피파생상품평가손익,1,2,auto_account_id,False,1,H1 | Q1,CFS,high,False,statement/fs_div 의미 혼동 가능
+ifrs-full_GainsLossesOnCashFlowHedgesNetOfTax,ifrs-full_GainsLossesOnCashFlowHedgesNetOfTax,SCE,현금흐름위험회피파생상품평가손익,파생상품평가손익 | 파생상품평가이익(손실) | 현금흐름위험회피파생상품평가손익,2,14,review_required,True,3,FY | H1 | Q1 | Q3,CFS,high,False,statement/fs_div 의미 혼동 가능
+name:현금흐름위험회피파생상품평가손익,,SCE,현금흐름위험회피파생상품평가손익,현금흐름위험회피파생상품평가손익,1,1,review_required,True,1,Q3,CFS,high,False,statement/fs_div 의미 혼동 가능
+name:확적급여제도의재측정요소,,SCE,확적급여제도의재측정요소,확적급여제도의재측정요소,1,1,review_required,True,1,Q3,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
+ifrs-full_OtherComprehensiveIncomeNetOfTaxGainsLossesOnRemeasurementsOfDefinedBenefitPlans,ifrs-full_OtherComprehensiveIncomeNetOfTaxGainsLossesOnRemeasurementsOfDefinedBenefitPlans,SCE,확정급여제도의 재측정요소,순확정급여부채(자산) 재측정요소 | 확정급여부채의 재측정요소 | 확정급여제도의 재측정손익(세후기타포괄손익) | 확정급여제도의 재측정요소 | 확정급여제도의재측정요소,5,42,review_required,True,5,FY | H1 | Q1 | Q3,CFS,high,False,statement/fs_div 의미 혼동 가능
+name:확정급여제도의재측정요소,,SCE,확정급여제도의 재측정요소,확정급여제도의 재측정요소 | 확정급여제도의재측정요소,4,12,review_required,True,2,FY | H1 | Q1 | Q3,CFS,high,False,statement/fs_div 의미 혼동 가능
+dart_OtherComprehensiveIncomeForStatementOfChangesInEquity,dart_OtherComprehensiveIncomeForStatementOfChangesInEquity,SCE,확정급여제도의재측정요소,확정급여제도의재측정요소,1,2,auto_account_id,False,1,H1 | Q1,CFS,medium,False,확장 태그·단일기업·다중 ID 가능성 검토
